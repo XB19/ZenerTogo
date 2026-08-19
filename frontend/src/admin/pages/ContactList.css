@@ -1,0 +1,105 @@
+.admin-page-contactlist .page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.admin-page-contactlist .page-header h1{
+    color:#1b60ad;
+    font-size:32px;
+    font-weight:800;
+}
+
+.admin-page-contactlist .page-header p{
+    color:#64748b;
+}
+
+.admin-page-contactlist .table-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.admin-page-contactlist table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.admin-page-contactlist thead{
+    background:#1b60ad;
+}
+
+.admin-page-contactlist thead th{
+    color:white;
+    padding:18px;
+    text-align:left;
+}
+
+.admin-page-contactlist tbody td{
+    padding:18px;
+    border-bottom:1px solid #edf2f7;
+}
+
+.admin-page-contactlist tbody tr:hover{
+    background:#f8fafc;
+}
+
+.admin-page-contactlist .badge-new{
+    background:#fff7e6;
+    color:#f59e0b;
+    padding:8px 14px;
+    border-radius:30px;
+    font-weight:700;
+    font-size:12px;
+}
+
+.admin-page-contactlist .badge-read{
+    background:#e8f7e2;
+    color:#4b8f1e;
+    padding:8px 14px;
+    border-radius:30px;
+    font-weight:700;
+    font-size:12px;
+}
+
+.admin-page-contactlist .btn-view{
+    text-decoration:none;
+    background:#1b60ad;
+    color:white;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .admin-page-contactlist .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .admin-page-contactlist .page-header h1{
+        font-size:26px;
+    }
+
+    .admin-page-contactlist .table-card{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .admin-page-contactlist table{
+        min-width:700px;
+    }
+
+    .admin-page-contactlist thead th,
+    .admin-page-contactlist tbody td{
+        padding:14px;
+        font-size:14px;
+    }
+}

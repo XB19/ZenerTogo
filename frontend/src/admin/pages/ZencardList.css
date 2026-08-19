@@ -1,0 +1,112 @@
+.admin-page-zencardlist .page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.admin-page-zencardlist .page-header h1{
+    color:#1b60ad;
+    font-size:32px;
+    font-weight:800;
+}
+
+.admin-page-zencardlist .page-header p{
+    color:#64748b;
+}
+
+.admin-page-zencardlist .table-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.admin-page-zencardlist table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.admin-page-zencardlist thead{
+    background:#1b60ad;
+}
+
+.admin-page-zencardlist thead th{
+    color:white;
+    padding:18px;
+    text-align:left;
+}
+
+.admin-page-zencardlist tbody td{
+    padding:18px;
+    border-bottom:1px solid #edf2f7;
+}
+
+.admin-page-zencardlist tbody tr:hover{
+    background:#f8fafc;
+}
+
+.admin-page-zencardlist .badge-pending{
+    background:#fff7e6;
+    color:#f59e0b;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.admin-page-zencardlist .badge-success{
+    background:#e8f7e2;
+    color:#4b8f1e;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.admin-page-zencardlist .badge-danger{
+    background:#ffe8e8;
+    color:#dc2626;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.admin-page-zencardlist .btn-view{
+    background:#1b60ad;
+    color:white;
+    padding:8px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+    .admin-page-zencardlist .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .admin-page-zencardlist .page-header h1{
+        font-size:26px;
+    }
+
+    .admin-page-zencardlist .table-card{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .admin-page-zencardlist table{
+        min-width:750px;
+    }
+
+    .admin-page-zencardlist thead th,
+    .admin-page-zencardlist tbody td{
+        padding:14px;
+        font-size:14px;
+    }
+}

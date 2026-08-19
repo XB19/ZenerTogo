@@ -1,0 +1,317 @@
+/* ==========================
+   HERO
+========================== */
+
+.page-actualites .news-hero{
+    position:relative;
+    height:500px;
+
+    background: url("/images/about-hero.png") center center/cover no-repeat;
+}
+
+.page-actualites .news-overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(27,96,173,.78);
+}
+
+.page-actualites .news-hero-content{
+    position:relative;
+    z-index:2;
+
+    max-width:750px;
+
+    padding-top:100px;
+
+    color:#fff;
+}
+
+.page-actualites .news-badge{
+    display:inline-block;
+
+    background:#9fc63b;
+
+    padding:10px 22px;
+
+    font-size:14px;
+    font-weight:600;
+
+    letter-spacing:1px;
+}
+
+.page-actualites .news-hero-content h1{
+    margin:25px 0;
+
+    font-size:60px;
+    font-weight:800;
+
+    line-height:1.15;
+}
+
+.page-actualites .news-hero-content p{
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* ==========================
+   INTRO
+========================== */
+
+.page-actualites .news-intro{
+    padding:100px 0 70px;
+}
+
+.page-actualites .news-intro-content{
+    max-width:850px;
+}
+
+.page-actualites .section-subtitle{
+    color:#2f7ecb;
+
+    font-size:15px;
+    font-weight:700;
+
+    text-transform:uppercase;
+}
+
+.page-actualites .news-intro-content h2{
+    margin:15px 0 25px;
+
+    font-size:48px;
+    font-weight:800;
+}
+
+.page-actualites .news-intro-content p{
+    line-height:1.9;
+    color:#666;
+}
+
+/* ==========================
+   ARTICLES
+========================== */
+
+.page-actualites .news-section{
+    padding-bottom:100px;
+}
+
+.page-actualites .news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.page-actualites .news-card{
+    background:#fff;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.page-actualites .news-card:hover{
+    transform:translateY(-10px);
+}
+
+.page-actualites .news-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.page-actualites .news-content{
+    padding:30px;
+}
+
+.page-actualites .news-meta{
+    color:#2f7ecb;
+
+    font-size:13px;
+    font-weight:600;
+
+    margin-bottom:15px;
+
+    text-transform:uppercase;
+}
+
+.page-actualites .news-content h3{
+    font-size:26px;
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.page-actualites .news-content p{
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+.page-actualites .news-btn{
+    color:#2f7ecb;
+
+    font-weight:600;
+
+    text-decoration:none;
+}
+
+.page-actualites .news-btn:hover{
+    color:#9fc63b;
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.page-actualites .news-cta{
+    background:#2f7ecb;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:110px 0;
+}
+
+.page-actualites .news-cta h2{
+    font-size:50px;
+    font-weight:800;
+
+    margin-bottom:20px;
+}
+
+.page-actualites .news-cta p{
+    font-size:18px;
+}
+
+.page-actualites .cta-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:240px;
+    height:60px;
+
+    margin-top:35px;
+
+    border-radius:60px;
+
+    background:#9fc63b;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.page-actualites .cta-btn:hover{
+    background:#86b22f;
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:991px){
+
+    .page-actualites .news-hero{
+        height:auto;
+        min-height:400px;
+    }
+
+    .page-actualites .news-hero-content{
+        padding:80px 0 60px;
+    }
+
+    .page-actualites .news-intro{
+        padding:70px 0 50px;
+    }
+
+    .page-actualites .news-section{
+        padding-bottom:70px;
+    }
+
+    .page-actualites .news-cta{
+        padding:70px 0;
+    }
+
+    .page-actualites .news-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .page-actualites .news-hero-content h1,
+    .page-actualites .news-intro-content h2,
+    .page-actualites .news-cta h2{
+        font-size:40px;
+    }
+}
+
+@media(max-width:768px){
+
+    .page-actualites .news-grid{
+        grid-template-columns:minmax(0,1fr);
+    }
+
+    .page-actualites .news-hero-content h1{
+        font-size:34px;
+    }
+}
+
+@media(max-width:576px){
+
+    .page-actualites .news-hero-content h1{
+        font-size:26px;
+        margin:18px 0;
+    }
+
+    .page-actualites .news-hero-content p{
+        font-size:15px;
+    }
+
+    .page-actualites .news-intro{
+        padding:50px 0 40px;
+    }
+
+    .page-actualites .news-intro-content h2{
+        font-size:26px;
+    }
+
+    .page-actualites .news-section{
+        padding-bottom:50px;
+    }
+
+    .page-actualites .news-content{
+        padding:22px;
+    }
+
+    .page-actualites .news-content h3{
+        font-size:21px;
+    }
+
+    .page-actualites .news-cta{
+        padding:50px 0;
+    }
+
+    .page-actualites .news-cta h2{
+        font-size:28px;
+    }
+
+    .page-actualites .cta-btn{
+        width:100%;
+    }
+}

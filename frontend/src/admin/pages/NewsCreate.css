@@ -1,0 +1,83 @@
+/* FORM CARD */
+.admin-page-newscreate .form-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    max-width:800px;
+}
+
+/* HEADER */
+.admin-page-newscreate .form-card h1{
+    color:#1b60ad;
+    margin-bottom:25px;
+}
+
+/* INPUTS */
+.admin-page-newscreate .form-group{
+    margin-bottom:20px;
+}
+
+.admin-page-newscreate .form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:700;
+    color:#1b60ad;
+}
+
+.admin-page-newscreate .form-group input,
+.admin-page-newscreate .form-group textarea,
+.admin-page-newscreate .form-group select{
+
+    width:100%;
+    padding:12px 15px;
+
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+
+    outline:none;
+    transition:.3s;
+
+}
+
+.admin-page-newscreate .form-group input:focus,
+.admin-page-newscreate .form-group textarea:focus,
+.admin-page-newscreate .form-group select:focus{
+    border-color:#1b60ad;
+}
+
+/* BUTTON */
+.admin-page-newscreate .btn-submit{
+    background:#9fc63b;
+    color:white;
+
+    padding:14px 20px;
+    border:none;
+    border-radius:10px;
+
+    font-weight:700;
+    cursor:pointer;
+}
+
+.admin-page-newscreate .btn-submit:hover{
+    background:#8db52f;
+}
+
+@media(max-width:768px){
+
+    .admin-page-newscreate .form-card{
+        padding:25px;
+    }
+}
+
+@media(max-width:480px){
+
+    .admin-page-newscreate .form-card{
+        padding:18px;
+        border-radius:14px;
+    }
+
+    .admin-page-newscreate .btn-submit{
+        width:100%;
+    }
+}

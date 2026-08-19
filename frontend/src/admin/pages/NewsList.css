@@ -1,0 +1,192 @@
+/* HEADER */
+.admin-page-newslist .page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.admin-page-newslist .page-header h1{
+    color:#1b60ad;
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:6px;
+}
+
+.admin-page-newslist .page-header p{
+    color:#6b7280;
+}
+
+/* BUTTON */
+.admin-page-newslist .btn-add{
+    background:#9fc63b;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.admin-page-newslist .btn-add:hover{
+    background:#8db52f;
+}
+
+/* TABLE CARD */
+.admin-page-newslist .table-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+/* TABLE */
+.admin-page-newslist .table-card table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.admin-page-newslist .table-card thead{
+    background:#1b60ad;
+}
+
+.admin-page-newslist .table-card thead th{
+    color:white;
+    padding:18px;
+    text-align:left;
+    font-size:14px;
+    font-weight:700;
+}
+
+.admin-page-newslist .table-card tbody tr{
+    border-bottom:1px solid #edf2f7;
+    transition:.3s;
+}
+
+.admin-page-newslist .table-card tbody tr:hover{
+    background:#f8fafc;
+}
+
+.admin-page-newslist .table-card td{
+    padding:18px;
+    font-size:14px;
+    color:#334155;
+}
+
+/* IMAGE */
+.admin-page-newslist .news-img{
+    width:70px;
+    height:50px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* BADGES */
+.admin-page-newslist .badge{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.admin-page-newslist .badge-blue{
+    background:rgba(27,96,173,.1);
+    color:#1b60ad;
+}
+
+.admin-page-newslist .badge-green{
+    background:rgba(159,198,59,.15);
+    color:#6b8f1e;
+}
+
+/* ACTIONS */
+.admin-page-newslist .actions{
+    display:flex;
+    gap:10px;
+}
+
+.admin-page-newslist .btn-view{
+    background:#1b60ad;
+    color:white;
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.admin-page-newslist .btn-delete{
+    background:#dc2626;
+    color:white;
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* EMPTY */
+.admin-page-newslist .empty-state{
+    text-align:center;
+    padding:60px;
+}
+
+.admin-page-newslist .empty-state i{
+    font-size:60px;
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+.admin-page-newslist .empty-state h3{
+    color:#475569;
+    margin-bottom:10px;
+}
+
+.admin-page-newslist .empty-state p{
+    color:#94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .admin-page-newslist .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .admin-page-newslist .page-header h1{
+        font-size:26px;
+    }
+
+    .admin-page-newslist .btn-add{
+        display:inline-block;
+    }
+
+    .admin-page-newslist .table-card{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .admin-page-newslist .table-card table{
+        min-width:750px;
+    }
+
+    .admin-page-newslist .table-card thead th,
+    .admin-page-newslist .table-card td{
+        padding:14px;
+    }
+}
+
+@media(max-width:480px){
+
+    .admin-page-newslist .empty-state{
+        padding:40px 20px;
+    }
+
+    .admin-page-newslist .empty-state i{
+        font-size:46px;
+    }
+}

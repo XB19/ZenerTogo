@@ -1,0 +1,143 @@
+.admin-page-zencarddetail .detail-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.admin-page-zencarddetail .detail-card h1{
+    color:#1b60ad;
+    margin-bottom:25px;
+}
+
+.admin-page-zencarddetail .info-row{
+    margin-bottom:18px;
+}
+
+.admin-page-zencarddetail .label{
+    font-weight:700;
+    color:#1b60ad;
+}
+
+/* IMAGE CNI */
+.admin-page-zencarddetail .cni-image{
+    width:280px;
+    max-width:100%;
+    border-radius:12px;
+    margin-top:10px;
+    border:1px solid #ddd;
+}
+
+/* STATUS BADGE */
+.admin-page-zencarddetail .status-badge{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:30px;
+    font-weight:700;
+    font-size:13px;
+}
+
+.admin-page-zencarddetail .status-pending{
+    background:#fff7e6;
+    color:#f59e0b;
+}
+
+.admin-page-zencarddetail .status-approved{
+    background:#e8f7e2;
+    color:#4b8f1e;
+}
+
+.admin-page-zencarddetail .status-rejected{
+    background:#ffe8e8;
+    color:#dc2626;
+}
+
+/* ACTION BUTTONS */
+.admin-page-zencarddetail .actions{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+}
+
+.admin-page-zencarddetail .btn{
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+    font-weight:600;
+    transition:.2s;
+}
+
+.admin-page-zencarddetail .btn:hover{
+    transform:translateY(-2px);
+}
+
+.admin-page-zencarddetail .btn-success{
+    background:#4b8f1e;
+}
+
+.admin-page-zencarddetail .btn-danger{
+    background:#dc2626;
+}
+
+.admin-page-zencarddetail .disabled-box{
+    margin-top:25px;
+    padding:15px;
+    background:#f8fafc;
+    border-left:4px solid #1b60ad;
+    color:#64748b;
+    border-radius:8px;
+}
+
+.admin-page-zencarddetail .section{
+    margin-top:25px;
+}
+
+.admin-page-zencarddetail .btn-back{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+
+    background:#1b60ad;
+    color:white;
+
+    padding:12px 20px;
+    border-radius:10px;
+
+    font-weight:600;
+    transition:.2s;
+}
+
+.admin-page-zencarddetail .btn-back:hover{
+    background:#144a86;
+    transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+    .admin-page-zencarddetail .detail-card{
+        padding:25px;
+    }
+
+    .admin-page-zencarddetail .actions,
+    .admin-page-zencarddetail div[style*="margin-top:35px"]{
+        flex-wrap:wrap;
+    }
+}
+
+@media(max-width:480px){
+
+    .admin-page-zencarddetail .detail-card{
+        padding:18px;
+        border-radius:14px;
+    }
+
+    .admin-page-zencarddetail .actions{
+        flex-direction:column;
+    }
+
+    .admin-page-zencarddetail .actions .btn{
+        width:100%;
+    }
+}

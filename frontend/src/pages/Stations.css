@@ -1,0 +1,282 @@
+/* =========================
+   HERO
+========================= */
+
+.page-stations .stations-hero{
+    position:relative;
+    height:500px;
+    background: url("/images/about-hero.png") center center/cover no-repeat;
+}
+
+.page-stations .stations-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(27,96,173,.82);
+}
+
+.page-stations .stations-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding-top:110px;
+    max-width:750px;
+}
+
+.page-stations .stations-badge{
+    display:inline-block;
+    background:#9fc63b;
+    padding:10px 20px;
+    font-weight:600;
+}
+
+.page-stations .stations-content h1{
+    margin:25px 0;
+    font-size:60px;
+    font-weight:800;
+    line-height:1.15;
+}
+
+.page-stations .stations-content p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.page-stations .stations-intro{
+    padding:90px 0;
+}
+
+.page-stations .section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.page-stations .section-heading h2{
+    color:#1b60ad;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.page-stations .section-heading p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* =========================
+   MAP
+========================= */
+
+.page-stations .map-wrapper{
+    overflow:hidden;
+    border-radius:12px;
+    background:white;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.page-stations #map{
+    width:100%;
+    height:700px;
+}
+
+/* =========================
+   STATIONS
+========================= */
+
+.page-stations .stations-list{
+    padding:100px 0;
+    background:#f7f9fc;
+}
+
+.page-stations .stations-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.page-stations .station-card{
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.page-stations .station-card:hover{
+    transform:translateY(-8px);
+}
+
+.page-stations .station-card h3{
+    color:#1b60ad;
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.page-stations .station-city{
+    color:#9fc63b;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.page-stations .station-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.page-stations .station-cta{
+    padding:100px 0;
+    background:#1b60ad;
+    color:white;
+    text-align:center;
+}
+
+.page-stations .station-cta h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.page-stations .station-cta p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.page-stations .cta-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:220px;
+    height:58px;
+
+    margin-top:30px;
+
+    border-radius:50px;
+
+    background:#9fc63b;
+    color:white;
+
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* =========================
+   POPUP
+========================= */
+
+.page-stations .station-popup h3{
+    color:#1b60ad;
+    margin-bottom:10px;
+}
+
+.page-stations .station-popup p{
+    margin-bottom:8px;
+}
+
+.page-stations .popup-btn{
+    width:100%;
+    height:42px;
+    border:none;
+    border-radius:30px;
+    background:#9fc63b;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+    .page-stations .stations-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:992px){
+
+    .page-stations .stations-hero{
+        height:auto;
+        min-height:400px;
+    }
+
+    .page-stations .stations-content{
+        padding:80px 0 60px;
+    }
+
+    .page-stations .stations-intro,
+    .page-stations .stations-list,
+    .page-stations .station-cta{
+        padding:60px 0;
+    }
+
+    .page-stations .section-heading{
+        margin-bottom:40px;
+    }
+}
+
+@media(max-width:768px){
+
+    .page-stations .stations-content h1{
+        font-size:42px;
+    }
+
+    .page-stations .stations-grid{
+        grid-template-columns:minmax(0,1fr);
+    }
+
+    .page-stations #map{
+        height:500px;
+    }
+
+    .page-stations .section-heading h2{
+        font-size:32px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .page-stations .stations-content h1{
+        font-size:28px;
+        margin:18px 0;
+    }
+
+    .page-stations .stations-content p{
+        font-size:15px;
+    }
+
+    .page-stations .stations-intro,
+    .page-stations .stations-list,
+    .page-stations .station-cta{
+        padding:45px 0;
+    }
+
+    .page-stations .section-heading h2{
+        font-size:26px;
+    }
+
+    .page-stations #map{
+        height:380px;
+    }
+
+    .page-stations .station-cta h2{
+        font-size:26px;
+    }
+
+    .page-stations .cta-btn{
+        width:100%;
+    }
+
+}

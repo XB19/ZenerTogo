@@ -1,0 +1,472 @@
+.page-carrieres .success-message{
+    background:#d4edda;
+    color:#155724;
+    border:1px solid #c3e6cb;
+    padding:16px 20px;
+    margin:20px auto;
+    max-width:1200px;
+    border-radius:8px;
+}
+/* ==========================
+   HERO
+========================== */
+
+.page-carrieres .career-hero{
+    position:relative;
+    height:500px;
+
+    background: url("/images/about-hero.png") center center/cover no-repeat;
+}
+
+.page-carrieres .career-overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(27,96,173,.80);
+}
+
+.page-carrieres .career-content{
+    position:relative;
+    z-index:2;
+
+    color:white;
+
+    max-width:750px;
+
+    padding-top:100px;
+}
+
+.page-carrieres .career-badge{
+    display:inline-block;
+
+    background:#9fc63b;
+
+    padding:10px 22px;
+
+    font-weight:600;
+}
+
+.page-carrieres .career-content h1{
+    font-size:60px;
+    font-weight:800;
+
+    margin:25px 0;
+}
+
+.page-carrieres .career-content p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ==========================
+   INTRO
+========================== */
+
+.page-carrieres .career-intro{
+    padding:100px 0;
+}
+
+.page-carrieres .career-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.page-carrieres .career-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.page-carrieres .career-text h2{
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.page-carrieres .career-text p{
+    line-height:1.9;
+}
+
+/* ==========================
+   VALEURS RH
+========================== */
+
+.page-carrieres .hr-values{
+    padding:100px 0;
+    background:#f6f8fb;
+}
+
+.page-carrieres .section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.page-carrieres .section-title h2{
+    font-size:42px;
+}
+
+.page-carrieres .values-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.page-carrieres .value-card{
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.page-carrieres .value-card:hover{
+    transform:translateY(-10px);
+}
+
+.page-carrieres .value-card h3{
+    color:#2f7ecb;
+    margin-bottom:15px;
+}
+
+/* ==========================
+   CHIFFRES
+========================== */
+
+.page-carrieres .career-stats{
+    background:#2f7ecb;
+    padding:90px 0;
+}
+
+.page-carrieres .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.page-carrieres .stat-box{
+    text-align:center;
+    color:white;
+}
+
+.page-carrieres .stat-box span{
+    display:block;
+    font-size:55px;
+    font-weight:800;
+}
+
+/* ==========================
+   OFFRES
+========================== */
+
+.page-carrieres .jobs-section{
+    padding:100px 0;
+}
+
+.page-carrieres .jobs-list{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.page-carrieres .job-card{
+    background:white;
+
+    padding:35px;
+
+    border-left:5px solid #9fc63b;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.page-carrieres .job-card h3{
+    color:#2f7ecb;
+}
+
+.page-carrieres .job-card p{
+    margin-top:10px;
+}
+
+.page-carrieres .job-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:180px;
+    height:50px;
+
+    border-radius:40px;
+
+    background:#2f7ecb;
+    color:white;
+
+    text-decoration:none;
+}
+
+/* ==========================
+   CANDIDATURE
+========================== */
+
+.page-carrieres .application-section{
+    padding:100px 0;
+    background:#f6f8fb;
+}
+
+.page-carrieres .application-box{
+    max-width:900px;
+    margin:auto;
+
+    background:white;
+
+    padding:60px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.page-carrieres .application-box h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.page-carrieres .application-box p{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.page-carrieres .form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.page-carrieres .form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.page-carrieres .form-group.full{
+    grid-column:span 2;
+}
+
+.page-carrieres .form-group input,
+.page-carrieres .form-group textarea{
+    width:100%;
+    min-width:0;
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+.page-carrieres .form-group textarea{
+    min-height:180px;
+    resize:none;
+}
+
+.page-carrieres .submit-btn{
+    margin-top:20px;
+
+    width:220px;
+    height:58px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#9fc63b;
+
+    color:white;
+
+    font-weight:600;
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.page-carrieres .career-cta{
+    padding:100px 0;
+
+    text-align:center;
+
+    background:#2f7ecb;
+
+    color:white;
+}
+
+.page-carrieres .career-cta h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.page-carrieres .cta-btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:240px;
+    height:60px;
+
+    margin-top:25px;
+
+    background:#9fc63b;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .page-carrieres .career-hero{
+        height:auto;
+        min-height:400px;
+    }
+
+    .page-carrieres .career-content{
+        padding:80px 0 60px;
+    }
+
+    .page-carrieres .career-intro,
+    .page-carrieres .hr-values,
+    .page-carrieres .career-stats,
+    .page-carrieres .jobs-section,
+    .page-carrieres .application-section,
+    .page-carrieres .career-cta{
+        padding:70px 0;
+    }
+
+    .page-carrieres .career-grid,
+    .page-carrieres .form-grid{
+        grid-template-columns:minmax(0,1fr);
+        gap:35px;
+    }
+
+    .page-carrieres .values-grid,
+    .page-carrieres .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .page-carrieres .form-group.full{
+        grid-column:auto;
+    }
+
+    .page-carrieres .job-card{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .page-carrieres .application-box{
+        padding:40px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .page-carrieres .career-content h1{
+        font-size:42px;
+    }
+
+    .page-carrieres .values-grid,
+    .page-carrieres .stats-grid{
+        grid-template-columns:minmax(0,1fr);
+    }
+
+    .page-carrieres .career-text h2,
+    .page-carrieres .section-title h2,
+    .page-carrieres .career-cta h2{
+        font-size:32px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .page-carrieres .career-content h1{
+        font-size:28px;
+        margin:18px 0;
+    }
+
+    .page-carrieres .career-content p{
+        font-size:15px;
+    }
+
+    .page-carrieres .career-intro,
+    .page-carrieres .hr-values,
+    .page-carrieres .career-stats,
+    .page-carrieres .jobs-section,
+    .page-carrieres .application-section,
+    .page-carrieres .career-cta{
+        padding:50px 0;
+    }
+
+    .page-carrieres .stat-box span{
+        font-size:38px;
+    }
+
+    .page-carrieres .job-card{
+        padding:25px;
+    }
+
+    .page-carrieres .job-btn{
+        width:100%;
+    }
+
+    .page-carrieres .application-box{
+        padding:25px;
+    }
+
+    .page-carrieres .submit-btn,
+    .page-carrieres .cta-btn{
+        width:100%;
+    }
+
+}
+
+.page-carrieres .file-label{
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+    color:#1b60ad;
+}
+
+.page-carrieres .form-group input[type="file"]{
+    width:100%;
+    padding:12px;
+    border:1px solid #dce5f0;
+    border-radius:8px;
+    background:#f8fafc;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.page-carrieres .form-group input[type="file"]::file-selector-button{
+    background:#1b60ad;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    margin-right:12px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.page-carrieres .form-group input[type="file"]::file-selector-button:hover{
+    background:#154c89;
+}

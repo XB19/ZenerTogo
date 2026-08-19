@@ -1,0 +1,138 @@
+.admin-page-offreslist .page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.admin-page-offreslist .page-header h1{
+    color:#1b60ad;
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:6px;
+}
+
+.admin-page-offreslist .page-header p{
+    color:#6b7280;
+}
+
+.admin-page-offreslist .btn-primary{
+    background:#9fc63b;
+    color:white;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:12px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.admin-page-offreslist .btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(159,198,59,.25);
+}
+
+.admin-page-offreslist .table-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.admin-page-offreslist .table-card table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.admin-page-offreslist .table-card thead{
+    background:#1b60ad;
+}
+
+.admin-page-offreslist .table-card thead th{
+    color:white;
+    padding:18px;
+    text-align:left;
+    font-size:14px;
+    font-weight:700;
+}
+
+.admin-page-offreslist .table-card tbody tr{
+    border-bottom:1px solid #edf2f7;
+    transition:.3s;
+}
+
+.admin-page-offreslist .table-card tbody tr:hover{
+    background:#f8fafc;
+}
+
+.admin-page-offreslist .table-card td{
+    padding:18px;
+    color:#334155;
+    font-size:14px;
+}
+
+.admin-page-offreslist .badge-success{
+    background:rgba(159,198,59,.15);
+    color:#7ca321;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.admin-page-offreslist .badge-danger{
+    background:rgba(220,38,38,.10);
+    color:#dc2626;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.admin-page-offreslist .actions{
+    display:flex;
+    gap:10px;
+}
+
+.admin-page-offreslist .btn-edit{
+    text-decoration:none;
+    background:#1b60ad;
+    color:white;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.admin-page-offreslist .btn-delete{
+    text-decoration:none;
+    background:#dc2626;
+    color:white;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.admin-page-offreslist .empty-state{
+    text-align:center;
+    padding:40px;
+    color:#64748b;
+}
+
+@media(max-width:992px){
+
+    .admin-page-offreslist .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .admin-page-offreslist .table-card{
+        overflow-x:auto;
+    }
+
+    .admin-page-offreslist table{
+        min-width:900px;
+    }
+
+}

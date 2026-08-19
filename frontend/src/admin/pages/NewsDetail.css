@@ -1,0 +1,135 @@
+/* PAGE WRAPPER */
+.admin-page-newsdetail .page-header{
+    margin-bottom:25px;
+}
+
+.admin-page-newsdetail .page-header h1{
+    color:#1b60ad;
+    font-size:30px;
+    font-weight:800;
+}
+
+.admin-page-newsdetail .page-header p{
+    color:#64748b;
+}
+
+/* CARD */
+.admin-page-newsdetail .detail-card{
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    overflow:hidden;
+}
+
+/* IMAGE */
+.admin-page-newsdetail .detail-image{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+/* CONTENT */
+.admin-page-newsdetail .detail-content{
+    padding:30px;
+}
+
+.admin-page-newsdetail .badge{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.admin-page-newsdetail .badge-blue{
+    background:rgba(27,96,173,.1);
+    color:#1b60ad;
+}
+
+.admin-page-newsdetail .title{
+    font-size:28px;
+    font-weight:800;
+    color:#1b60ad;
+    margin-bottom:10px;
+}
+
+.admin-page-newsdetail .meta{
+    color:#64748b;
+    font-size:13px;
+    margin-bottom:25px;
+}
+
+/* TEXT */
+.admin-page-newsdetail .content-text{
+    font-size:16px;
+    line-height:1.9;
+    color:#334155;
+}
+
+/* ACTIONS */
+.admin-page-newsdetail .actions{
+    margin-top:30px;
+    display:flex;
+    gap:12px;
+}
+
+.admin-page-newsdetail .btn-back{
+    background:#f1f5f9;
+    color:#1b60ad;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.admin-page-newsdetail .btn-back:hover{
+    background:#1b60ad;
+    color:white;
+}
+
+.admin-page-newsdetail .btn-delete{
+    background:#dc2626;
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.admin-page-newsdetail .btn-delete:hover{
+    background:#b91c1c;
+}
+
+@media(max-width:768px){
+
+    .admin-page-newsdetail .page-header h1{
+        font-size:24px;
+    }
+
+    .admin-page-newsdetail .detail-image{
+        height:240px;
+    }
+
+    .admin-page-newsdetail .detail-content{
+        padding:22px;
+    }
+
+    .admin-page-newsdetail .title{
+        font-size:22px;
+    }
+}
+
+@media(max-width:480px){
+
+    .admin-page-newsdetail .actions{
+        flex-direction:column;
+    }
+
+    .admin-page-newsdetail .btn-back,
+    .admin-page-newsdetail .btn-delete{
+        text-align:center;
+    }
+}

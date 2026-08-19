@@ -1,0 +1,347 @@
+.admin-page-dashboard .dashboard-page{
+    padding:35px;
+    background:#f5f8fb;
+    min-height:100vh;
+}
+
+/* =======================
+HEADER
+======================= */
+
+.admin-page-dashboard .dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.admin-page-dashboard .dashboard-title h1{
+    font-size:34px;
+    font-weight:800;
+    color:#1b60ad;
+    margin-bottom:8px;
+}
+
+.admin-page-dashboard .dashboard-title p{
+    color:#6b7280;
+    font-size:15px;
+}
+
+.admin-page-dashboard .dashboard-date{
+    background:white;
+    padding:14px 22px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    font-weight:600;
+    color:#1b60ad;
+}
+
+/* =======================
+STATS
+======================= */
+
+.admin-page-dashboard .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-bottom:35px;
+}
+
+.admin-page-dashboard .stat-card{
+    position:relative;
+    background:white;
+    border-radius:18px;
+    padding:28px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.admin-page-dashboard .stat-card:hover{
+    transform:translateY(-8px);
+}
+
+.admin-page-dashboard .stat-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+}
+
+.admin-page-dashboard .stat-card.blue::before{
+    background:#1b60ad;
+}
+
+.admin-page-dashboard .stat-card.green::before{
+    background:#9fc63b;
+}
+
+.admin-page-dashboard .stat-card.light::before{
+    background:#2f7ecb;
+}
+
+.admin-page-dashboard .stat-card.orange::before{
+    background:#4aa3ff;
+}
+
+.admin-page-dashboard .stat-icon{
+    width:60px;
+    height:60px;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    margin-bottom:18px;
+}
+
+.admin-page-dashboard .blue .stat-icon{
+    background:rgba(27,96,173,.12);
+}
+
+.admin-page-dashboard .green .stat-icon{
+    background:rgba(159,198,59,.15);
+}
+
+.admin-page-dashboard .light .stat-icon{
+    background:rgba(47,126,203,.12);
+}
+
+.admin-page-dashboard .orange .stat-icon{
+    background:rgba(74,163,255,.12);
+}
+
+.admin-page-dashboard .stat-card h3{
+    font-size:15px;
+    color:#6b7280;
+    margin-bottom:10px;
+}
+
+.admin-page-dashboard .stat-number{
+    font-size:42px;
+    font-weight:800;
+    color:#1b60ad;
+}
+
+/* =======================
+GRID
+======================= */
+
+.admin-page-dashboard .dashboard-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+/* =======================
+ACTIVITES
+======================= */
+
+.admin-page-dashboard .dashboard-box{
+    background:white;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.admin-page-dashboard .box-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.admin-page-dashboard .box-title h2{
+    color:#1b60ad;
+    font-size:22px;
+}
+
+.admin-page-dashboard .activity-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.admin-page-dashboard .activity-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    border-radius:12px;
+    background:#f8fafc;
+}
+
+.admin-page-dashboard .activity-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#9fc63b;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:700;
+}
+
+.admin-page-dashboard .activity-text h4{
+    color:#163b68;
+    font-size:15px;
+    margin-bottom:4px;
+}
+
+.admin-page-dashboard .activity-text p{
+    color:#6b7280;
+    font-size:13px;
+}
+
+/* =======================
+RACCOURCIS
+======================= */
+
+.admin-page-dashboard .quick-links{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.admin-page-dashboard .quick-btn{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:16px;
+    border-radius:14px;
+    background:#f8fafc;
+    text-decoration:none;
+    color:#163b68;
+    font-weight:600;
+    transition:.3s;
+}
+
+.admin-page-dashboard .quick-btn:hover{
+    background:#1b60ad;
+    color:white;
+}
+
+.admin-page-dashboard .quick-btn span{
+    font-size:20px;
+}
+
+/* =======================
+BOTTOM
+======================= */
+
+.admin-page-dashboard .bottom-grid{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.admin-page-dashboard .mini-box{
+    background:white;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.admin-page-dashboard .mini-box h3{
+    color:#1b60ad;
+    margin-bottom:20px;
+}
+
+.admin-page-dashboard .progress-item{
+    margin-bottom:18px;
+}
+
+.admin-page-dashboard .progress-item span{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.admin-page-dashboard .progress{
+    height:8px;
+    background:#e5edf8;
+    border-radius:50px;
+}
+
+.admin-page-dashboard .progress-bar{
+    height:100%;
+    border-radius:50px;
+    background:#9fc63b;
+}
+
+/* =======================
+RESPONSIVE
+======================= */
+
+@media(max-width:1200px){
+
+    .admin-page-dashboard .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .admin-page-dashboard .dashboard-grid{
+        grid-template-columns:1fr;
+    }
+
+    .admin-page-dashboard .bottom-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .admin-page-dashboard .dashboard-page{
+        padding:20px;
+    }
+
+    .admin-page-dashboard .dashboard-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .admin-page-dashboard .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .admin-page-dashboard .dashboard-title h1{
+        font-size:28px;
+    }
+}
+
+@media(max-width:480px){
+
+    .admin-page-dashboard .dashboard-page{
+        padding:15px;
+    }
+
+    .admin-page-dashboard .stat-card,
+    .admin-page-dashboard .dashboard-box,
+    .admin-page-dashboard .mini-box{
+        padding:20px;
+    }
+
+    .admin-page-dashboard .stat-number{
+        font-size:34px;
+    }
+
+    .admin-page-dashboard .dashboard-date{
+        padding:12px 16px;
+        font-size:14px;
+    }
+
+    .admin-page-dashboard .box-title{
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .admin-page-dashboard .box-title h2{
+        font-size:19px;
+    }
+}

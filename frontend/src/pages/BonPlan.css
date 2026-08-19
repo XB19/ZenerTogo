@@ -1,0 +1,760 @@
+:root{
+
+    --primary:#1b60ad;
+    --primary-dark:#154c89;
+
+    --secondary:#9fc63b;
+    --secondary-dark:#85ab2e;
+
+    --blue-light:#2f7ecb;
+    --blue-pale:#eef5fc;
+
+    --dark:#163b68;
+    --text:#666666;
+
+    --white:#ffffff;
+    --light:#f5f8fb;
+
+    --border:#e7edf5;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --shadow-hover:0 20px 45px rgba(27,96,173,.12);
+
+}
+
+/* =========================
+BASE
+========================= */
+
+.page-bonplan *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.page-bonplan{
+    display:block;
+    background:var(--light);
+    color:var(--text);
+}
+
+.page-bonplan .container{
+    max-width:1280px;
+    margin:auto;
+    padding:0 24px;
+}
+
+/* =========================
+ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes scaleIn{
+
+    from{
+        opacity:0;
+        transform:scale(.95);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* =========================
+TOP BANNER
+========================= */
+
+.page-bonplan .anniv-banner{
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--blue-light),
+        var(--primary)
+    );
+
+    padding:15px 0;
+    margin-top:90px;
+}
+
+.page-bonplan .anniv-inner{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.page-bonplan .anniv-badge{
+
+    background:var(--secondary);
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:11px;
+    font-weight:800;
+
+    letter-spacing:.12em;
+}
+
+.page-bonplan .anniv-text{
+
+    color:white;
+    font-size:14px;
+}
+
+/* =========================
+HERO
+========================= */
+
+.page-bonplan .hero-section{
+
+    position:relative;
+
+    padding:120px 0;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(27,96,173,.88),
+        rgba(27,96,173,.92)
+    ),
+    url("/images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.page-bonplan .hero-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    color:white;
+
+    font-size:12px;
+    font-weight:700;
+
+    letter-spacing:.15em;
+
+    margin-bottom:25px;
+}
+
+.page-bonplan .hero-title{
+
+    font-size:clamp(42px,6vw,68px);
+
+    color:white;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+}
+
+.page-bonplan .hero-title span{
+    color:var(--secondary);
+}
+
+.page-bonplan .hero-text{
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.8;
+}
+
+.page-bonplan .hero-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    padding:18px 38px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:var(--secondary);
+
+    color:white;
+
+    font-size:15px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.page-bonplan .hero-btn:hover{
+
+    background:var(--secondary-dark);
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 18px 40px rgba(159,198,59,.35);
+}
+
+/* =========================
+SECTION
+========================= */
+
+.page-bonplan .bonsplans-section{
+
+    padding:100px 0;
+}
+
+.page-bonplan .section-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(159,198,59,.15);
+
+    color:var(--secondary-dark);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+}
+
+.page-bonplan .section-title{
+
+    color:var(--primary);
+
+    font-size:42px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+}
+
+/* =========================
+GRID
+========================= */
+
+.page-bonplan .bp-grid{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:28px;
+}
+
+/* =========================
+CARD IMAGE
+========================= */
+
+.page-bonplan .bp-card{
+
+    position:relative;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    cursor:pointer;
+}
+
+.page-bonplan .bp-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-hover);
+}
+
+.page-bonplan .bp-img{
+
+    width:100%;
+
+    aspect-ratio:3/4;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.page-bonplan .bp-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.7),
+        transparent
+    );
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:25px;
+
+    opacity:0;
+
+    transition:.3s;
+}
+
+.page-bonplan .bp-card:hover .bp-overlay{
+    opacity:1;
+}
+
+.page-bonplan .bp-badge{
+
+    position:absolute;
+
+    top:15px;
+    left:15px;
+
+    background:var(--secondary);
+
+    color:white;
+
+    padding:7px 14px;
+
+    border-radius:30px;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    letter-spacing:.12em;
+}
+
+.page-bonplan .bp-footer{
+
+    padding:18px 20px;
+}
+
+.page-bonplan .bp-name{
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:700;
+}
+
+/* =========================
+TEXT CARD
+========================= */
+
+.page-bonplan .bp-text-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+}
+
+.page-bonplan .bp-text-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-hover);
+}
+
+.page-bonplan .bp-icon{
+
+    width:60px;
+    height:60px;
+
+    border-radius:16px;
+
+    background:rgba(159,198,59,.15);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+}
+
+.page-bonplan .bp-mini-badge{
+
+    display:inline-block;
+
+    background:var(--secondary);
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+}
+
+.page-bonplan .bp-text-title{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+    font-weight:800;
+
+    margin-bottom:12px;
+}
+
+.page-bonplan .bp-text{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+}
+
+.page-bonplan .bp-link{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:700;
+}
+
+.page-bonplan .bp-link:hover{
+    color:var(--blue-light);
+}
+
+/* =========================
+LIGHTBOX
+========================= */
+
+.page-bonplan .lb-bg{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:99999;
+
+    background:rgba(0,0,0,.85);
+
+    backdrop-filter:blur(8px);
+
+    align-items:center;
+    justify-content:center;
+}
+
+.page-bonplan .lb-img{
+
+    width:100%;
+
+    max-height:88vh;
+
+    object-fit:contain;
+
+    border-radius:20px;
+}
+
+.page-bonplan .lb-close{
+
+    position:absolute;
+
+    top:-50px;
+    right:0;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.2);
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.page-bonplan .lb-title{
+
+    margin-top:15px;
+
+    color:white;
+
+    text-align:center;
+
+    font-weight:600;
+}
+
+/* =========================
+MODAL
+========================= */
+
+.page-bonplan .zc-modal-bg{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:999999;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(6px);
+
+    align-items:center;
+    justify-content:center;
+}
+
+.page-bonplan .zc-modal-box{
+
+    position:relative;
+
+    background:white;
+
+    width:92%;
+    max-width:480px;
+
+    padding:45px 35px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    animation:scaleIn .25s ease;
+}
+
+.page-bonplan .zc-close{
+
+    position:absolute;
+
+    top:15px;
+    right:18px;
+
+    border:none;
+
+    background:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+}
+
+.page-bonplan .zc-icon{
+
+    width:80px;
+    height:80px;
+
+    margin:0 auto 25px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        var(--secondary),
+        var(--secondary-dark)
+    );
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    font-size:34px;
+}
+
+.page-bonplan .zc-title{
+
+    color:var(--primary);
+
+    font-size:28px;
+
+    font-weight:800;
+
+    margin-bottom:12px;
+}
+
+.page-bonplan .zc-text{
+
+    color:var(--text);
+
+    line-height:1.8;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .page-bonplan .container{
+        padding:0 16px;
+    }
+
+    .page-bonplan .hero-section{
+        padding:90px 0;
+    }
+
+    .page-bonplan .hero-title{
+        font-size:42px;
+    }
+
+    .page-bonplan .section-title{
+        font-size:32px;
+    }
+
+    .page-bonplan .bonsplans-section{
+        padding:70px 0;
+    }
+
+    .page-bonplan .bp-grid{
+        margin-top:40px;
+        gap:20px;
+    }
+
+    .page-bonplan .zc-modal-box{
+        padding:35px 25px;
+    }
+
+    .page-bonplan .anniv-inner{
+        text-align:center;
+    }
+
+    .page-bonplan .anniv-text{
+        font-size:13px;
+    }
+}
+
+@media(max-width:576px){
+
+    .page-bonplan .hero-section{
+        padding:70px 0;
+    }
+
+    .page-bonplan .hero-title{
+        font-size:32px;
+    }
+
+    .page-bonplan .hero-text{
+        font-size:15px;
+    }
+
+    .page-bonplan .hero-btn{
+        width:100%;
+        padding:16px 24px;
+    }
+
+    .page-bonplan .bonsplans-section{
+        padding:50px 0;
+    }
+
+    .page-bonplan .section-title{
+        font-size:26px;
+    }
+
+    .page-bonplan .bp-grid{
+        grid-template-columns:1fr 1fr;
+        gap:14px;
+    }
+
+    .page-bonplan .bp-footer{
+        padding:14px;
+    }
+
+    .page-bonplan .bp-name{
+        font-size:13px;
+    }
+
+    .page-bonplan .lb-close{
+        top:-42px;
+        right:0;
+        width:36px;
+        height:36px;
+    }
+
+    .page-bonplan .zc-modal-box{
+        padding:28px 20px;
+    }
+}
+
+@media(max-width:380px){
+
+    .page-bonplan .bp-grid{
+        grid-template-columns:1fr;
+    }
+}

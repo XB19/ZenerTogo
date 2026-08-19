@@ -1,0 +1,194 @@
+.admin-page-candidatureslist .page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.admin-page-candidatureslist .page-header h1{
+    color:#1b60ad;
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:6px;
+}
+
+.admin-page-candidatureslist .page-header p{
+    color:#6b7280;
+}
+
+/* CARD */
+
+.admin-page-candidatureslist .table-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+/* TABLE */
+
+.admin-page-candidatureslist .table-card table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.admin-page-candidatureslist .table-card thead{
+    background:#1b60ad;
+}
+
+.admin-page-candidatureslist .table-card thead th{
+    color:white;
+    padding:18px;
+    text-align:left;
+    font-size:14px;
+    font-weight:700;
+}
+
+.admin-page-candidatureslist .table-card tbody tr{
+    border-bottom:1px solid #edf2f7;
+    transition:.3s;
+}
+
+.admin-page-candidatureslist .table-card tbody tr:hover{
+    background:#f8fafc;
+}
+
+.admin-page-candidatureslist .table-card td{
+    padding:18px;
+    color:#334155;
+    font-size:14px;
+}
+
+/* CANDIDAT */
+
+.admin-page-candidatureslist .candidat{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.admin-page-candidatureslist .avatar{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#1b60ad;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:14px;
+}
+
+/* EMAIL */
+
+.admin-page-candidatureslist .email{
+    color:#1b60ad;
+    font-weight:600;
+}
+
+/* DATE */
+
+.admin-page-candidatureslist .date{
+    color:#64748b;
+    font-size:13px;
+}
+
+/* BOUTONS */
+
+.admin-page-candidatureslist .actions{
+    display:flex;
+    gap:10px;
+}
+
+.admin-page-candidatureslist .btn-view{
+    background:#1b60ad;
+    color:white;
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.admin-page-candidatureslist .btn-view:hover{
+    background:#174f8f;
+}
+
+.admin-page-candidatureslist .btn-cv{
+    background:#9fc63b;
+    color:white;
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.admin-page-candidatureslist .btn-cv:hover{
+    background:#8db52f;
+}
+
+/* BADGE */
+
+.admin-page-candidatureslist .badge-job{
+    display:inline-block;
+    background:rgba(27,96,173,.10);
+    color:#1b60ad;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+}
+
+/* EMPTY */
+
+.admin-page-candidatureslist .empty-state{
+    text-align:center;
+    padding:60px;
+}
+
+.admin-page-candidatureslist .empty-state i{
+    font-size:60px;
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+.admin-page-candidatureslist .empty-state h3{
+    color:#475569;
+    margin-bottom:10px;
+}
+
+.admin-page-candidatureslist .empty-state p{
+    color:#94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .admin-page-candidatureslist .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .admin-page-candidatureslist .table-card{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .admin-page-candidatureslist table{
+        min-width:1000px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .admin-page-candidatureslist .page-header h1{
+        font-size:26px;
+    }
+}

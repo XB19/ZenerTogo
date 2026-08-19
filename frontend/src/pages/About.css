@@ -1,0 +1,303 @@
+/* HERO */
+
+.page-about .about-hero{
+    position:relative;
+    height:500px;
+    background: url("/images/about-hero.png") center center/cover no-repeat;
+}
+
+.page-about .about-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(27,96,173,.75);
+}
+
+.page-about .about-hero-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+    padding-top:100px;
+    max-width:700px;
+}
+
+.page-about .about-badge{
+    background:#9fc63b;
+    padding:10px 20px;
+    display:inline-block;
+    font-weight:600;
+}
+
+.page-about .about-hero-content h1{
+    font-size:60px;
+    margin:25px 0;
+    font-weight:800;
+}
+
+.page-about .about-hero-content p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* SECTION */
+
+.page-about .about-company{
+    padding:100px 0;
+}
+
+.page-about .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.page-about .about-image img{
+    width:100%;
+    border-radius:8px;
+}
+
+.page-about .section-subtitle{
+    color:#2f7ecb;
+    font-weight:700;
+}
+
+.page-about .about-text h2{
+    margin:15px 0 25px;
+    font-size:42px;
+}
+
+.page-about .about-text p{
+    line-height:1.9;
+}
+
+.page-about .about-text ul{
+    margin-top:25px;
+}
+
+.page-about .about-text li{
+    margin-bottom:12px;
+}
+
+/* STATS */
+
+.page-about .about-stats{
+    background:#2f7ecb;
+    padding:90px 0;
+}
+
+.page-about .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.page-about .stat-box{
+    text-align:center;
+    color:white;
+}
+
+.page-about .counter{
+    display:block;
+    font-size:58px;
+    font-weight:800;
+}
+
+.page-about .stat-box p{
+    margin-top:10px;
+}
+
+/* VALEURS */
+
+.page-about .values-section{
+    padding:100px 0;
+}
+
+.page-about .section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.page-about .values-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.page-about .value-card{
+    background:#fff;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.page-about .value-card:hover{
+    transform:translateY(-10px);
+}
+
+/* MISSION */
+
+.page-about .mission-section{
+    background:#f5f8fb;
+    padding:100px 0;
+}
+
+.page-about .mission-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.page-about .mission-card{
+    background:white;
+    padding:50px;
+    border-left:5px solid #9fc63b;
+}
+
+/* CTA */
+
+.page-about .about-cta{
+    padding:100px 0;
+    text-align:center;
+    background:#2f7ecb;
+    color:white;
+}
+
+.page-about .about-cta h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.page-about .cta-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:220px;
+    height:58px;
+
+    margin-top:30px;
+
+    border-radius:50px;
+
+    background:#9fc63b;
+    color:white;
+
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media(max-width:992px){
+
+    .page-about .about-hero{
+        height:auto;
+        min-height:420px;
+    }
+
+    .page-about .about-hero-content{
+        padding:80px 0 60px;
+    }
+
+    .page-about .about-hero-content h1{
+        font-size:44px;
+    }
+
+    .page-about .about-company,
+    .page-about .about-stats,
+    .page-about .values-section,
+    .page-about .mission-section,
+    .page-about .about-cta{
+        padding:70px 0;
+    }
+
+    .page-about .about-grid{
+        grid-template-columns:minmax(0,1fr);
+        gap:40px;
+    }
+
+    .page-about .about-text h2{
+        font-size:32px;
+    }
+
+    .page-about .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px 20px;
+    }
+
+    .page-about .counter{
+        font-size:44px;
+    }
+
+    .page-about .values-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .page-about .mission-grid{
+        grid-template-columns:minmax(0,1fr);
+        gap:25px;
+    }
+
+    .page-about .mission-card{
+        padding:35px;
+    }
+
+    .page-about .about-cta h2{
+        font-size:34px;
+    }
+}
+
+@media(max-width:576px){
+
+    .page-about .about-hero-content h1{
+        font-size:32px;
+        margin:18px 0;
+    }
+
+    .page-about .about-hero-content p{
+        font-size:16px;
+    }
+
+    .page-about .about-company,
+    .page-about .about-stats,
+    .page-about .values-section,
+    .page-about .mission-section,
+    .page-about .about-cta{
+        padding:50px 0;
+    }
+
+    .page-about .about-text h2{
+        font-size:26px;
+    }
+
+    .page-about .stats-grid{
+        grid-template-columns:1fr 1fr;
+        gap:25px 15px;
+    }
+
+    .page-about .counter{
+        font-size:36px;
+    }
+
+    .page-about .values-grid{
+        grid-template-columns:minmax(0,1fr);
+    }
+
+    .page-about .value-card{
+        padding:25px;
+    }
+
+    .page-about .mission-card{
+        padding:25px;
+    }
+
+    .page-about .about-cta h2{
+        font-size:26px;
+    }
+
+    .page-about .cta-btn{
+        width:100%;
+    }
+}

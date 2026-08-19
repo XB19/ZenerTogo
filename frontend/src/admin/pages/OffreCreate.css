@@ -1,0 +1,131 @@
+.admin-page-offrecreate .form-card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.admin-page-offrecreate .form-header{
+    margin-bottom:30px;
+}
+
+.admin-page-offrecreate .form-header h1{
+    color:#1b60ad;
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.admin-page-offrecreate .form-header p{
+    color:#64748b;
+}
+
+.admin-page-offrecreate .form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.admin-page-offrecreate .form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.admin-page-offrecreate .form-group.full{
+    grid-column:span 2;
+}
+
+.admin-page-offrecreate .form-group label{
+    margin-bottom:8px;
+    color:#163b68;
+    font-weight:600;
+}
+
+.admin-page-offrecreate .form-group input,
+.admin-page-offrecreate .form-group select,
+.admin-page-offrecreate .form-group textarea{
+    width:100%;
+    min-width:0;
+    padding:15px;
+    border:1px solid #dbe4ef;
+    border-radius:12px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.admin-page-offrecreate .form-group input:focus,
+.admin-page-offrecreate .form-group select:focus,
+.admin-page-offrecreate .form-group textarea:focus{
+    border-color:#1b60ad;
+    box-shadow:0 0 0 4px rgba(27,96,173,.10);
+}
+
+.admin-page-offrecreate .form-group textarea{
+    min-height:180px;
+    resize:vertical;
+}
+
+.admin-page-offrecreate .form-actions{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+}
+
+.admin-page-offrecreate .btn-primary{
+    background:#9fc63b;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:12px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.admin-page-offrecreate .btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.admin-page-offrecreate .btn-secondary{
+    background:#1b60ad;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:12px;
+    font-weight:700;
+}
+
+@media(max-width:768px){
+
+    .admin-page-offrecreate .form-card{
+        padding:22px;
+    }
+
+    .admin-page-offrecreate .form-header h1{
+        font-size:26px;
+    }
+
+    .admin-page-offrecreate .form-grid{
+        grid-template-columns:minmax(0,1fr);
+    }
+
+    .admin-page-offrecreate .form-group.full{
+        grid-column:auto;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .admin-page-offrecreate .form-actions{
+        flex-direction:column;
+    }
+
+    .admin-page-offrecreate .btn-primary,
+    .admin-page-offrecreate .btn-secondary{
+        width:100%;
+        text-align:center;
+    }
+
+}
