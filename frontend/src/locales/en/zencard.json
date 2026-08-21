@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "badge": "ZENCARD",
+    "title": "The card that simplifies your fuel purchases"
+  },
+  "benefits": {
+    "heading": "Why choose the ZenCard?",
+    "imageAlt": "ZENER ZenCard",
+    "cards": {
+      "speed": {
+        "title": "Fast payment",
+        "text": "Save time on every visit to a service station."
+      },
+      "security": {
+        "title": "Secure",
+        "text": "A reliable solution for your transactions."
+      },
+      "tracking": {
+        "title": "Easy tracking",
+        "text": "Keep control of your fuel spending."
+      },
+      "accepted": {
+        "title": "Accepted everywhere",
+        "text": "Usable across the entire ZENER station network."
+      }
+    }
+  },
+  "steps": {
+    "heading": "How do you get your ZenCard?",
+    "items": {
+      "form": {
+        "title": "Fill in the form",
+        "text": "Just a few details are all it takes."
+      },
+      "validation": {
+        "title": "Validation",
+        "text": "Our team processes your request."
+      },
+      "pickup": {
+        "title": "Collect your card",
+        "text": "Your ZenCard is ready to use."
+      }
+    }
+  },
+  "form": {
+    "heading": "ZenCard request",
+    "successMessage": "Your request has been submitted successfully. Our team will contact you shortly.",
+    "labels": {
+      "fullName": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "city": "City",
+      "type": "Request type",
+      "station": "Pickup station",
+      "idPhoto": "ID photo"
+    },
+    "typeOptions": {
+      "select": "Select",
+      "individual": "Individual",
+      "business": "Business"
+    },
+    "stationPlaceholder": "Choose a station",
+    "submitCta": "Submit my request"
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "moreLink": "See all frequently asked questions →"
+  },
+  "cta": {
+    "title": "Join ZenCard users",
+    "text": "A modern solution designed to make your mobility easier.",
+    "button": "Apply now"
+  }
+}

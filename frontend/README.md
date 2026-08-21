@@ -1,11 +1,28 @@
 # ZENER — Frontend React
 
-Portage en React (Vite) du site ZENER complet — site public et panneau
-d'administration — avec un rendu visuel identique à l'original Django. Le
-backend Django a été entièrement retiré du dépôt ; ce projet React est
-maintenant la seule application. Les références à Django ci-dessous décrivent
-l'origine du portage (templates et vues qui ont servi de source), pas un
-service encore en place.
+Application React (Vite) ZENER, organisée en **3 espaces** :
+
+1. **Site public** — Présentation ZENER, Services, Stations, ZenCard,
+   Actualités, FAQ, Contact, Boutique, Carrières, Bon plan.
+2. **Portail client** (`/portail-client`) — espace personnel authentifié pour
+   les clients : profil, ZenCards, transactions, réclamations.
+3. **Back-office Customer Care** (`/back-office`) — outil interne pour les
+   agents : agents, appels, tickets, affectations, SLA, ZenCard, SAP,
+   statistiques, reporting.
+
+Le panneau **admin** (`/admin-panel`, gestion de contenu : offres, actualités,
+messages, demandes ZenCard) est un quatrième espace, antérieur à cette
+structure à 3 niveaux et conservé tel quel.
+
+Les 4 espaces sont visuellement identiques (même charte ZENER) mais
+techniquement isolés : CSS scopé séparément, et **authentification propre à
+chacun** (voir plus bas) — un client ne peut pas accéder au back-office avec
+son compte, et inversement.
+
+Le rendu du site public et de l'admin reproduit à l'identique l'original
+Django (backend entièrement retiré du dépôt, voir plus bas) ; le portail
+client et le back-office sont des espaces neufs, sans équivalent Django,
+construits avec le même langage visuel pour rester cohérents.
 
 ## Lancer le projet
 
@@ -14,31 +31,72 @@ npm install
 npm run dev
 ```
 
-Le site est servi sur `http://localhost:5173`. Le panneau d'administration est
-sur `/admin/login` (identifiants de démo : `admin` / `admin`, voir plus bas).
+Le site est servi sur `http://localhost:5173`.
+
+| Espace | URL de connexion | Identifiants de démo |
+|---|---|---|
+| Site public | `/` | — |
+| Portail client | `/portail-client/connexion` | n'importe quel email / mot de passe non vide |
+| Back-office Customer Care | `/back-office/connexion` | `agent` / `agent` |
+| Admin (gestion de contenu) | `/admin/login` | `admin` / `admin` |
 
 ## Structure
 
 ```
 src/
-  pages/            site public : une page par route, chacune avec son CSS
-                     extrait du <style> de la page Django d'origine
+  pages/            site public : une page par route (dont FAQ.jsx, nouvelle)
   components/        Navbar, Footer, Counter, TestimonialSlider (site public)
-  styles/global.css  équivalent de static/css/style.css (styles partagés)
+  styles/global.css  styles partagés du site public, scopés .client-app
   data/mockData.js   données factices du site public (offres, actualités...)
 
-  admin/
-    AdminAuthContext.jsx   authentification factice (voir plus bas)
-    AdminDataContext.jsx   store CRUD en mémoire pour l'admin (voir plus bas)
-    AdminLayout.jsx/.css   sidebar + topbar, équivalent de admin/base.html
-    RequireAdminAuth.jsx   garde de route (redirige vers /admin/login)
-    pages/                 une page admin par route, même principe que
-                            src/pages/ (CSS extrait + scopé)
-  data/adminMockData.js    données factices de l'admin (candidatures,
-                            messages, demandes ZenCard)
+  admin/              panneau admin (gestion de contenu) — voir plus bas
+  data/adminMockData.js
+
+  portal/             PORTAIL CLIENT (nouveau)
+    ClientAuthContext.jsx    authentification factice, clé localStorage dédiée
+    ClientDataContext.jsx    store en mémoire (ZenCards, transactions,
+                              réclamations) + addReclamation()
+    ClientPortalLayout.jsx/.css  en-tête + onglets, scopé .client-portal-app
+    RequireClientAuth.jsx    garde de route (redirige vers .../connexion)
+    pages/
+      ClientLogin.jsx, Profile.jsx, MyZencards.jsx, MyTransactions.jsx,
+      ReclamationsList.jsx, ReclamationCreate.jsx, ReclamationDetail.jsx
+      ClientPortalPages.css  composants partagés (cartes, tableaux, badges),
+                              classes préfixées .cp-, importé par ces 6 pages
+  data/clientPortalMockData.js
+
+  backoffice/          BACK-OFFICE CUSTOMER CARE (nouveau)
+    BackOfficeAuthContext.jsx / BackOfficeDataContext.jsx  même principe que
+                              portal/, store CRUD : assignTicket(),
+                              updateTicketStatut()
+    BackOfficeLayout.jsx/.css   sidebar + topbar, cloné de admin/AdminLayout
+                              (même look), scopé .backoffice-app
+    RequireBackOfficeAuth.jsx
+    pages/
+      BackOfficeLogin.jsx, BODashboard.jsx, Agents.jsx, Appels.jsx,
+      Tickets.jsx, Affectations.jsx, SLA.jsx, BOZencard.jsx, SAP.jsx,
+      Statistiques.jsx, Reporting.jsx
+      BackOfficePages.css   composants partagés, importé par ces 10 pages
+  data/backOfficeMockData.js
 ```
 
-## Authentification admin (factice)
+Chaque espace authentifié (`admin/`, `portal/`, `backoffice/`) répète
+volontairement le même triplet **AuthContext + DataContext + Layout +
+RequireXAuth** : c'est le patron déjà validé pour l'admin, dupliqué tel quel
+plutôt que factorisé, pour que les trois espaces restent indépendants et
+qu'on puisse faire évoluer (ou remplacer par une vraie API) l'un sans risquer
+de casser les deux autres.
+
+## Authentification (factice, une par espace)
+
+Chacun des 3 espaces authentifiés a son propre contexte d'auth et sa propre
+clé `localStorage` (`zener_admin_user`, `zener_client_user`,
+`zener_backoffice_user`) : se connecter à l'un ne connecte pas aux autres, et
+les routes de chaque espace sont protégées indépendamment (`RequireAdminAuth`,
+`RequireClientAuth`, `RequireBackOfficeAuth`), chacune redirigeant vers sa
+propre page de connexion.
+
+### Admin (gestion de contenu)
 
 `src/admin/AdminAuthContext.jsx` simule la session Django (`login_required` +
 `user.is_staff`) avec un état stocké en `localStorage`. Identifiants de démo :
@@ -49,6 +107,19 @@ redirige vers `/admin/login` si non connecté — exactement le comportement de
 
 **TODO** : remplacer par de vrais appels à l'API Django (session ou JWT) une
 fois PostgreSQL branché.
+
+### Portail client
+
+`src/portal/ClientAuthContext.jsx` — n'importe quel email / mot de passe non
+vide connecte un client de démo (profil `src/data/clientPortalMockData.js`).
+Routes `/portail-client/...` (sauf `/connexion`) protégées par
+`RequireClientAuth`.
+
+### Back-office Customer Care
+
+`src/backoffice/BackOfficeAuthContext.jsx` — identifiants de démo `agent` /
+`agent` (n'importe quel couple non vide fonctionne aussi). Routes
+`/back-office/...` (sauf `/connexion`) protégées par `RequireBackOfficeAuth`.
 
 ## Données et actions CRUD (factices)
 
@@ -61,6 +132,13 @@ API PostgreSQL. Les données de départ viennent de `src/data/adminMockData.js`,
 avec la même forme que les modèles Django (`JobApplication`, `ContactMessage`,
 `DemandeZenCard`).
 
+`src/portal/ClientDataContext.jsx` (ZenCards, transactions, réclamations —
+`addReclamation()` fait vraiment apparaître la nouvelle réclamation dans la
+liste et sa page de suivi) et `src/backoffice/BackOfficeDataContext.jsx`
+(tickets, affectations — `assignTicket()` et `updateTicketStatut()` mettent
+vraiment à jour le tableau des tickets) suivent exactement le même principe,
+avec leurs propres `// TODO`.
+
 ## Pourquoi chaque page a son propre fichier CSS scopé
 
 Django charge le `<style>` de chaque template séparément à chaque requête (et
@@ -72,18 +150,29 @@ une SPA React, tous les CSS sont chargés ensemble en permanence : sans
 précaution, le `.logo` de la sidebar admin aurait par exemple écrasé celui du
 header du site public.
 
-Trois niveaux de scoping garantissent qu'aucun CSS ne peut fuir d'une page ou
-d'une section à l'autre :
+Le même principe s'applique aux 4 espaces : `src/styles/global.css` (site
+public) est préfixé `.client-app`, `src/admin/AdminLayout.css` est préfixé
+`.admin-app`, `src/portal/ClientPortalLayout.css` est préfixé
+`.client-portal-app`, `src/backoffice/BackOfficeLayout.css` est préfixé
+`.backoffice-app`. Chaque layout (`ClientLayout`, `AdminLayout`,
+`ClientPortalLayout`, `BackOfficeLayout`) enveloppe son contenu dans la div
+correspondante, donc les 4 espaces ne peuvent jamais se marcher dessus.
 
-1. **Isolation site public / admin** : `src/styles/global.css` (site public)
-   est préfixé `.client-app`, `src/admin/AdminLayout.css` est préfixé
-   `.admin-app`. `ClientLayout` et `AdminLayout` enveloppent leur contenu
-   dans la div correspondante.
-2. **Isolation entre pages du site public** : chaque `src/pages/X.css` est
-   préfixé `.page-x` (le composant page enveloppe son contenu dans
-   `<div className="page-x">`).
-3. **Isolation entre pages admin** : même principe, chaque
-   `src/admin/pages/X.css` est préfixé `.admin-page-x`.
+À l'intérieur de chaque espace, deux stratégies selon l'origine du code :
+
+1. **Pages portées depuis Django** (site public, admin) : chaque
+   `src/pages/X.css` / `src/admin/pages/X.css` est préfixé individuellement
+   (`.page-x` / `.admin-page-x`), parce que ces pages ont été extraites une
+   par une de templates Django qui réutilisaient déjà les mêmes noms de
+   classe (`.container`, `.section-title`, `.page-header`, `.table-card`...)
+   avec des valeurs différentes selon la page.
+2. **Pages neuves** (portail client, back-office) : plutôt que de porter un
+   CSS existant page par page, chaque espace a un **unique fichier de
+   composants partagés** (`ClientPortalPages.css` classes `.cp-*`,
+   `BackOfficePages.css` classes `.page-header`/`.card`/`.table`/`.badge-*`
+   qui reprennent le vocabulaire déjà utilisé dans `admin/pages/*.css`) —
+   plus rapide à écrire et cohérent par construction, puisqu'il n'y a qu'une
+   seule définition de chaque classe à l'intérieur de l'espace.
 
 C'est fait une fois pour toutes via `scripts/scope-css.cjs` (le script est
 idempotent — le relancer sur un fichier déjà préfixé ne double pas le

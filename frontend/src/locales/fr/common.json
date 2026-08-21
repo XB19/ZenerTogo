@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "stations": "Stations",
+    "zencard": "ZenCard",
+    "news": "Actualités",
+    "faq": "FAQ",
+    "careers": "Carrières",
+    "bonPlan": "Bon plan",
+    "contactCta": "Nous contacter",
+    "clientSpace": "Espace client",
+    "cart": "Panier",
+    "search": "Rechercher",
+    "openMenu": "Ouvrir le menu"
+  },
+  "footer": {
+    "tagline": "Nous vous apportons l'énergie",
+    "quickLinks": "Liens rapides",
+    "ourServices": "Nos services",
+    "fuels": "Carburants",
+    "gas": "Gaz",
+    "lubricants": "Lubrifiants",
+    "gasStations": "Stations-services",
+    "spaces": "Espaces",
+    "clientPortal": "Portail client",
+    "customerCare": "Customer Care",
+    "contact": "Contact",
+    "phone": "Téléphone",
+    "email": "Email",
+    "address": "Adresse",
+    "socialNetworks": "Réseaux sociaux",
+    "qhse": "Politique QHSE",
+    "rse": "Politique RSE",
+    "locations": "Ramatou - Agoè - Nyékonapoè - Aného - Kpalimé - Kara - Telessou - Tsévié - Doumassesse - Blita - Atakpamé",
+    "joinUs": "Rejoignez-nous",
+    "privacyPolicy": "Politique de confidentialité",
+    "copyright": "COPYRIGHT © ZENER 2026"
+  },
+  "search": {
+    "placeholder": "Rechercher une actualité, un produit...",
+    "ariaLabel": "Rechercher sur le site",
+    "close": "Fermer la recherche",
+    "hint": "Tapez pour rechercher dans les actualités et la boutique.",
+    "noResults": "Aucun résultat pour « {{query}} ».",
+    "typeNews": "Actualité",
+    "typeProduct": "Produit"
+  },
+  "chat": {
+    "toggleOpen": "Ouvrir le chat",
+    "toggleClose": "Fermer le chat",
+    "windowLabel": "Assistance ZENER",
+    "header": "ZENER — Assistance",
+    "welcome": "Bonjour 👋 Comment pouvons-nous vous aider aujourd'hui ?",
+    "placeholder": "Écrivez votre message...",
+    "inputLabel": "Votre message",
+    "send": "Envoyer"
+  },
+  "shareButtons": {
+    "label": "Partager :",
+    "shareOn": "Partager sur {{network}}",
+    "copyLink": "Copier le lien",
+    "copied": "Lien copié !"
+  },
+  "promoModal": {
+    "close": "Fermer"
+  },
+  "cards": {
+    "learnMore": "En savoir plus",
+    "addToCart": "Ajouter au panier",
+    "addToCartAria": "Ajouter {{name}} au panier",
+    "added": "Ajouté"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Recevez nos actualités et offres directement par email.",
+    "placeholder": "Votre adresse email",
+    "submit": "S'inscrire",
+    "submitting": "...",
+    "success": "Merci ! Votre inscription a bien été prise en compte.",
+    "invalidEmail": "Merci de renseigner une adresse email valide.",
+    "consentRequired": "Merci d'accepter la politique de confidentialité pour continuer.",
+    "submitError": "L'inscription a échoué. Merci de réessayer.",
+    "consentPrefix": "J'accepte que mes données soient utilisées conformément à la",
+    "privacyPolicy": "politique de confidentialité"
+  }
+}

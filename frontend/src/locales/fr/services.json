@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "NOS SERVICES",
+    "title": "Des solutions énergétiques adaptées à vos besoins"
+  },
+  "intro": {
+    "title": "Une expertise énergétique complète",
+    "text": "Grâce à son réseau national et à son savoir-faire, ZENER propose des services de qualité répondant aux besoins des particuliers comme des professionnels."
+  },
+  "grid": {
+    "sectionTitle": "Nos domaines d'intervention",
+    "cards": {
+      "fuel": {
+        "title": "Distribution de carburants",
+        "text": "Réseau national de stations-services offrant des carburants de qualité."
+      },
+      "gas": {
+        "title": "Gaz domestique",
+        "text": "Solutions énergétiques adaptées aux ménages."
+      },
+      "lubricants": {
+        "title": "Lubrifiants",
+        "text": "Produits performants pour véhicules et industries."
+      },
+      "proximity": {
+        "title": "Services de proximité",
+        "text": "Des solutions innovantes pour simplifier le quotidien."
+      },
+      "environment": {
+        "title": "Environnement & écosystème",
+        "text": "Initiatives durables et actions en faveur de la préservation de l'environnement."
+      }
+    }
+  },
+  "why": {
+    "title": "Pourquoi choisir ZENER ?",
+    "items": {
+      "network": "Réseau national performant",
+      "products": "Produits certifiés et fiables",
+      "service": "Service client réactif",
+      "innovation": "Innovation permanente",
+      "team": "Équipe expérimentée"
+    }
+  },
+  "process": {
+    "title": "Notre approche",
+    "steps": {
+      "analysis": "Analyse",
+      "advice": "Conseil",
+      "implementation": "Mise en œuvre",
+      "monitoring": "Suivi"
+    }
+  },
+  "cta": {
+    "title": "Besoin d'une solution énergétique ?",
+    "text": "Nos équipes sont à votre disposition.",
+    "button": "Nous contacter"
+  }
+}

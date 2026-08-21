@@ -1,58 +1,12 @@
-import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { stations } from '../data/mockData.js';
+import { useTranslation } from 'react-i18next';
+import StationCard from '../components/StationCard.jsx';
+import TogoStationsMap from '../components/TogoStationsMap.jsx';
+import { stations } from '../data/stations.js';
 import './Stations.css';
 
-function goToStation(lat, lng) {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition((position) => {
-      const userLat = position.coords.latitude;
-      const userLng = position.coords.longitude;
-
-      window.open(
-        `https://www.google.com/maps/dir/${userLat},${userLng}/${lat},${lng}`,
-        '_blank'
-      );
-    });
-  }
-}
-
 function Stations() {
-  const mapRef = useRef(null);
-  const mapInstance = useRef(null);
-
-  useEffect(() => {
-    window.goToStation = goToStation;
-
-    if (!window.L || !mapRef.current || mapInstance.current) return undefined;
-
-    const map = window.L.map(mapRef.current).setView([8.6195, 0.8248], 7);
-    mapInstance.current = map;
-
-    window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap',
-    }).addTo(map);
-
-    stations.forEach((station) => {
-      const marker = window.L.marker([station.lat, station.lng]).addTo(map);
-
-      marker.bindPopup(`
-        <div class="station-popup">
-          <h3>${station.name}</h3>
-          <p>📍 ${station.city}</p>
-          <p>${station.services}</p>
-          <button class="popup-btn" onclick="goToStation(${station.lat},${station.lng})">
-            Voir mon itinéraire
-          </button>
-        </div>
-      `);
-    });
-
-    return () => {
-      map.remove();
-      mapInstance.current = null;
-    };
-  }, []);
+  const { t } = useTranslation();
 
   return (
     <div className="page-stations">
@@ -62,12 +16,9 @@ function Stations() {
 
         <div className="container">
           <div className="stations-content">
-            <span className="stations-badge">RÉSEAU ZENER</span>
-            <h1>Retrouvez nos stations partout au Togo</h1>
-            <p>
-              Consultez les stations ZENER, trouvez celle la plus proche de vous et
-              obtenez votre itinéraire en un clic.
-            </p>
+            <span className="stations-badge">{t('stations.hero.badge')}</span>
+            <h1>{t('stations.hero.title')}</h1>
+            <p>{t('stations.hero.text')}</p>
           </div>
         </div>
       </section>
@@ -76,12 +27,12 @@ function Stations() {
       <section className="stations-intro">
         <div className="container">
           <div className="section-heading">
-            <h2>Carte interactive des stations</h2>
-            <p>Cliquez sur une station pour consulter ses informations et obtenir votre itinéraire.</p>
+            <h2>{t('stations.map.title')}</h2>
+            <p>{t('stations.map.text')}</p>
           </div>
 
           <div className="map-wrapper">
-            <div id="map" ref={mapRef}></div>
+            <TogoStationsMap stations={stations} />
           </div>
         </div>
       </section>
@@ -90,16 +41,20 @@ function Stations() {
       <section className="stations-list">
         <div className="container">
           <div className="section-heading">
-            <h2>Nos stations principales</h2>
+            <h2>{t('stations.list.title')}</h2>
           </div>
 
           <div className="stations-grid">
             {stations.map((station) => (
-              <div className="station-card" key={station.id}>
-                <h3>{station.name}</h3>
-                <div className="station-city">{station.city}</div>
-                <p>{station.services}</p>
-              </div>
+              <StationCard
+                key={station.id}
+                id={station.id}
+                name={station.name}
+                image={station.image}
+                city={station.city}
+                address={station.address}
+                phone={station.phone}
+              />
             ))}
           </div>
         </div>
@@ -108,15 +63,11 @@ function Stations() {
       {/* CTA */}
       <section className="station-cta">
         <div className="container">
-          <h2>Toujours une station proche de vous</h2>
-          <p>
-            ZENER poursuit le développement de son réseau afin de rapprocher ses
-            services des particuliers et des entreprises sur toute l'étendue du
-            territoire.
-          </p>
+          <h2>{t('stations.cta.title')}</h2>
+          <p>{t('stations.cta.text')}</p>
 
           <Link to="/contact" className="cta-btn">
-            Nous contacter
+            {t('stations.cta.button')}
           </Link>
         </div>
       </section>

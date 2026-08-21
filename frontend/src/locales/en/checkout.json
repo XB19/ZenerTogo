@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "badge": "CHECKOUT",
+    "title": "Complete your order"
+  },
+  "empty": {
+    "text": "Your cart is empty, there's nothing to order yet.",
+    "cta": "Browse the shop"
+  },
+  "summary": {
+    "title": "Your order",
+    "total": "Total due"
+  },
+  "form": {
+    "contactTitle": "Your details",
+    "fields": {
+      "name": { "label": "Full name", "placeholder": "Your first and last name" },
+      "phone": { "label": "Phone", "placeholder": "+228 XX XX XX XX" },
+      "email": { "label": "Email", "placeholder": "you@example.com" }
+    },
+    "deliveryTitle": "Pickup method",
+    "delivery": {
+      "pickup": "Pick up at a station",
+      "home": "Home delivery"
+    },
+    "stationLabel": "Pickup station",
+    "stationPlaceholder": "Choose a station",
+    "addressLabel": "Delivery address",
+    "addressPlaceholder": "Neighborhood, street, landmarks...",
+    "paymentTitle": "Payment method",
+    "payment": {
+      "cash": "Pay on delivery / at the station",
+      "mobile": "Mobile Money"
+    },
+    "submitCta": "Confirm order"
+  },
+  "success": {
+    "title": "Order confirmed!",
+    "text": "Thank you, your order {{orderNumber}} has been recorded. Our team will contact you to confirm it.",
+    "backHome": "Back to home",
+    "backShop": "Continue shopping"
+  }
+}

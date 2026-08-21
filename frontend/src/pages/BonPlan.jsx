@@ -1,20 +1,22 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './BonPlan.css';
 
-const galleryItems = [
-  { img: '/images/zencard_pub2.jpg', alt: 'ZenCard Pub 2', title: 'ZenCard — Offre Spéciale' },
-  { img: '/images/zencard_pub3.jpg', alt: 'ZenCard Pub 3', title: 'ZenCard — Promotion Exclusive' },
-  { img: '/images/zencard_pub5.jpg', alt: 'ZenCard Pub 5', title: 'ZenCard — Bon Plan #5' },
-  { img: '/images/zencard_pub5b.jpg', alt: 'ZenCard Pub 5B', title: 'ZenCard — Édition Spéciale' },
-  { img: '/images/zencard_pub6.jpg', alt: 'ZenCard Pub 6', title: 'ZenCard — Bon Plan #6' },
-  { img: '/images/zencard_pub6b.jpg', alt: 'ZenCard Pub 6B', title: 'ZenCard — Offre Limitée' },
-  { img: '/images/zencard_pub7.jpg', alt: 'ZenCard Pub 7', title: 'ZenCard — Bon Plan #7' },
-  { img: '/images/zencard_product.jpg', alt: 'ZenCard Produit', title: 'ZenCard — Le Produit' },
-];
-
 function BonPlan() {
+  const { t } = useTranslation();
   const [lightbox, setLightbox] = useState(null); // { image, title } | null
   const [zencardOpen, setZencardOpen] = useState(false);
+
+  const galleryItems = [
+    { img: '/images/zencard_pub2.jpg', alt: t('bonPlan.gallery.items.pub2.alt'), title: t('bonPlan.gallery.items.pub2.title') },
+    { img: '/images/zencard_pub3.jpg', alt: t('bonPlan.gallery.items.pub3.alt'), title: t('bonPlan.gallery.items.pub3.title') },
+    { img: '/images/zencard_pub5.jpg', alt: t('bonPlan.gallery.items.pub5.alt'), title: t('bonPlan.gallery.items.pub5.title') },
+    { img: '/images/zencard_pub5b.jpg', alt: t('bonPlan.gallery.items.pub5b.alt'), title: t('bonPlan.gallery.items.pub5b.title') },
+    { img: '/images/zencard_pub6.jpg', alt: t('bonPlan.gallery.items.pub6.alt'), title: t('bonPlan.gallery.items.pub6.title') },
+    { img: '/images/zencard_pub6b.jpg', alt: t('bonPlan.gallery.items.pub6b.alt'), title: t('bonPlan.gallery.items.pub6b.title') },
+    { img: '/images/zencard_pub7.jpg', alt: t('bonPlan.gallery.items.pub7.alt'), title: t('bonPlan.gallery.items.pub7.title') },
+    { img: '/images/zencard_product.jpg', alt: t('bonPlan.gallery.items.product.alt'), title: t('bonPlan.gallery.items.product.title') },
+  ];
 
   return (
     <div className="page-bonplan">
@@ -22,11 +24,11 @@ function BonPlan() {
       <div className="anniv-banner">
         <div className="container">
           <div className="anniv-inner">
-            <div className="anniv-badge">20 ANS</div>
+            <div className="anniv-badge">{t('bonPlan.anniv.badge')}</div>
 
             <div className="anniv-text">
-              Kapi Consult célèbre ses <strong>20 ans d'excellence</strong> au service
-              des organisations.
+              {t('bonPlan.anniv.textBefore')} <strong>{t('bonPlan.anniv.textStrong')}</strong>{' '}
+              {t('bonPlan.anniv.textAfter')}
             </div>
           </div>
         </div>
@@ -36,20 +38,18 @@ function BonPlan() {
         {/* HERO */}
         <section className="hero-section">
           <div className="container">
-            <div className="hero-tag">Kapi Consult</div>
+            <div className="hero-tag">{t('bonPlan.hero.tag')}</div>
 
             <h1 className="hero-title">
-              Bons Plans
-              <span>&</span>
-              ZenCard
+              {t('bonPlan.hero.titleLine1')}
+              <span>{t('bonPlan.hero.titleAmp')}</span>
+              {t('bonPlan.hero.titleLine2')}
             </h1>
 
-            <p className="hero-text">
-              Offres spéciales, promotions et avantages exclusifs sélectionnés pour vous.
-            </p>
+            <p className="hero-text">{t('bonPlan.hero.text')}</p>
 
             <button className="hero-btn" onClick={() => setZencardOpen(true)}>
-              💳 Recharger ma ZenCard
+              {t('bonPlan.hero.cta')}
             </button>
           </div>
         </section>
@@ -58,8 +58,8 @@ function BonPlan() {
         <section className="bonsplans-section">
           <div className="container">
             <div style={{ textAlign: 'center' }}>
-              <span className="section-tag">Offres & Promotions</span>
-              <h2 className="section-title">Nos bons plans du moment</h2>
+              <span className="section-tag">{t('bonPlan.section.tag')}</span>
+              <h2 className="section-title">{t('bonPlan.section.title')}</h2>
             </div>
 
             <div className="bp-grid">
@@ -69,13 +69,13 @@ function BonPlan() {
                   key={item.img}
                   onClick={() => setLightbox({ image: item.img, title: item.title })}
                 >
-                  <span className="bp-badge">ZenCard</span>
+                  <span className="bp-badge">{t('bonPlan.gallery.badge')}</span>
 
                   <img src={item.img} className="bp-img" alt={item.alt} />
 
                   <div className="bp-overlay">
                     <span style={{ color: 'white', fontSize: '13px', fontWeight: 600 }}>
-                      🔍 Agrandir
+                      {t('bonPlan.gallery.enlarge')}
                     </span>
                   </div>
 
@@ -115,7 +115,7 @@ function BonPlan() {
                     marginBottom: '12px',
                   }}
                 >
-                  Bon Plan
+                  {t('bonPlan.textCard.badge')}
                 </span>
 
                 <h3
@@ -126,7 +126,7 @@ function BonPlan() {
                     marginBottom: '10px',
                   }}
                 >
-                  Formation Gratuite : Excel RH
+                  {t('bonPlan.textCard.title')}
                 </h3>
 
                 <p
@@ -137,7 +137,7 @@ function BonPlan() {
                     marginBottom: '16px',
                   }}
                 >
-                  Kapi Consult vous offre un accès gratuit à sa formation Excel RH.
+                  {t('bonPlan.textCard.text')}
                 </p>
 
                 <a
@@ -149,7 +149,7 @@ function BonPlan() {
                     fontSize: '13px',
                   }}
                 >
-                  Voir le détail →
+                  {t('bonPlan.textCard.link')}
                 </a>
               </div>
             </div>
@@ -176,7 +176,7 @@ function BonPlan() {
           onClick={(e) => e.stopPropagation()}
         >
           <button className="lb-close" onClick={() => setLightbox(null)}>
-            ✕
+            {t('bonPlan.lightbox.close')}
           </button>
 
           <img id="lb-img" src={lightbox?.image || undefined} alt="" className="lb-img" />
@@ -194,7 +194,7 @@ function BonPlan() {
       <div id="zencard-modal" className="zc-modal-bg" style={{ display: zencardOpen ? 'flex' : 'none' }}>
         <div className="zc-modal-box">
           <button className="zc-close" onClick={() => setZencardOpen(false)}>
-            ✕
+            {t('bonPlan.zencardModal.close')}
           </button>
 
           <div
@@ -222,11 +222,11 @@ function BonPlan() {
               marginBottom: '10px',
             }}
           >
-            Recharge ZenCard
+            {t('bonPlan.zencardModal.title')}
           </h2>
 
           <p style={{ fontSize: '14px', color: 'var(--gray)', lineHeight: 1.7 }}>
-            Le système de recharge sera bientôt disponible.
+            {t('bonPlan.zencardModal.text')}
           </p>
         </div>
       </div>

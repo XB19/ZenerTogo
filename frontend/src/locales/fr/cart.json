@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "badge": "PANIER",
+    "title": "Votre panier"
+  },
+  "empty": {
+    "text": "Votre panier est vide pour le moment.",
+    "cta": "Découvrir la boutique"
+  },
+  "items": {
+    "remove": "Retirer l'article",
+    "decrease": "Diminuer la quantité",
+    "increase": "Augmenter la quantité"
+  },
+  "summary": {
+    "title": "Récapitulatif",
+    "itemsCount_one": "{{count}} article",
+    "itemsCount_other": "{{count}} articles",
+    "total": "Total",
+    "checkout": "Passer la commande",
+    "continue": "Continuer mes achats"
+  }
+}

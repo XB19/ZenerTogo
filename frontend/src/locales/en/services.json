@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "OUR SERVICES",
+    "title": "Energy solutions tailored to your needs"
+  },
+  "intro": {
+    "title": "Comprehensive energy expertise",
+    "text": "Backed by its national network and expertise, ZENER offers quality services that meet the needs of individuals and professionals alike."
+  },
+  "grid": {
+    "sectionTitle": "Our areas of expertise",
+    "cards": {
+      "fuel": {
+        "title": "Fuel Distribution",
+        "text": "A national network of service stations offering quality fuels."
+      },
+      "gas": {
+        "title": "Household Gas",
+        "text": "Energy solutions tailored to households."
+      },
+      "lubricants": {
+        "title": "Lubricants",
+        "text": "High-performance products for vehicles and industry."
+      },
+      "proximity": {
+        "title": "Convenience Services",
+        "text": "Innovative solutions to simplify everyday life."
+      },
+      "environment": {
+        "title": "Environment & Ecosystem",
+        "text": "Sustainable initiatives and actions to help protect the environment."
+      }
+    }
+  },
+  "why": {
+    "title": "Why choose ZENER?",
+    "items": {
+      "network": "A strong national network",
+      "products": "Certified, reliable products",
+      "service": "Responsive customer service",
+      "innovation": "Ongoing innovation",
+      "team": "An experienced team"
+    }
+  },
+  "process": {
+    "title": "Our approach",
+    "steps": {
+      "analysis": "Analysis",
+      "advice": "Advice",
+      "implementation": "Implementation",
+      "monitoring": "Follow-up"
+    }
+  },
+  "cta": {
+    "title": "Need an energy solution?",
+    "text": "Our teams are ready to assist you.",
+    "button": "Contact us"
+  }
+}

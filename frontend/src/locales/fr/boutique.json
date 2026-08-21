@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "badge": "BOUTIQUE ZENER",
+    "title": "Découvrez notre espace boutique",
+    "description": "Retrouvez une sélection de produits, équipements et accessoires proposés par ZENER."
+  },
+  "categories": {
+    "all": "Tout",
+    "fuel": "Carburant",
+    "gas": "Gaz",
+    "lubricant": "Lubrifiant",
+    "uncategorized": "Non classé"
+  },
+  "products": {
+    "filterAriaLabel": "Filtrer par catégorie",
+    "error": "Une erreur est survenue lors du chargement des produits.",
+    "retry": "Réessayer",
+    "empty": "Aucun produit disponible pour le moment.",
+    "emptyCategory": "Aucun produit dans cette catégorie pour le moment."
+  },
+  "cta": {
+    "title": "Besoin d'informations ?",
+    "text": "Nos équipes sont à votre disposition pour vous conseiller.",
+    "button": "Nous contacter"
+  }
+}

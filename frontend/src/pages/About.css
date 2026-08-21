@@ -51,9 +51,87 @@
     align-items:center;
 }
 
+.page-about .about-grid.reverse .about-image{
+    order:2;
+}
+
+.page-about .about-image{
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    box-shadow:0 20px 45px rgba(20,40,70,.14);
+}
+
+.page-about .about-image-badge{
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    z-index:2;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    background:#fff;
+    padding:16px 20px;
+    border-radius:10px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.page-about .about-image-badge-number{
+    color:#1b60ad;
+    font-size:30px;
+    font-weight:800;
+    line-height:1;
+}
+
+.page-about .about-image-badge-label{
+    margin-top:6px;
+
+    color:#555;
+    font-size:12px;
+    font-weight:600;
+    line-height:1.3;
+    text-align:center;
+    max-width:110px;
+}
+
 .page-about .about-image img{
+    display:block;
     width:100%;
-    border-radius:8px;
+    height:380px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:transform .6s;
+}
+
+.page-about .about-image:hover img{
+    transform:scale(1.06);
+}
+
+.page-about .text-link{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top:20px;
+
+    color:#1b60ad;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.page-about .text-link i{
+    transition:transform .25s;
+}
+
+.page-about .text-link:hover{
+    color:#2f7ecb;
+}
+
+.page-about .text-link:hover i{
+    transform:translateX(4px);
 }
 
 .page-about .section-subtitle{
@@ -98,40 +176,19 @@
 
 .page-about .counter{
     display:block;
-    font-size:58px;
+    font-size:clamp(40px, 6vw, 72px);
     font-weight:800;
+    color:#9fc63b;
+    line-height:1.1;
 }
 
 .page-about .stat-box p{
-    margin-top:10px;
-}
-
-/* VALEURS */
-
-.page-about .values-section{
-    padding:100px 0;
-}
-
-.page-about .section-heading{
-    text-align:center;
-    margin-bottom:60px;
-}
-
-.page-about .values-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-
-.page-about .value-card{
-    background:#fff;
-    padding:35px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.page-about .value-card:hover{
-    transform:translateY(-10px);
+    margin-top:12px;
+    font-size:14px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    opacity:.9;
 }
 
 /* MISSION */
@@ -151,6 +208,237 @@
     background:white;
     padding:50px;
     border-left:5px solid #9fc63b;
+    transition:transform .3s, box-shadow .3s;
+}
+
+.page-about .mission-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.page-about .mission-card i{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:56px;
+    height:56px;
+
+    margin-bottom:20px;
+    border-radius:50%;
+
+    background:#eaf3fc;
+    color:#1b60ad;
+
+    font-size:22px;
+}
+
+/* ======================
+   SECTIONS GÉNÉRIQUES
+   (Vision, Gouvernance, Présence géo,
+   Carrières, Filiales, Votre profil,
+   Digital, RSE...)
+====================== */
+
+.page-about .zn-section{
+    padding:100px 0;
+}
+
+.page-about .zn-section.bg-light{
+    background:#f5f8fb;
+}
+
+.page-about .zn-section.bg-blue{
+    background:#2f7ecb;
+    color:#fff;
+}
+
+.page-about .zn-section-header{
+    max-width:920px;
+    margin-bottom:20px;
+}
+
+.page-about .zn-section-header.centered{
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.page-about .zn-eyebrow{
+    color:#2f7ecb;
+    font-weight:700;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+}
+
+.page-about .bg-blue .zn-eyebrow{
+    color:#c9e77a;
+}
+
+.page-about .zn-section-header h2{
+    margin:15px 0 20px;
+    font-size:38px;
+    font-weight:800;
+    color:#111;
+}
+
+.page-about .bg-blue .zn-section-header h2{
+    color:#fff;
+}
+
+.page-about .zn-section-header p{
+    line-height:1.9;
+    color:#555;
+    margin-bottom:16px;
+}
+
+.page-about .zn-section-header p:last-child{
+    margin-bottom:0;
+}
+
+.page-about .bg-blue .zn-section-header p{
+    color:rgba(255,255,255,.9);
+}
+
+.page-about .zn-cards-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:20px;
+}
+
+.page-about .zn-cards-grid.cols-3{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.page-about .zn-card{
+    background:#fff;
+    padding:32px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.page-about .zn-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.1);
+}
+
+.page-about .zn-card-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:56px;
+    height:56px;
+
+    margin-bottom:20px;
+    border-radius:50%;
+
+    background:#eaf3fc;
+    color:#1b60ad;
+
+    font-size:22px;
+
+    transition:.3s;
+}
+
+.page-about .zn-card:hover .zn-card-icon{
+    background:#1b60ad;
+    color:#fff;
+}
+
+.page-about .metiers-subtitle{
+    color:#1b60ad;
+    font-size:24px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+/* CARTES MÉTIERS (carrousel) — plus grandes que le format expertise-card
+   de la page d'accueil, car les descriptions ici sont plus longues. */
+
+.page-about .metiers-card{
+    width:310px;
+    height:460px;
+
+    flex-shrink:0;
+
+    overflow:hidden;
+    position:relative;
+    border-radius:8px;
+}
+
+.page-about .metiers-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .6s;
+}
+
+.page-about .metiers-card:hover img{
+    transform:scale(1.08);
+}
+
+.page-about .metiers-card .card-overlay h4{
+    color:#c9e77a;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    margin-bottom:8px;
+}
+
+.page-about .metiers-card .card-overlay p{
+    font-size:13.5px;
+    line-height:1.55;
+}
+
+.page-about .zn-card h3{
+    color:#1b60ad;
+    font-size:19px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.page-about .zn-card h4{
+    color:#2f7ecb;
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    margin-bottom:8px;
+}
+
+.page-about .zn-card p{
+    color:#555;
+    line-height:1.8;
+    font-size:15px;
+}
+
+.page-about .zn-career-box{
+    background:#fff;
+    border-radius:12px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.page-about .zn-career-box h2{
+    color:#1b60ad;
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.page-about .zn-career-box p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:25px;
 }
 
 /* CTA */
@@ -194,7 +482,7 @@
 
     .page-about .about-hero{
         height:auto;
-        min-height:420px;
+        min-height:400px;
     }
 
     .page-about .about-hero-content{
@@ -207,15 +495,23 @@
 
     .page-about .about-company,
     .page-about .about-stats,
-    .page-about .values-section,
     .page-about .mission-section,
     .page-about .about-cta{
         padding:70px 0;
     }
 
-    .page-about .about-grid{
+    .page-about .about-grid,
+    .page-about .about-grid.reverse{
         grid-template-columns:minmax(0,1fr);
-        gap:40px;
+        gap:30px;
+    }
+
+    .page-about .about-grid.reverse .about-image{
+        order:0;
+    }
+
+    .page-about .about-image img{
+        height:280px;
     }
 
     .page-about .about-text h2{
@@ -225,14 +521,6 @@
     .page-about .stats-grid{
         grid-template-columns:repeat(2,1fr);
         gap:30px 20px;
-    }
-
-    .page-about .counter{
-        font-size:44px;
-    }
-
-    .page-about .values-grid{
-        grid-template-columns:repeat(2,1fr);
     }
 
     .page-about .mission-grid{
@@ -246,6 +534,27 @@
 
     .page-about .about-cta h2{
         font-size:34px;
+    }
+
+    .page-about .zn-section{
+        padding:70px 0;
+    }
+
+    .page-about .zn-section-header h2{
+        font-size:30px;
+    }
+
+    .page-about .zn-cards-grid.cols-3{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .page-about .zn-career-box{
+        padding:35px;
+    }
+
+    .page-about .metiers-card{
+        width:260px;
+        height:420px;
     }
 }
 
@@ -262,7 +571,6 @@
 
     .page-about .about-company,
     .page-about .about-stats,
-    .page-about .values-section,
     .page-about .mission-section,
     .page-about .about-cta{
         padding:50px 0;
@@ -277,16 +585,8 @@
         gap:25px 15px;
     }
 
-    .page-about .counter{
-        font-size:36px;
-    }
-
-    .page-about .values-grid{
-        grid-template-columns:minmax(0,1fr);
-    }
-
-    .page-about .value-card{
-        padding:25px;
+    .page-about .about-image img{
+        height:220px;
     }
 
     .page-about .mission-card{
@@ -299,5 +599,30 @@
 
     .page-about .cta-btn{
         width:100%;
+    }
+
+    .page-about .zn-section{
+        padding:50px 0;
+    }
+
+    .page-about .zn-section-header h2{
+        font-size:24px;
+    }
+
+    .page-about .zn-cards-grid,
+    .page-about .zn-cards-grid.cols-3{
+        grid-template-columns:1fr;
+    }
+
+    .page-about .zn-card{
+        padding:24px;
+    }
+
+    .page-about .zn-career-box{
+        padding:25px;
+    }
+
+    .page-about .zn-career-box h2{
+        font-size:24px;
     }
 }

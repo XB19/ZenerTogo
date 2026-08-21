@@ -1,0 +1,100 @@
+{
+  "successMessage": "Your application has been successfully sent.",
+  "hero": {
+    "badge": "CAREERS",
+    "title": "Build your future with ZENER",
+    "text": "Join a dynamic company that actively contributes to Togo's energy development and invests in the talent of its people."
+  },
+  "intro": {
+    "title": "Why join ZENER?",
+    "text": "At ZENER, we believe our success is built on the people who make up our team. We foster skills development, innovation and team spirit."
+  },
+  "values": {
+    "sectionTitle": "Our HR commitments",
+    "training": {
+      "title": "Training",
+      "text": "Developing skills."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "text": "Encouraging new ideas."
+    },
+    "growth": {
+      "title": "Growth",
+      "text": "Offering career opportunities."
+    },
+    "wellbeing": {
+      "title": "Well-being",
+      "text": "Valuing every employee."
+    }
+  },
+  "stats": {
+    "partners": "Partners",
+    "stations": "Stations",
+    "experience": "Years of experience",
+    "commitment": "Commitment"
+  },
+  "jobs": {
+    "sectionTitle": "Job openings",
+    "emptyTitle": "No openings available at the moment",
+    "emptyText": "Check back soon to discover our new opportunities.",
+    "deadline": "Deadline",
+    "apply": "Apply"
+  },
+  "application": {
+    "title": "Spontaneous application",
+    "text": "Can't find an offer that matches your profile? Send us your application and our team will review it carefully.",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "Email address",
+    "phonePlaceholder": "Phone number",
+    "positionPlaceholder": "Desired position",
+    "cvLabel": "Curriculum Vitae (CV) *",
+    "coverLetterLabel": "Cover letter",
+    "messagePlaceholder": "Briefly introduce your profile, skills or motivation...",
+    "submit": "Send my application"
+  },
+  "cta": {
+    "title": "Join the ZENER adventure",
+    "text": "Together, let's build the energy of tomorrow.",
+    "button": "Contact us"
+  },
+  "jobDetail": {
+    "notFound": {
+      "title": "Job not found",
+      "text": "This job offer no longer exists or is no longer available.",
+      "backLink": "Back to openings"
+    },
+    "success": {
+      "title": "Congratulations!",
+      "text": "Your application has been sent successfully.",
+      "close": "Close"
+    },
+    "hero": {
+      "tagline": "Join ZENER and take part in Togo's energy transformation."
+    },
+    "backLink": "Back to openings",
+    "sections": {
+      "description": "Job description",
+      "missions": "Key responsibilities",
+      "profile": "Candidate profile"
+    },
+    "sidebar": {
+      "location": "Location",
+      "contract": "Contract",
+      "department": "Department",
+      "publishedDate": "Posted on",
+      "active": "Active listing"
+    },
+    "apply": {
+      "title": "Apply for this position",
+      "subtitle": "Fill in the form below to send your application.",
+      "nameLabel": "Full name *",
+      "emailLabel": "Email *",
+      "phoneLabel": "Phone number *",
+      "cvLabel": "CV *",
+      "motivationLabel": "Motivation",
+      "messagePlaceholder": "Introduce your profile, skills and motivation...",
+      "submit": "Send my application"
+    }
+  }
+}

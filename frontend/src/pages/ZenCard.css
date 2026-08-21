@@ -55,9 +55,21 @@
     color:#1b60ad;
 }
 
+.page-zencard .benefits-layout{
+    display:grid;
+    grid-template-columns:0.9fr 1.3fr;
+    gap:50px;
+    align-items:center;
+}
+
+.page-zencard .benefits-image img{
+    width:100%;
+    border-radius:10px;
+}
+
 .page-zencard .benefits-grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(2,1fr);
     gap:25px;
 }
 
@@ -175,6 +187,92 @@
     cursor:pointer;
 }
 
+/* FAQ */
+
+.page-zencard .zencard-faq{
+    padding:100px 0;
+    background:#f5f8fb;
+}
+
+.page-zencard .zencard-faq-list{
+    max-width:850px;
+    margin:0 auto 30px;
+}
+
+.page-zencard .zencard-faq-more{
+    text-align:center;
+}
+
+.page-zencard .zencard-faq-more a{
+    color:#1b60ad;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.page-zencard .zencard-faq-more a:hover{
+    color:#9fc63b;
+}
+
+.page-zencard .accordion{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.page-zencard .accordion-item{
+    background:white;
+    border-radius:14px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    overflow:hidden;
+}
+
+.page-zencard .accordion-question{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+
+    padding:20px 24px;
+
+    background:none;
+    border:none;
+
+    text-align:left;
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:700;
+    color:#1b60ad;
+    font-family:inherit;
+}
+
+.page-zencard .accordion-question i{
+    transition:.3s;
+    color:#9fc63b;
+    flex-shrink:0;
+}
+
+.page-zencard .accordion-item.open .accordion-question i{
+    transform:rotate(180deg);
+}
+
+.page-zencard .accordion-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+}
+
+.page-zencard .accordion-item.open .accordion-answer{
+    max-height:300px;
+}
+
+.page-zencard .accordion-answer-inner{
+    padding:0 24px 22px;
+    color:#555;
+    line-height:1.8;
+}
+
 /* CTA */
 
 .page-zencard .zencard-cta{
@@ -219,12 +317,14 @@
     .page-zencard .benefits-section,
     .page-zencard .steps-section,
     .page-zencard .form-section,
+    .page-zencard .zencard-faq,
     .page-zencard .zencard-cta{
         padding:70px 0;
     }
 
-    .page-zencard .benefits-grid{
-        grid-template-columns:repeat(2,1fr);
+    .page-zencard .benefits-layout{
+        grid-template-columns:minmax(0,1fr);
+        gap:35px;
     }
 }
 
@@ -262,12 +362,23 @@
     .page-zencard .benefits-section,
     .page-zencard .steps-section,
     .page-zencard .form-section,
+    .page-zencard .zencard-faq,
     .page-zencard .zencard-cta{
         padding:50px 0;
     }
 
     .page-zencard .benefits-grid{
         grid-template-columns:minmax(0,1fr);
+    }
+
+    .page-zencard .accordion-question{
+        padding:16px 18px;
+        font-size:14px;
+    }
+
+    .page-zencard .accordion-answer-inner{
+        padding:0 18px 18px;
+        font-size:14px;
     }
 
     .page-zencard .section-heading h2{

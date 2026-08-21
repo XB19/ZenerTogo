@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "badge": "ZENER SHOP",
+    "title": "Discover our online shop",
+    "description": "Browse a selection of products, equipment and accessories offered by ZENER."
+  },
+  "categories": {
+    "all": "All",
+    "fuel": "Fuel",
+    "gas": "Gas",
+    "lubricant": "Lubricant",
+    "uncategorized": "Uncategorized"
+  },
+  "products": {
+    "filterAriaLabel": "Filter by category",
+    "error": "An error occurred while loading products.",
+    "retry": "Try again",
+    "empty": "No products available at the moment.",
+    "emptyCategory": "No products in this category at the moment."
+  },
+  "cta": {
+    "title": "Need more information?",
+    "text": "Our teams are on hand to advise you.",
+    "button": "Contact us"
+  }
+}

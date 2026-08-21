@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "badge": "CART",
+    "title": "Your cart"
+  },
+  "empty": {
+    "text": "Your cart is empty for now.",
+    "cta": "Browse the shop"
+  },
+  "items": {
+    "remove": "Remove item",
+    "decrease": "Decrease quantity",
+    "increase": "Increase quantity"
+  },
+  "summary": {
+    "title": "Summary",
+    "itemsCount_one": "{{count}} item",
+    "itemsCount_other": "{{count}} items",
+    "total": "Total",
+    "checkout": "Proceed to checkout",
+    "continue": "Continue shopping"
+  }
+}

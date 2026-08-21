@@ -1,0 +1,154 @@
+.page-stationdetail .station-hero{
+    position:relative;
+    height:420px;
+    overflow:hidden;
+}
+
+.page-stationdetail .station-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.page-stationdetail .station-hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top, rgba(27,96,173,.85), rgba(27,96,173,.35));
+}
+
+.page-stationdetail .station-hero-text{
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:2;
+
+    width:100%;
+    padding:40px 0;
+
+    color:#fff;
+    text-align:center;
+}
+
+.page-stationdetail .station-hero-city{
+    display:inline-block;
+    background:#9fc63b;
+    padding:8px 18px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.page-stationdetail .station-hero-text h1{
+    font-size:38px;
+    font-weight:800;
+}
+
+.page-stationdetail .station-body{
+    max-width:800px;
+    padding:70px 20px;
+}
+
+.page-stationdetail .station-description{
+    font-size:18px;
+    line-height:1.9;
+    color:#444;
+    margin-bottom:40px;
+}
+
+.page-stationdetail .station-contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+
+    margin-bottom:40px;
+}
+
+.page-stationdetail .station-contact-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:#1b60ad;
+    font-weight:600;
+
+    text-decoration:none;
+}
+
+.page-stationdetail .station-contact-item i{
+    color:#9fc63b;
+}
+
+a.station-contact-item:hover{
+    color:#2f7ecb;
+    text-decoration:underline;
+}
+
+.page-stationdetail .station-services{
+    background:#f5f8fb;
+    border-radius:10px;
+    padding:30px;
+    margin-bottom:40px;
+}
+
+.page-stationdetail .station-services h2{
+    color:#1b60ad;
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+.page-stationdetail .station-services p{
+    color:#555;
+    line-height:1.8;
+}
+
+.page-stationdetail .station-actions{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.page-stationdetail .cta-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 30px;
+    border-radius:50px;
+
+    background:#9fc63b;
+    color:#fff;
+
+    font-weight:600;
+    text-decoration:none;
+}
+
+.page-stationdetail .back-link{
+    color:#1b60ad;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.page-stationdetail .back-link:hover{
+    color:#2f7ecb;
+}
+
+.page-stationdetail.station-container{
+    max-width:700px;
+    margin:100px auto;
+    text-align:center;
+    padding:0 20px;
+}
+
+@media(max-width:576px){
+    .page-stationdetail .station-hero{
+        height:300px;
+    }
+
+    .page-stationdetail .station-hero-text h1{
+        font-size:26px;
+    }
+
+    .page-stationdetail .station-body{
+        padding:50px 20px;
+    }
+}

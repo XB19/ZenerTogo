@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to the most common questions about our products and services."
+  },
+  "search": {
+    "placeholder": "Search for a question...",
+    "ariaLabel": "Search the FAQ"
+  },
+  "empty": "No question matches your search.",
+  "cta": {
+    "title": "Can't find an answer to your question?",
+    "text": "Our team is here to help you.",
+    "button": "Contact us"
+  }
+}

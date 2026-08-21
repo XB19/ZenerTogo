@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "titleLine1": "ZENER,",
+    "titleLine2": "L'ÉNERGIE AU CŒUR",
+    "titleLine3": "DES USAGES",
+    "description": "Groupe énergétique africain, ZENER développe des solutions de carburants, de gaz, de mobilité et de services pour accompagner durablement les particuliers, les entreprises et les institutions.",
+    "exploreCta": "Explorer nos solutions",
+    "zencardCta": "Obtenir sa ZenCard"
+  },
+  "presentation": {
+    "badge": "Un groupe énergétique africain en mouvement",
+    "text": "ZENER développe et déploie des solutions énergétiques adaptées aux réalités des marchés africains. À travers ses activités dans les carburants, le gaz, les lubrifiants, la mobilité et les services énergétiques, le Groupe accompagne au quotidien les particuliers, les professionnels, les entreprises et les institutions. Présent au Togo, au Bénin et en Guinée-Bissau, ZENER poursuit son développement régional en s'appuyant sur une connaissance approfondie de ses marchés, des infrastructures dédiées et une culture d'innovation orientée vers les usages."
+  },
+  "stats": {
+    "countries": "Pays de présence",
+    "employees": "Collaborateurs",
+    "experience": "Années d'expérience",
+    "businesses": "Métiers stratégiques"
+  },
+  "expertise": {
+    "sectionTitle": "NOS MARQUES ET SOLUTIONS",
+    "subtitle": "Des marques de référence et des solutions innovantes au service de l'énergie et de la mobilité.",
+    "label": "Nos métiers",
+    "prevAria": "Métier précédent",
+    "nextAria": "Métier suivant",
+    "paginationAria": "Navigation du carrousel",
+    "cards": {
+      "fuel": {
+        "title": "Distribution de carburant",
+        "text": "De l'approvisionnement à la distribution, ZENER déploie son expertise à travers ses infrastructures de stockage et son réseau de stations-service, avec une attention constante portée à la qualité, à la sécurité et à la disponibilité des produits."
+      },
+      "gas": {
+        "title": "Gaz & solutions énergétiques",
+        "text": "De l'usage domestique aux applications industrielles, ZENER déploie son expertise gazière et développe des solutions énergétiques adaptées aux nouveaux enjeux, notamment à travers le Gas-to-Power."
+      },
+      "mobility": {
+        "title": "Mobilité & Services",
+        "text": "À travers un écosystème de services digitaux et de solutions de mobilité, ZENER simplifie l'accès à l'énergie, fluidifie les usages et fait évoluer l'expérience client. Ces solutions prolongent nos métiers et ouvrent la voie à de nouveaux usages de l'énergie et de la mobilité."
+      },
+      "lubricants": {
+        "title": "Lubrifiants et produits spécialisés",
+        "text": "ZENER complète son offre énergétique par une gamme de lubrifiants et d'accessoires, pensée pour conjuguer performance, fiabilité et qualité d'usage."
+      },
+      "business": {
+        "title": "Solutions pour entreprises et institutions",
+        "text": "ZENER met l'ensemble de ses expertises au service des entreprises et des institutions, à travers des solutions adaptées à leurs enjeux énergétiques, opérationnels et de continuité d'activité."
+      }
+    }
+  },
+  "banner": {
+    "title": "Nos stations sur le territoire togolais",
+    "text": "Grâce à notre réseau de stations-services réparties sur le territoire national, nous garantissons une proximité et une disponibilité permanente de nos produits et services.",
+    "cta": "Voir toutes nos stations"
+  },
+  "engagements": {
+    "sectionTitle": "Nos engagements",
+    "quality": {
+      "title": "Qualité",
+      "text": "Nous garantissons des produits et services conformes aux normes les plus exigeantes du secteur."
+    },
+    "security": {
+      "title": "Sécurité",
+      "text": "La protection de nos clients, collaborateurs et infrastructures demeure notre priorité absolue."
+    },
+    "responsibility": {
+      "title": "Responsabilité",
+      "text": "Nous favorisons un développement durable à travers des actions responsables et respectueuses de l'environnement."
+    }
+  },
+  "shop": {
+    "title": "Découvrez nos produits gaz et accessoires",
+    "cta": "Voir la boutique"
+  },
+  "news": {
+    "sectionTitle": "Actualités et perspectives",
+    "badge": "ACTU",
+    "cta": "Toutes les actualités"
+  },
+  "testimonials": {
+    "title": "Ils nous font confiance"
+  },
+  "faq": {
+    "sectionTitle": "Questions fréquentes",
+    "cta": "Voir toutes les questions fréquentes"
+  }
+}

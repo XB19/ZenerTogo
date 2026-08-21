@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "stations": "Stations",
+    "zencard": "ZenCard",
+    "news": "News",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "bonPlan": "Special Offer",
+    "contactCta": "Contact Us",
+    "clientSpace": "Client Area",
+    "cart": "Cart",
+    "search": "Search",
+    "openMenu": "Open menu"
+  },
+  "footer": {
+    "tagline": "We bring you energy",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "fuels": "Fuels",
+    "gas": "Gas",
+    "lubricants": "Lubricants",
+    "gasStations": "Gas Stations",
+    "spaces": "Portals",
+    "clientPortal": "Client Portal",
+    "customerCare": "Customer Care",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "socialNetworks": "Social Media",
+    "qhse": "QHSE Policy",
+    "rse": "CSR Policy",
+    "locations": "Ramatou - Agoè - Nyékonapoè - Aného - Kpalimé - Kara - Telessou - Tsévié - Doumassesse - Blita - Atakpamé",
+    "joinUs": "Follow us",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "COPYRIGHT © ZENER 2026"
+  },
+  "search": {
+    "placeholder": "Search for news, a product...",
+    "ariaLabel": "Search the site",
+    "close": "Close search",
+    "hint": "Type to search news and the shop.",
+    "noResults": "No results for \"{{query}}\".",
+    "typeNews": "News",
+    "typeProduct": "Product"
+  },
+  "chat": {
+    "toggleOpen": "Open chat",
+    "toggleClose": "Close chat",
+    "windowLabel": "ZENER Support",
+    "header": "ZENER — Support",
+    "welcome": "Hi 👋 How can we help you today?",
+    "placeholder": "Type your message...",
+    "inputLabel": "Your message",
+    "send": "Send"
+  },
+  "shareButtons": {
+    "label": "Share:",
+    "shareOn": "Share on {{network}}",
+    "copyLink": "Copy link",
+    "copied": "Link copied!"
+  },
+  "promoModal": {
+    "close": "Close"
+  },
+  "cards": {
+    "learnMore": "Learn more",
+    "addToCart": "Add to cart",
+    "addToCartAria": "Add {{name}} to cart",
+    "added": "Added"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Get our news and offers straight to your inbox.",
+    "placeholder": "Your email address",
+    "submit": "Subscribe",
+    "submitting": "...",
+    "success": "Thank you! Your subscription has been confirmed.",
+    "invalidEmail": "Please enter a valid email address.",
+    "consentRequired": "Please accept the privacy policy to continue.",
+    "submitError": "Subscription failed. Please try again.",
+    "consentPrefix": "I agree that my data will be used in accordance with the",
+    "privacyPolicy": "privacy policy"
+  }
+}

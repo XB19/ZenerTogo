@@ -1,6 +1,18 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import NewsletterForm from './NewsletterForm.jsx';
+
+const SOCIAL_LINKS = [
+  { icon: 'fa-facebook-f', href: 'https://www.facebook.com/zenertg?_rdc=1&_rdr', label: 'Facebook' },
+  { icon: 'fa-x-twitter', href: 'https://x.com/Zenertg', label: 'X (Twitter)' },
+  { icon: 'fa-instagram', href: 'https://www.instagram.com/zenertg/', label: 'Instagram' },
+  { icon: 'fa-linkedin-in', href: '#', label: 'LinkedIn' },
+  { icon: 'fa-tiktok', href: '#', label: 'TikTok' },
+];
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="zener-footer">
       <div className="footer-top">
@@ -9,63 +21,76 @@ function Footer() {
             <div className="footer-brand">
               <img src="/images/logo.png" alt="ZENER" />
 
-              <h3>
-                <strong>L'énergie</strong> qui accompagne le
-                <br />
-                <strong>développement</strong> du <strong>Togo</strong>
-              </h3>
+              <h3>{t('footer.tagline')}</h3>
+
+              <NewsletterForm />
             </div>
 
             <div className="footer-column">
-              <h4>Liens rapides</h4>
+              <h4>{t('footer.quickLinks')}</h4>
               <ul>
                 <li>
-                  <Link to="/">Accueil</Link>
+                  <Link to="/">{t('nav.home')}</Link>
                 </li>
                 <li>
-                  <Link to="/a-propos">À propos</Link>
+                  <Link to="/a-propos">{t('nav.about')}</Link>
                 </li>
                 <li>
-                  <Link to="/services">Services</Link>
+                  <Link to="/services">{t('nav.services')}</Link>
                 </li>
                 <li>
-                  <Link to="/actualites">Actualités</Link>
+                  <Link to="/actualites">{t('nav.news')}</Link>
+                </li>
+                <li>
+                  <Link to="/faq">{t('nav.faq')}</Link>
                 </li>
               </ul>
             </div>
 
             <div className="footer-column">
-              <h4>Nos services</h4>
+              <h4>{t('footer.ourServices')}</h4>
               <ul>
                 <li>
-                  <a href="#">Carburants</a>
+                  <a href="#">{t('footer.fuels')}</a>
                 </li>
                 <li>
-                  <a href="#">Gaz</a>
+                  <a href="#">{t('footer.gas')}</a>
                 </li>
                 <li>
-                  <a href="#">Lubrifiants</a>
+                  <a href="#">{t('footer.lubricants')}</a>
                 </li>
                 <li>
-                  <a href="#">Stations-services</a>
+                  <a href="#">{t('footer.gasStations')}</a>
                 </li>
               </ul>
             </div>
 
             <div className="footer-column">
-              <h4>Contact</h4>
+              <h4>{t('footer.spaces')}</h4>
               <ul>
                 <li>
-                  <a href="#">Téléphone</a>
+                  <Link to="/portail-client/connexion">{t('footer.clientPortal')}</Link>
                 </li>
                 <li>
-                  <a href="#">Email</a>
+                  <Link to="/back-office/connexion">{t('footer.customerCare')}</Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="footer-column">
+              <h4>{t('footer.contact')}</h4>
+              <ul>
+                <li>
+                  <a href="#">{t('footer.phone')}</a>
                 </li>
                 <li>
-                  <a href="#">Adresse</a>
+                  <a href="#">{t('footer.email')}</a>
                 </li>
                 <li>
-                  <a href="#">Réseaux sociaux</a>
+                  <a href="#">{t('footer.address')}</a>
+                </li>
+                <li>
+                  <a href="#">{t('footer.socialNetworks')}</a>
                 </li>
               </ul>
             </div>
@@ -75,19 +100,40 @@ function Footer() {
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          <div className="footer-socials">
-            <a href="#">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-twitter"></i>
-            </a>
+          <div className="footer-policies-row">
+            <Link to="/news/2">{t('footer.qhse')}</Link>
+            <span className="footer-policies-sep">|</span>
+            <Link to="/a-propos#politique-rse">{t('footer.rse')}</Link>
+            <span className="footer-policies-sep">|</span>
+            <span className="footer-locations">
+              <i className="fa-solid fa-location-dot"></i> {t('footer.locations')}
+            </span>
           </div>
 
-          <div className="footer-copyright">COPYRIGHT © ZENER 2026</div>
+          <div className="footer-join-row">
+            <span className="footer-join-label">{t('footer.joinUs')}</span>
+
+            <div className="footer-socials">
+              {SOCIAL_LINKS.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                >
+                  <i className={`fa-brands ${social.icon}`}></i>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div className="footer-legal-row">
+            <div className="footer-copyright">{t('footer.copyright')}</div>
+            <Link to="/confidentialite" className="footer-privacy-link">
+              {t('footer.privacyPolicy')}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

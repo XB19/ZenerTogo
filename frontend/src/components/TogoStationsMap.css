@@ -1,0 +1,27 @@
+.zener-map{
+    width:100%;
+    min-height:320px;
+}
+
+.zener-map .zener-map-marker{
+    background:transparent;
+    border:none;
+}
+
+.zener-map .leaflet-popup-content-wrapper{
+    border-radius:10px;
+}
+
+.zener-map .leaflet-popup-content{
+    margin:16px 18px;
+    min-width:200px;
+}
+
+@media (max-width:480px){
+
+    .zener-map .leaflet-control-zoom{
+        transform:scale(.9);
+        transform-origin:top left;
+    }
+
+}

@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "titleLine1": "ZENER,",
+    "titleLine2": "ENERGY AT THE HEART",
+    "titleLine3": "OF EVERYDAY LIFE",
+    "description": "An African energy group, ZENER develops fuel, gas, mobility and service solutions to sustainably support individuals, businesses and institutions.",
+    "exploreCta": "Explore our solutions",
+    "zencardCta": "Get your ZenCard"
+  },
+  "presentation": {
+    "badge": "An African energy group on the move",
+    "text": "ZENER develops and deploys energy solutions tailored to the realities of African markets. Through its activities in fuel, gas, lubricants, mobility and energy services, the Group supports individuals, professionals, businesses and institutions every day. Present in Togo, Benin and Guinea-Bissau, ZENER continues its regional growth, drawing on an in-depth understanding of its markets, dedicated infrastructure and a culture of usage-driven innovation."
+  },
+  "stats": {
+    "countries": "Countries of presence",
+    "employees": "Employees",
+    "experience": "Years of experience",
+    "businesses": "Strategic business lines"
+  },
+  "expertise": {
+    "sectionTitle": "OUR BRANDS AND SOLUTIONS",
+    "subtitle": "Leading brands and innovative solutions serving energy and mobility.",
+    "label": "Our business lines",
+    "prevAria": "Previous business line",
+    "nextAria": "Next business line",
+    "paginationAria": "Carousel navigation",
+    "cards": {
+      "fuel": {
+        "title": "Fuel Distribution",
+        "text": "From supply to distribution, ZENER deploys its expertise through its storage infrastructure and network of service stations, with constant attention to quality, safety and product availability."
+      },
+      "gas": {
+        "title": "Gas & Energy Solutions",
+        "text": "From household use to industrial applications, ZENER deploys its gas expertise and develops energy solutions tailored to new challenges, notably through Gas-to-Power."
+      },
+      "mobility": {
+        "title": "Mobility & Services",
+        "text": "Through an ecosystem of digital services and mobility solutions, ZENER simplifies access to energy, streamlines usage and enhances the customer experience. These solutions extend our core businesses and pave the way for new energy and mobility uses."
+      },
+      "lubricants": {
+        "title": "Lubricants & Specialty Products",
+        "text": "ZENER complements its energy offering with a range of lubricants and accessories designed to combine performance, reliability and quality of use."
+      },
+      "business": {
+        "title": "Solutions for Businesses & Institutions",
+        "text": "ZENER puts all of its expertise at the service of businesses and institutions, through solutions tailored to their energy, operational and business continuity needs."
+      }
+    }
+  },
+  "banner": {
+    "title": "Our stations across Togo",
+    "text": "Thanks to our network of service stations spread across the country, we guarantee constant proximity and availability of our products and services.",
+    "cta": "See all our stations"
+  },
+  "engagements": {
+    "sectionTitle": "Our commitments",
+    "quality": {
+      "title": "Quality",
+      "text": "We guarantee products and services that meet the industry's most demanding standards."
+    },
+    "security": {
+      "title": "Safety",
+      "text": "Protecting our customers, employees and infrastructure remains our top priority."
+    },
+    "responsibility": {
+      "title": "Responsibility",
+      "text": "We promote sustainable development through responsible, environmentally-conscious actions."
+    }
+  },
+  "shop": {
+    "title": "Discover our gas products and accessories",
+    "cta": "Visit the shop"
+  },
+  "news": {
+    "sectionTitle": "News and insights",
+    "badge": "NEWS",
+    "cta": "All news"
+  },
+  "testimonials": {
+    "title": "They trust us"
+  },
+  "faq": {
+    "sectionTitle": "Frequently asked questions",
+    "cta": "See all frequently asked questions"
+  }
+}

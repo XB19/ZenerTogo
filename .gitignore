@@ -4,8 +4,19 @@ frontend/dist/
 frontend/.vite/
 *.log
 
+# Python / backend
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.egg-info/
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+backend/.venv/
+venv/
+
 # Environment / secrets
 .env
+backend/.env
 
 # Editors / OS
 .vscode/

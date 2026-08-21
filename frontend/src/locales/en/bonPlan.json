@@ -1,0 +1,48 @@
+{
+  "anniv": {
+    "badge": "15 YEARS",
+    "textBefore": "ZENER celebrates",
+    "textStrong": "15 years of energy excellence",
+    "textAfter": "serving individuals, businesses and institutions across Togo."
+  },
+  "hero": {
+    "tag": "ZENER",
+    "titleLine1": "Special Offers",
+    "titleAmp": "&",
+    "titleLine2": "ZenCard",
+    "text": "Special offers, promotions and exclusive benefits handpicked for you.",
+    "cta": "💳 Top up my ZenCard"
+  },
+  "section": {
+    "tag": "Offers & Promotions",
+    "title": "Our current special offers"
+  },
+  "gallery": {
+    "badge": "ZenCard",
+    "enlarge": "🔍 Enlarge",
+    "items": {
+      "pub2": { "alt": "ZenCard Ad 2", "title": "ZenCard — Special Offer" },
+      "pub3": { "alt": "ZenCard Ad 3", "title": "ZenCard — Exclusive Promotion" },
+      "pub5": { "alt": "ZenCard Ad 5", "title": "ZenCard — Deal #5" },
+      "pub5b": { "alt": "ZenCard Ad 5B", "title": "ZenCard — Special Edition" },
+      "pub6": { "alt": "ZenCard Ad 6", "title": "ZenCard — Deal #6" },
+      "pub6b": { "alt": "ZenCard Ad 6B", "title": "ZenCard — Limited Offer" },
+      "pub7": { "alt": "ZenCard Ad 7", "title": "ZenCard — Deal #7" },
+      "product": { "alt": "ZenCard Product", "title": "ZenCard — The Product" }
+    }
+  },
+  "textCard": {
+    "badge": "Special Offer",
+    "title": "Free Training: HR Excel",
+    "text": "Kapi Consult offers you free access to its HR Excel training course.",
+    "link": "See details →"
+  },
+  "lightbox": {
+    "close": "✕"
+  },
+  "zencardModal": {
+    "close": "✕",
+    "title": "ZenCard Top-Up",
+    "text": "The top-up system will be available soon."
+  }
+}

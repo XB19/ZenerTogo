@@ -94,11 +94,15 @@
 
 .page-services .services-grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(4,minmax(0,1fr));
     gap:25px;
+    align-items:stretch;
 }
 
 .page-services .service-card{
+    display:flex;
+    flex-direction:column;
+
     background:#fff;
 
     overflow:hidden;
@@ -122,6 +126,10 @@
 }
 
 .page-services .service-content{
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+
     padding:28px;
 }
 
@@ -137,6 +145,30 @@
 .page-services .service-content p{
     color:#666;
     line-height:1.8;
+}
+
+.page-services .clamp-3{
+    flex-grow:1;
+
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+.page-services .service-btn{
+    display:inline-block;
+
+    margin-top:auto;
+    padding-top:20px;
+
+    color:#2f7ecb;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.page-services .service-btn:hover{
+    color:#9fc63b;
 }
 
 /* ==========================

@@ -1,22 +1,26 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import ServiceCard from '../components/ServiceCard.jsx';
 import './Services.css';
 
-const services = [
-  { img: '/images/card1.jpg', title: 'Distribution de carburants', text: 'Réseau national de stations-services offrant des carburants de qualité.' },
-  { img: '/images/card2.jpg', title: 'Gaz domestique', text: 'Solutions énergétiques adaptées aux ménages.' },
-  { img: '/images/card3.jpg', title: 'Lubrifiants', text: 'Produits performants pour véhicules et industries.' },
-  { img: '/images/card4.jpg', title: 'Services de proximité', text: 'Des solutions innovantes pour simplifier le quotidien.' },
-  { img: '/images/card5.jpg', title: 'Environnement & écosystème', text: 'Initiatives durables et actions en faveur de la préservation de l’environnement.' },
-];
-
-const process = [
-  { number: '01', title: 'Analyse' },
-  { number: '02', title: 'Conseil' },
-  { number: '03', title: 'Mise en œuvre' },
-  { number: '04', title: 'Suivi' },
-];
-
 function Services() {
+  const { t } = useTranslation();
+
+  const services = [
+    { img: '/images/card1.jpg', title: t('services.grid.cards.fuel.title'), text: t('services.grid.cards.fuel.text') },
+    { img: '/images/card2.jpg', title: t('services.grid.cards.gas.title'), text: t('services.grid.cards.gas.text') },
+    { img: '/images/card3.jpg', title: t('services.grid.cards.lubricants.title'), text: t('services.grid.cards.lubricants.text') },
+    { img: '/images/card4.jpg', title: t('services.grid.cards.proximity.title'), text: t('services.grid.cards.proximity.text') },
+    { img: '/images/card5.jpg', title: t('services.grid.cards.environment.title'), text: t('services.grid.cards.environment.text') },
+  ];
+
+  const process = [
+    { number: '01', title: t('services.process.steps.analysis') },
+    { number: '02', title: t('services.process.steps.advice') },
+    { number: '03', title: t('services.process.steps.implementation') },
+    { number: '04', title: t('services.process.steps.monitoring') },
+  ];
+
   return (
     <div className="page-services">
       {/* HERO */}
@@ -25,8 +29,8 @@ function Services() {
 
         <div className="container">
           <div className="services-hero-content">
-            <span className="hero-badge">NOS SERVICES</span>
-            <h1>Des solutions énergétiques adaptées à vos besoins</h1>
+            <span className="hero-badge">{t('services.hero.badge')}</span>
+            <h1>{t('services.hero.title')}</h1>
           </div>
         </div>
       </section>
@@ -35,12 +39,8 @@ function Services() {
       <section className="services-intro">
         <div className="container">
           <div className="intro-content">
-            <h2>Une expertise énergétique complète</h2>
-            <p>
-              Grâce à son réseau national et à son savoir-faire, ZENER propose des
-              services de qualité répondant aux besoins des particuliers comme des
-              professionnels.
-            </p>
+            <h2>{t('services.intro.title')}</h2>
+            <p>{t('services.intro.text')}</p>
           </div>
         </div>
       </section>
@@ -49,18 +49,12 @@ function Services() {
       <section className="services-grid-section">
         <div className="container">
           <div className="section-header">
-            <h2>Nos domaines d'intervention</h2>
+            <h2>{t('services.grid.sectionTitle')}</h2>
           </div>
 
           <div className="services-grid">
             {services.map((s) => (
-              <article className="service-card" key={s.title}>
-                <img src={s.img} alt="" />
-                <div className="service-content">
-                  <h3>{s.title}</h3>
-                  <p>{s.text}</p>
-                </div>
-              </article>
+              <ServiceCard key={s.title} img={s.img} title={s.title} text={s.text} />
             ))}
           </div>
         </div>
@@ -75,14 +69,14 @@ function Services() {
             </div>
 
             <div className="why-content">
-              <h2>Pourquoi choisir ZENER ?</h2>
+              <h2>{t('services.why.title')}</h2>
 
               <ul>
-                <li>Réseau national performant</li>
-                <li>Produits certifiés et fiables</li>
-                <li>Service client réactif</li>
-                <li>Innovation permanente</li>
-                <li>Équipe expérimentée</li>
+                <li>{t('services.why.items.network')}</li>
+                <li>{t('services.why.items.products')}</li>
+                <li>{t('services.why.items.service')}</li>
+                <li>{t('services.why.items.innovation')}</li>
+                <li>{t('services.why.items.team')}</li>
               </ul>
             </div>
           </div>
@@ -92,7 +86,7 @@ function Services() {
       {/* PROCESSUS */}
       <section className="process-section">
         <div className="container">
-          <h2>Notre approche</h2>
+          <h2>{t('services.process.title')}</h2>
 
           <div className="process-grid">
             {process.map((p) => (
@@ -108,11 +102,11 @@ function Services() {
       {/* CTA */}
       <section className="service-cta">
         <div className="container">
-          <h2>Besoin d'une solution énergétique ?</h2>
-          <p>Nos équipes sont à votre disposition.</p>
+          <h2>{t('services.cta.title')}</h2>
+          <p>{t('services.cta.text')}</p>
 
           <Link to="/contact" className="cta-btn">
-            Nous contacter
+            {t('services.cta.button')}
           </Link>
         </div>
       </section>

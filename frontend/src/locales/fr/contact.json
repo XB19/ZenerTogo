@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "badge": "CONTACTEZ-NOUS",
+    "title": "Parlons de vos besoins énergétiques",
+    "description": "Notre équipe est à votre écoute pour répondre à toutes vos questions et vous accompagner dans vos projets."
+  },
+  "info": {
+    "header": {
+      "title": "Nos coordonnées",
+      "text": "Retrouvez toutes les informations utiles pour joindre rapidement les équipes ZENER."
+    },
+    "address": {
+      "title": "Adresse",
+      "line1": "Lomé, Togo",
+      "line2": "Siège social ZENER"
+    },
+    "phone": {
+      "title": "Téléphone",
+      "value": "+228 XX XX XX XX"
+    },
+    "email": {
+      "title": "Email",
+      "value": "contact@zener.tg"
+    },
+    "hours": {
+      "title": "Horaires",
+      "days": "Lun - Ven",
+      "time": "08h00 à 17h00"
+    }
+  },
+  "form": {
+    "header": {
+      "title": "Envoyez-nous un message",
+      "text": "Remplissez ce formulaire et notre équipe vous répondra dans les meilleurs délais."
+    },
+    "success": {
+      "title": "Message envoyé avec succès",
+      "text": "Merci pour votre prise de contact. Notre équipe vous répondra dans les plus brefs délais."
+    },
+    "fields": {
+      "name": { "label": "Nom complet *", "placeholder": "Votre nom complet" },
+      "email": { "label": "Adresse email *", "placeholder": "exemple@email.com" },
+      "phone": { "label": "Téléphone", "placeholder": "+228 XX XX XX XX" },
+      "subject": { "label": "Sujet *", "placeholder": "Objet de votre demande" },
+      "message": { "label": "Votre message *", "placeholder": "Décrivez votre demande..." }
+    },
+    "submitCta": "Envoyer le message"
+  },
+  "map": {
+    "title": "Nous localiser",
+    "placeholder": "Google Maps ici"
+  }
+}

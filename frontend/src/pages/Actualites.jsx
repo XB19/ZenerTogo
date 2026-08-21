@@ -1,6 +1,12 @@
-import { Link } from 'react-router-dom';
+import { useMemo } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { actualites } from '../data/mockData.js';
+import { pickLang } from '../utils/i18nData.js';
 import './Actualites.css';
+
+const FALLBACK_IMAGE = '/images/station-banner.png';
+const ALL_KEY = 'Tout';
 
 function truncateWords(text, count) {
   const words = text.trim().split(/\s+/);
@@ -9,6 +15,37 @@ function truncateWords(text, count) {
 }
 
 function Actualites() {
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
+  const [searchParams, setSearchParams] = useSearchParams();
+  const activeCategory = searchParams.get('categorie') || ALL_KEY;
+
+  // Categories are keyed on the French label (stable across language switches)
+  // but displayed via pickLang so the filter pills follow the current language.
+  const categories = useMemo(() => {
+    const seen = new Map();
+    actualites.forEach((a) => {
+      if (!seen.has(a.categorie.fr)) seen.set(a.categorie.fr, a.categorie);
+    });
+    return [ALL_KEY, ...seen.values()];
+  }, []);
+
+  const filtered = useMemo(
+    () =>
+      activeCategory === ALL_KEY
+        ? actualites
+        : actualites.filter((a) => a.categorie.fr === activeCategory),
+    [activeCategory]
+  );
+
+  const setCategory = (catKey) => {
+    if (catKey === ALL_KEY) {
+      setSearchParams({});
+    } else {
+      setSearchParams({ categorie: catKey });
+    }
+  };
+
   return (
     <div className="page-actualites">
       {/* HERO */}
@@ -17,12 +54,9 @@ function Actualites() {
 
         <div className="container">
           <div className="news-hero-content">
-            <span className="news-badge">ACTUALITÉS ZENER</span>
-            <h1>Suivez les dernières informations et événements de ZENER</h1>
-            <p>
-              Découvrez nos actualités, nos initiatives, nos projets et les événements
-              qui marquent la vie de notre entreprise.
-            </p>
+            <span className="news-badge">{t('news.hero.badge')}</span>
+            <h1>{t('news.hero.title')}</h1>
+            <p>{t('news.hero.text')}</p>
           </div>
         </div>
       </section>
@@ -31,13 +65,9 @@ function Actualites() {
       <section className="news-intro">
         <div className="container">
           <div className="news-intro-content">
-            <span className="section-subtitle">Nos publications</span>
-            <h2>Toute l'actualité de ZENER</h2>
-            <p>
-              Retrouvez régulièrement les dernières nouvelles concernant nos activités,
-              nos innovations, nos engagements et les évolutions du secteur énergétique
-              au Togo.
-            </p>
+            <span className="section-subtitle">{t('news.intro.subtitle')}</span>
+            <h2>{t('news.intro.title')}</h2>
+            <p>{t('news.intro.text')}</p>
           </div>
         </div>
       </section>
@@ -45,30 +75,64 @@ function Actualites() {
       {/* ARTICLES */}
       <section className="news-section">
         <div className="container">
+          <div className="news-filters" role="group" aria-label={t('news.filters.ariaLabel')}>
+            {categories.map((cat) => {
+              const catKey = cat === ALL_KEY ? ALL_KEY : cat.fr;
+              const label = cat === ALL_KEY ? t('news.filters.all') : pickLang(cat, lang);
+              return (
+                <button
+                  type="button"
+                  key={catKey}
+                  className={`news-filter${activeCategory === catKey ? ' active' : ''}`}
+                  onClick={() => setCategory(catKey)}
+                  aria-pressed={activeCategory === catKey}
+                >
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+
           <div className="news-grid">
-            {actualites.length === 0 ? (
-              <p style={{ textAlign: 'center', gridColumn: '1/-1', color: '#666' }}>
-                Aucune actualité disponible pour le moment.
-              </p>
+            {filtered.length === 0 ? (
+              <p className="news-empty">{t('news.empty')}</p>
             ) : (
-              actualites.map((act) => (
-                <article className="news-card" key={act.id}>
-                  <img src={act.image || '/images/news1.jpg'} alt={act.titre} />
-
-                  <div className="news-content">
-                    <div className="news-meta">
-                      {act.categorie} • {new Date(act.created_at).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' })}
-                    </div>
-
-                    <h3>{act.titre}</h3>
-                    <p>{truncateWords(act.contenu, 25)}</p>
-
-                    <Link to={`/news/${act.id}`} className="news-btn">
-                      Lire l'article →
+              filtered.map((act) => {
+                const titre = pickLang(act.titre, lang);
+                const contenu = pickLang(act.contenu, lang);
+                return (
+                  <article className="news-card" key={act.id}>
+                    <Link to={`/news/${act.id}`} className="news-image-link">
+                      <img
+                        src={act.image || FALLBACK_IMAGE}
+                        alt={titre}
+                        loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = FALLBACK_IMAGE;
+                        }}
+                      />
                     </Link>
-                  </div>
-                </article>
-              ))
+
+                    <div className="news-content">
+                      <div className="news-meta">
+                        <span className="news-category-badge">{pickLang(act.categorie, lang)}</span>
+                        {' • '}
+                        {new Date(act.created_at).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR', { day: 'numeric', month: 'short', year: 'numeric' })}
+                      </div>
+
+                      <h3>
+                        <Link to={`/news/${act.id}`}>{titre}</Link>
+                      </h3>
+                      <p>{truncateWords(contenu, 25)}</p>
+
+                      <Link to={`/news/${act.id}`} className="news-btn">
+                        {t('news.readMore')}
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })
             )}
           </div>
         </div>
@@ -77,11 +141,11 @@ function Actualites() {
       {/* CTA */}
       <section className="news-cta">
         <div className="container">
-          <h2>Restons connectés</h2>
-          <p>Suivez toutes les actualités de ZENER et nos prochains événements.</p>
+          <h2>{t('news.cta.title')}</h2>
+          <p>{t('news.cta.text')}</p>
 
           <Link to="/contact" className="cta-btn">
-            Nous contacter
+            {t('news.cta.button')}
           </Link>
         </div>
       </section>

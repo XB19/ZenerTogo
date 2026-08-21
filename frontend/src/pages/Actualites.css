@@ -95,14 +95,60 @@
     padding-bottom:100px;
 }
 
+.page-actualites .news-filters{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:40px;
+}
+
+.page-actualites .news-filter{
+    padding:10px 22px;
+    border:1px solid #dce5f0;
+    border-radius:30px;
+
+    background:#fff;
+    color:#1b60ad;
+
+    font-weight:600;
+    font-size:14px;
+
+    cursor:pointer;
+    transition:.2s;
+}
+
+.page-actualites .news-filter:hover{
+    border-color:#2f7ecb;
+}
+
+.page-actualites .news-filter.active{
+    background:#2f7ecb;
+    border-color:#2f7ecb;
+    color:#fff;
+}
+
+.page-actualites .news-empty{
+    grid-column:1/-1;
+    text-align:center;
+    color:#666;
+    padding:40px 0;
+}
+
 .page-actualites .news-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(3,minmax(0,1fr));
     gap:30px;
+}
+
+.page-actualites .news-card .news-image-link{
+    display:block;
+    width:100%;
+    height:250px;
 }
 
 .page-actualites .news-card{
     background:#fff;
+    color:#1a2433;
 
     border-radius:10px;
 
@@ -146,6 +192,25 @@
     margin-bottom:15px;
 }
 
+.page-actualites .news-content h3 a{
+    display:block;
+    width:auto;
+    height:auto;
+    border-radius:0;
+    background:none;
+
+    color:inherit;
+    text-decoration:none;
+}
+
+.page-actualites .news-content h3 a:hover{
+    color:#2f7ecb;
+}
+
+.page-actualites .news-category-badge{
+    color:#2f7ecb;
+}
+
 .page-actualites .news-content p{
     color:#666;
 
@@ -154,7 +219,17 @@
     margin-bottom:25px;
 }
 
-.page-actualites .news-btn{
+.page-actualites .news-content .news-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    width:auto;
+    height:auto;
+    padding:0;
+    margin:0;
+    border-radius:0;
+    background:none;
+
     color:#2f7ecb;
 
     font-weight:600;

@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "badge": "ZENER NEWS",
+    "title": "Follow the latest news and events from ZENER",
+    "text": "Discover our news, initiatives, projects and the events that shape life at our company."
+  },
+  "intro": {
+    "subtitle": "Our publications",
+    "title": "All the latest news from ZENER",
+    "text": "Find regular updates on our activities, innovations, commitments and developments in Togo's energy sector."
+  },
+  "filters": {
+    "ariaLabel": "Filter by category",
+    "all": "All"
+  },
+  "empty": "No news in this category at the moment.",
+  "readMore": "Read the article →",
+  "cta": {
+    "title": "Let's stay connected",
+    "text": "Follow all of ZENER's news and our upcoming events.",
+    "button": "Contact us"
+  },
+  "notFound": {
+    "title": "Article not found",
+    "back": "Back to news"
+  },
+  "detail": {
+    "back": "← Back to news",
+    "author": "ZENER News"
+  }
+}

@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Contact.css';
 
 const initialForm = { nom: '', email: '', telephone: '', sujet: '', message: '' };
 
 function Contact() {
+  const { t } = useTranslation();
   const [form, setForm] = useState(initialForm);
   const [submitted, setSubmitted] = useState(false);
 
@@ -32,12 +34,9 @@ function Contact() {
 
         <div className="container">
           <div className="contact-hero-content">
-            <span className="contact-badge">CONTACTEZ-NOUS</span>
-            <h1>Parlons de vos besoins énergétiques</h1>
-            <p>
-              Notre équipe est à votre écoute pour répondre à toutes vos questions et
-              vous accompagner dans vos projets.
-            </p>
+            <span className="contact-badge">{t('contact.hero.badge')}</span>
+            <h1>{t('contact.hero.title')}</h1>
+            <p>{t('contact.hero.description')}</p>
           </div>
         </div>
       </section>
@@ -46,8 +45,8 @@ function Contact() {
       <section className="contact-info-section">
         <div className="container">
           <div className="contact-info-header">
-            <h2>Nos coordonnées</h2>
-            <p>Retrouvez toutes les informations utiles pour joindre rapidement les équipes ZENER.</p>
+            <h2>{t('contact.info.header.title')}</h2>
+            <p>{t('contact.info.header.text')}</p>
           </div>
 
           <div className="contact-info-grid">
@@ -55,11 +54,11 @@ function Contact() {
               <div className="info-icon">
                 <i className="fa-solid fa-location-dot"></i>
               </div>
-              <h3>Adresse</h3>
+              <h3>{t('contact.info.address.title')}</h3>
               <p>
-                Lomé, Togo
+                {t('contact.info.address.line1')}
                 <br />
-                Siège social ZENER
+                {t('contact.info.address.line2')}
               </p>
             </div>
 
@@ -67,27 +66,27 @@ function Contact() {
               <div className="info-icon">
                 <i className="fa-solid fa-phone"></i>
               </div>
-              <h3>Téléphone</h3>
-              <p>+228 XX XX XX XX</p>
+              <h3>{t('contact.info.phone.title')}</h3>
+              <p>{t('contact.info.phone.value')}</p>
             </div>
 
             <div className="info-card">
               <div className="info-icon">
                 <i className="fa-solid fa-envelope"></i>
               </div>
-              <h3>Email</h3>
-              <p>contact@zener.tg</p>
+              <h3>{t('contact.info.email.title')}</h3>
+              <p>{t('contact.info.email.value')}</p>
             </div>
 
             <div className="info-card">
               <div className="info-icon">
                 <i className="fa-solid fa-clock"></i>
               </div>
-              <h3>Horaires</h3>
+              <h3>{t('contact.info.hours.title')}</h3>
               <p>
-                Lun - Ven
+                {t('contact.info.hours.days')}
                 <br />
-                08h00 à 17h00
+                {t('contact.info.hours.time')}
               </p>
             </div>
           </div>
@@ -97,8 +96,8 @@ function Contact() {
             <div className="container">
               <div className="contact-form-wrapper">
                 <div className="contact-form-header">
-                  <h2>Envoyez-nous un message</h2>
-                  <p>Remplissez ce formulaire et notre équipe vous répondra dans les meilleurs délais.</p>
+                  <h2>{t('contact.form.header.title')}</h2>
+                  <p>{t('contact.form.header.text')}</p>
                 </div>
 
                 {submitted && (
@@ -108,8 +107,8 @@ function Contact() {
                     </div>
 
                     <div>
-                      <h4>Message envoyé avec succès</h4>
-                      <p>Merci pour votre prise de contact. Notre équipe vous répondra dans les plus brefs délais.</p>
+                      <h4>{t('contact.form.success.title')}</h4>
+                      <p>{t('contact.form.success.text')}</p>
                     </div>
                   </div>
                 )}
@@ -117,11 +116,11 @@ function Contact() {
                 <form onSubmit={handleSubmit}>
                   <div className="form-grid">
                     <div className="form-group">
-                      <label>Nom complet *</label>
+                      <label>{t('contact.form.fields.name.label')}</label>
                       <input
                         type="text"
                         name="nom"
-                        placeholder="Votre nom complet"
+                        placeholder={t('contact.form.fields.name.placeholder')}
                         value={form.nom}
                         onChange={handleChange}
                         required
@@ -129,11 +128,11 @@ function Contact() {
                     </div>
 
                     <div className="form-group">
-                      <label>Adresse email *</label>
+                      <label>{t('contact.form.fields.email.label')}</label>
                       <input
                         type="email"
                         name="email"
-                        placeholder="exemple@email.com"
+                        placeholder={t('contact.form.fields.email.placeholder')}
                         value={form.email}
                         onChange={handleChange}
                         required
@@ -141,22 +140,22 @@ function Contact() {
                     </div>
 
                     <div className="form-group">
-                      <label>Téléphone</label>
+                      <label>{t('contact.form.fields.phone.label')}</label>
                       <input
                         type="text"
                         name="telephone"
-                        placeholder="+228 XX XX XX XX"
+                        placeholder={t('contact.form.fields.phone.placeholder')}
                         value={form.telephone}
                         onChange={handleChange}
                       />
                     </div>
 
                     <div className="form-group">
-                      <label>Sujet *</label>
+                      <label>{t('contact.form.fields.subject.label')}</label>
                       <input
                         type="text"
                         name="sujet"
-                        placeholder="Objet de votre demande"
+                        placeholder={t('contact.form.fields.subject.placeholder')}
                         value={form.sujet}
                         onChange={handleChange}
                         required
@@ -164,10 +163,10 @@ function Contact() {
                     </div>
 
                     <div className="form-group full">
-                      <label>Votre message *</label>
+                      <label>{t('contact.form.fields.message.label')}</label>
                       <textarea
                         name="message"
-                        placeholder="Décrivez votre demande..."
+                        placeholder={t('contact.form.fields.message.placeholder')}
                         value={form.message}
                         onChange={handleChange}
                         required
@@ -177,7 +176,7 @@ function Contact() {
 
                   <button type="submit" className="contact-btn">
                     <i className="fa-solid fa-paper-plane"></i>
-                    Envoyer le message
+                    {t('contact.form.submitCta')}
                   </button>
                 </form>
               </div>
@@ -187,8 +186,8 @@ function Contact() {
           {/* CARTE */}
           <section className="map-section">
             <div className="container">
-              <h2>Nous localiser</h2>
-              <div className="map-box">Google Maps ici</div>
+              <h2>{t('contact.map.title')}</h2>
+              <div className="map-box">{t('contact.map.placeholder')}</div>
             </div>
           </section>
         </div>

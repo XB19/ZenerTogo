@@ -1,0 +1,148 @@
+{
+  "hero": {
+    "badge": "ABOUT ZENER",
+    "title": "Powering Togo's development",
+    "description": "An African energy group present in Togo, Benin and Guinea-Bissau."
+  },
+  "company": {
+    "subtitle": "Zener in a few words",
+    "title": "Energy expertise rooted in Togo, with a regional ambition",
+    "p1": "ZENER is a leading player in Togo's energy sector, present across the entire value chain: fuel, gas, lubricants, mobility and energy solutions for individuals, businesses and institutions. Over the years, the Group has built up infrastructure, a distribution network and strong brands to serve these needs.",
+    "p2": "Building on its long-standing presence in Togo, ZENER pursues regional growth with operations in Benin and Guinea-Bissau, driven by strong operational expertise, closeness to markets and innovation — making energy more accessible and closer to everyday uses.",
+    "badge": "years of energy expertise",
+    "list": {
+      "quality": "Certified quality",
+      "coverage": "Nationwide coverage",
+      "support": "Responsive customer service",
+      "innovation": "Continuous innovation"
+    }
+  },
+  "stats": {
+    "stations": "Service stations",
+    "partners": "Partners",
+    "clients": "Satisfied customers",
+    "experience": "Years of experience"
+  },
+  "vision": {
+    "eyebrow": "Vision & strategy",
+    "title": "A regional ambition",
+    "p1": "ZENER aims to become a reference energy partner in West and Central Africa by developing solutions tailored to the realities of local markets and evolving needs.",
+    "p2": "Its strategy is built on consolidating its historical business lines, developing new energy and mobility solutions, driving innovation in services and progressively strengthening its regional presence. This ambition is rooted in a responsible growth approach, based on operational excellence, quality of service and the ability to sustainably meet the needs of territories, businesses and communities."
+  },
+  "governance": {
+    "eyebrow": "Governance",
+    "title": "Governance",
+    "p1": "ZENER's governance rests on decision-making and oversight bodies that set strategic direction, monitor activities and safeguard the company's performance.",
+    "p2": "It is built on a structured organization, a clear allocation of responsibilities and a culture of accountability at every level. This governance supports ZENER's ambitions, underpins operational excellence and helps ensure the Group's long-term development."
+  },
+  "presence": {
+    "eyebrow": "Geographic presence",
+    "title": "Geographic presence",
+    "p1": "ZENER operates in Togo, Benin and Guinea-Bissau, with teams and activities closely attuned to the realities of each market.",
+    "p2": "Building on its strong footing in West Africa, ZENER continues its regional expansion with the ambition of strengthening its presence and progressively deploying its expertise in new markets.",
+    "cta": "See all our stations"
+  },
+  "careers": {
+    "eyebrow": "Careers at Zener",
+    "title": "Grow your potential at Zener",
+    "text": "ZENER is built by committed women and men who contribute every day to transforming the energy and mobility sectors in West Africa. The Group values responsibility, initiative and skills development, within an environment that fosters learning and collaboration. ZENER offers career growth opportunities across a wide range of operational, technical, commercial and digital roles. Joining ZENER means being part of a growing, meaningful project geared toward the future.",
+    "cta": "View our openings"
+  },
+  "subsidiaries": {
+    "eyebrow": "Our subsidiaries & entities",
+    "title": "Our subsidiaries & entities",
+    "intro": "ZENER carries out its activities through specialized subsidiaries and entities, organized by market and area of expertise. This structure combines local roots, operational excellence and the development of expertise tailored to each business.",
+    "metiersTitle": "Our business lines",
+    "metiersIntro": "ZENER brings together complementary expertise across energy, mobility and services. Driven by specialized entities rooted in their markets, they enable the Group to meet a wide range of uses and needs.",
+    "prevAria": "Previous business line",
+    "nextAria": "Next business line",
+    "paginationAria": "Carousel navigation",
+    "metiers": {
+      "maritime": {
+        "title": "Marine bunkering & aviation",
+        "text": "ZENER supplies fuel to vessels through bunkering operations conducted in line with strict requirements for safety, quality and continuity of service. Building on this expertise, ZENER is preparing to develop solutions for the aviation sector, progressively extending its reach to the energy needs of maritime and aeronautical activities."
+      },
+      "fuel": {
+        "title": "Fuel distribution",
+        "text": "ZENER manages the supply, storage and distribution of fuel through its dedicated infrastructure and its Oasis network of service stations, with constant attention to quality, safety and product availability. Its offering includes XtraLine for petrol engines and XtraZole for diesel engines, fuels developed to support engine performance and protection."
+      },
+      "gas": {
+        "title": "Gas & energy solutions",
+        "text": "ZENER develops gas solutions for household, professional and industrial use, with an unwavering focus on safety, reliability and availability. Beyond traditional gas uses, ZENER is extending its expertise to new energy applications, notably through the development of Gas-to-Power solutions."
+      },
+      "cards": {
+        "title": "Cards & payments",
+        "subtitle": "Solutions designed to simplify and take control of everyday use",
+        "text": "ZENER develops payment solutions that make transactions easier and help track consumption and manage spending. Through its range of cards and loyalty program, ZENER enhances the customer experience and offers services tailored to how its customers live and work."
+      },
+      "lubricants": {
+        "title": "Lubricants & accessories",
+        "text": "ZENER offers a diversified range of lubricants that meet performance, protection and reliability requirements across a variety of sectors. This expertise is complemented by a range of accessories and equipment that broadens ZENER's offering and meets the diverse needs of its customers."
+      }
+    }
+  },
+  "profile": {
+    "eyebrow": "Your profile",
+    "title": "Your profile",
+    "cards": {
+      "business": {
+        "title": "Business / SME",
+        "text": "Solutions tailored to businesses to secure their supply, control costs and ensure business continuity."
+      },
+      "horeca": {
+        "title": "Horeca",
+        "text": "ZENER supports hotels, restaurants, cafés and other service establishments with energy solutions tailored to their operational needs and business continuity."
+      },
+      "partners": {
+        "title": "Partners & institutions",
+        "text": "ZENER builds collaborations with public institutions, technical and financial partners, and development stakeholders around projects that support energy access and the development of energy infrastructure."
+      }
+    }
+  },
+  "digital": {
+    "eyebrow": "Digital & innovation",
+    "title": "Digital & innovation",
+    "p1": "At ZENER, digital technology and innovation extend our core businesses and transform the way our customers access energy and our services.",
+    "p2": "Through an ecosystem of connected solutions, ZENER simplifies everyday use, enhances the customer experience and develops new services tailored to evolving needs.",
+    "cards": {
+      "zencard": {
+        "title": "ZenCard",
+        "text": "A payment and management solution that simplifies purchases, secures transactions and makes it easier to track consumption and spending."
+      },
+      "zenfamili": {
+        "title": "ZenFamili 360",
+        "text": "A digital ecosystem that brings ZENER's services together, making it easier to access offers, track consumption, interact and enjoy the benefits available to customers."
+      },
+      "security": {
+        "title": "Security & data",
+        "text": "The security of transactions and responsible data management support the growth of ZENER's digital services and help ensure a reliable experience for users."
+      },
+      "zenmobility": {
+        "title": "ZenMobility",
+        "text": "A mobile refuelling solution designed to bring energy closer to businesses' operational needs and support the continuity of their activities."
+      }
+    }
+  },
+  "rse": {
+    "eyebrow": "Policy & CSR",
+    "title": "CSR Policy",
+    "p1": "As a company operating in the energy sector, ZENER carries out activities that come with a particular responsibility toward its employees, customers, partners, communities and the environment.",
+    "p2": "Our CSR approach lies at the heart of our development and operations. It reflects our commitment to combining performance, control over our impacts and a positive contribution to the territories where we operate.",
+    "p3": "Beyond our commitments, we favor a concrete, progressive approach based on responsible practices, continuous improvement and initiatives grounded in the realities of our activities and markets."
+  },
+  "mission": {
+    "mission": {
+      "title": "Our mission",
+      "text": "To provide reliable, accessible and sustainable energy."
+    },
+    "vision": {
+      "title": "Our vision",
+      "text": "To become a reference in energy across West Africa."
+    }
+  },
+  "cta": {
+    "title": "Let's build tomorrow's energy together",
+    "text": "We support your energy needs everywhere in Togo.",
+    "button": "Contact us"
+  }
+}

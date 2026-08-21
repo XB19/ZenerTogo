@@ -1,0 +1,338 @@
+.client-portal-app .cp-page-title{
+    font-size:28px;
+    font-weight:800;
+    color:#1b60ad;
+    margin-bottom:6px;
+}
+
+.client-portal-app .cp-page-subtitle{
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+.client-portal-app .cp-card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+}
+
+.client-portal-app .cp-card + .cp-card{
+    margin-top:25px;
+}
+
+.client-portal-app .cp-grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.client-portal-app .cp-stats-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.client-portal-app .cp-stat-card{
+    background:white;
+    border-radius:16px;
+    padding:22px;
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+    border-left:4px solid #9fc63b;
+}
+
+.client-portal-app .cp-stat-label{
+    color:#64748b;
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+.client-portal-app .cp-stat-value{
+    font-size:26px;
+    font-weight:800;
+    color:#1b60ad;
+}
+
+.client-portal-app .cp-form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:18px;
+}
+
+.client-portal-app .cp-form-group label{
+    font-weight:600;
+    color:#163b68;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.client-portal-app .cp-form-group input,
+.client-portal-app .cp-form-group select,
+.client-portal-app .cp-form-group textarea{
+    width:100%;
+    padding:13px 15px;
+    border:1px solid #dbe4ef;
+    border-radius:10px;
+    font-size:14px;
+    font-family:inherit;
+    outline:none;
+    transition:.3s;
+}
+
+.client-portal-app .cp-form-group input:focus,
+.client-portal-app .cp-form-group select:focus,
+.client-portal-app .cp-form-group textarea:focus{
+    border-color:#1b60ad;
+    box-shadow:0 0 0 4px rgba(27,96,173,.10);
+}
+
+.client-portal-app .cp-form-group textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+.client-portal-app .cp-form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.client-portal-app .cp-btn-primary{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    background:#9fc63b;
+    color:white;
+
+    border:none;
+    border-radius:12px;
+
+    padding:14px 26px;
+
+    font-size:14px;
+    font-weight:700;
+
+    text-decoration:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.client-portal-app .cp-btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+.client-portal-app .cp-btn-secondary{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    background:#eef4fb;
+    color:#1b60ad;
+
+    border:none;
+    border-radius:12px;
+
+    padding:14px 26px;
+
+    font-size:14px;
+    font-weight:700;
+
+    text-decoration:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.client-portal-app .cp-btn-secondary:hover{
+    background:#dde9f7;
+}
+
+.client-portal-app .cp-table-wrap{
+    overflow-x:auto;
+}
+
+.client-portal-app .cp-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.client-portal-app .cp-table thead{
+    background:#1b60ad;
+}
+
+.client-portal-app .cp-table thead th{
+    color:white;
+    padding:16px;
+    text-align:left;
+    font-size:13px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.client-portal-app .cp-table tbody td{
+    padding:16px;
+    border-bottom:1px solid #edf2f7;
+    font-size:14px;
+    color:#334155;
+}
+
+.client-portal-app .cp-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+.client-portal-app .cp-badge{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.client-portal-app .cp-badge-blue{ background:rgba(27,96,173,.10); color:#1b60ad; }
+.client-portal-app .cp-badge-green{ background:rgba(159,198,59,.15); color:#6b8f1e; }
+.client-portal-app .cp-badge-orange{ background:#fff7e6; color:#f59e0b; }
+.client-portal-app .cp-badge-red{ background:#ffe8e8; color:#dc2626; }
+.client-portal-app .cp-badge-gray{ background:#f1f5f9; color:#64748b; }
+
+.client-portal-app .cp-amount-pos{ color:#4b8f1e; font-weight:700; }
+.client-portal-app .cp-amount-neg{ color:#dc2626; font-weight:700; }
+
+.client-portal-app .cp-empty{
+    text-align:center;
+    padding:60px 20px;
+    color:#94a3b8;
+}
+
+.client-portal-app .cp-empty i{
+    font-size:44px;
+    margin-bottom:14px;
+    display:block;
+    color:#cbd5e1;
+}
+
+.client-portal-app .cp-zencard{
+    background:linear-gradient(135deg,#1b60ad,#2f7ecb);
+    border-radius:20px;
+    padding:26px;
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.client-portal-app .cp-zencard-type{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    opacity:.8;
+    margin-bottom:18px;
+}
+
+.client-portal-app .cp-zencard-number{
+    font-size:19px;
+    font-weight:700;
+    letter-spacing:.06em;
+    margin-bottom:22px;
+}
+
+.client-portal-app .cp-zencard-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.client-portal-app .cp-zencard-balance-label{
+    font-size:11px;
+    opacity:.75;
+    margin-bottom:4px;
+}
+
+.client-portal-app .cp-zencard-balance{
+    font-size:24px;
+    font-weight:800;
+}
+
+.client-portal-app .cp-zencard-status{
+    background:rgba(255,255,255,.18);
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.client-portal-app .cp-zencards-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:22px;
+}
+
+.client-portal-app .cp-timeline{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.client-portal-app .cp-timeline-item{
+    display:flex;
+    gap:16px;
+}
+
+.client-portal-app .cp-timeline-dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#9fc63b;
+    margin-top:6px;
+    flex-shrink:0;
+}
+
+.client-portal-app .cp-timeline-content{
+    background:#f8fafc;
+    border-radius:12px;
+    padding:16px 18px;
+    flex:1;
+}
+
+.client-portal-app .cp-timeline-date{
+    font-size:12px;
+    color:#94a3b8;
+    margin-bottom:4px;
+}
+
+.client-portal-app .cp-timeline-author{
+    font-weight:700;
+    color:#1b60ad;
+    font-size:13px;
+    margin-bottom:4px;
+}
+
+.client-portal-app .cp-section-title{
+    font-size:18px;
+    font-weight:800;
+    color:#1b60ad;
+    margin-bottom:18px;
+}
+
+.client-portal-app .cp-flex-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+@media(max-width:900px){
+
+    .client-portal-app .cp-grid-2,
+    .client-portal-app .cp-form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .client-portal-app .cp-stats-grid{
+        grid-template-columns:1fr;
+    }
+}

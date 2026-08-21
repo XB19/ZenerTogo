@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "badge": "ZENCARD",
+    "title": "La carte qui simplifie vos achats de carburant"
+  },
+  "benefits": {
+    "heading": "Pourquoi choisir la ZenCard ?",
+    "imageAlt": "ZenCard ZENER",
+    "cards": {
+      "speed": {
+        "title": "Paiement rapide",
+        "text": "Gagnez du temps à chaque passage en station."
+      },
+      "security": {
+        "title": "Sécurisée",
+        "text": "Une solution fiable pour vos transactions."
+      },
+      "tracking": {
+        "title": "Suivi facile",
+        "text": "Gardez le contrôle de vos dépenses carburant."
+      },
+      "accepted": {
+        "title": "Acceptée partout",
+        "text": "Utilisable dans le réseau des stations ZENER."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Comment obtenir votre ZenCard ?",
+    "items": {
+      "form": {
+        "title": "Remplissez le formulaire",
+        "text": "Quelques informations suffisent."
+      },
+      "validation": {
+        "title": "Validation",
+        "text": "Notre équipe traite votre demande."
+      },
+      "pickup": {
+        "title": "Récupérez votre carte",
+        "text": "Votre ZenCard est prête à être utilisée."
+      }
+    }
+  },
+  "form": {
+    "heading": "Demande de ZenCard",
+    "successMessage": "Votre demande a bien été envoyée. Notre équipe vous contactera bientôt.",
+    "labels": {
+      "fullName": "Nom complet",
+      "phone": "Téléphone",
+      "email": "Email",
+      "city": "Ville",
+      "type": "Type de demande",
+      "station": "Station de retrait",
+      "idPhoto": "Photo de la CNI"
+    },
+    "typeOptions": {
+      "select": "Sélectionner",
+      "individual": "Particulier",
+      "business": "Entreprise"
+    },
+    "stationPlaceholder": "Choisir une station",
+    "submitCta": "Envoyer ma demande"
+  },
+  "faq": {
+    "heading": "Questions fréquentes",
+    "moreLink": "Voir toutes les questions fréquentes →"
+  },
+  "cta": {
+    "title": "Rejoignez les utilisateurs ZenCard",
+    "text": "Une solution moderne pensée pour faciliter votre mobilité.",
+    "button": "Demander maintenant"
+  }
+}

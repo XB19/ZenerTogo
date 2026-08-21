@@ -1,0 +1,183 @@
+.client-portal-app *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.client-portal-app{
+    display:block;
+    min-height:100vh;
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+}
+
+.client-portal-app a{
+    font-family:inherit;
+}
+
+/* HEADER */
+
+.client-portal-app .cp-header{
+    background:#1b60ad;
+    color:white;
+}
+
+.client-portal-app .cp-header-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:0 30px;
+
+    height:84px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.client-portal-app .cp-brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.client-portal-app .cp-brand img{
+    height:44px;
+    width:auto;
+    background:white;
+    border-radius:10px;
+    padding:4px 8px;
+}
+
+.client-portal-app .cp-brand-text{
+    font-size:15px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.client-portal-app .cp-brand-text span{
+    display:block;
+    font-size:12px;
+    font-weight:400;
+    color:rgba(255,255,255,.75);
+}
+
+.client-portal-app .cp-user{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.client-portal-app .cp-user-name{
+    font-size:14px;
+    font-weight:600;
+}
+
+.client-portal-app .cp-logout{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    background:rgba(255,255,255,.14);
+    color:white;
+
+    border:none;
+    border-radius:30px;
+
+    padding:10px 18px;
+
+    font-size:13px;
+    font-weight:600;
+
+    text-decoration:none;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.client-portal-app .cp-logout:hover{
+    background:rgba(255,255,255,.24);
+}
+
+/* TABS NAV */
+
+.client-portal-app .cp-tabs{
+    background:white;
+    border-bottom:1px solid #e5edf7;
+
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.client-portal-app .cp-tabs-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:0 30px;
+
+    display:flex;
+    gap:6px;
+    overflow-x:auto;
+}
+
+.client-portal-app .cp-tab{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:18px 16px;
+
+    color:#64748b;
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+    white-space:nowrap;
+
+    border-bottom:3px solid transparent;
+
+    transition:.2s;
+}
+
+.client-portal-app .cp-tab:hover{
+    color:#1b60ad;
+}
+
+.client-portal-app .cp-tab.active{
+    color:#1b60ad;
+    border-bottom-color:#9fc63b;
+}
+
+/* CONTENT */
+
+.client-portal-app .cp-content{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 30px 80px;
+}
+
+@media(max-width:768px){
+
+    .client-portal-app .cp-header-inner{
+        padding:0 18px;
+        height:70px;
+    }
+
+    .client-portal-app .cp-brand img{
+        height:36px;
+    }
+
+    .client-portal-app .cp-brand-text{
+        font-size:13px;
+    }
+
+    .client-portal-app .cp-user-name{
+        display:none;
+    }
+
+    .client-portal-app .cp-tabs-inner{
+        padding:0 18px;
+    }
+
+    .client-portal-app .cp-content{
+        padding:28px 18px 60px;
+    }
+}

@@ -1,0 +1,353 @@
+.page-checkout .checkout-hero{
+    background:#1b60ad;
+    color:white;
+    padding:70px 0 50px;
+}
+
+.page-checkout .checkout-badge{
+    display:inline-block;
+
+    background:#9fc63b;
+
+    padding:8px 20px;
+    border-radius:20px;
+
+    font-size:13px;
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.page-checkout .checkout-hero h1{
+    font-size:42px;
+    font-weight:800;
+}
+
+.page-checkout .checkout-section{
+    padding:60px 20px 100px;
+}
+
+/* ==========================
+   EMPTY / SUCCESS STATES
+========================== */
+
+.page-checkout .checkout-empty,
+.page-checkout .checkout-success{
+    max-width:560px;
+    margin:0 auto;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.page-checkout .checkout-empty i{
+    font-size:56px;
+    color:#c7d2de;
+    margin-bottom:20px;
+}
+
+.page-checkout .checkout-empty p,
+.page-checkout .checkout-success p{
+    color:#666;
+    font-size:17px;
+    line-height:1.7;
+    margin-bottom:28px;
+}
+
+.page-checkout .checkout-success .success-icon{
+    width:70px;
+    height:70px;
+    margin:0 auto 20px;
+
+    border-radius:50%;
+    background:#22c55e;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+}
+
+.page-checkout .checkout-success h2{
+    font-size:28px;
+    margin-bottom:14px;
+}
+
+.page-checkout .checkout-success-actions{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+}
+
+/* ==========================
+   LAYOUT
+========================== */
+
+.page-checkout .checkout-layout{
+    display:grid;
+    grid-template-columns:1fr 380px;
+    gap:35px;
+    align-items:start;
+}
+
+.page-checkout .checkout-form-col{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.page-checkout .checkout-block{
+    background:white;
+    padding:28px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+}
+
+.page-checkout .checkout-block h2{
+    font-size:19px;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   FORM (mirrors Contact page fields)
+========================== */
+
+.page-checkout .form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.page-checkout .form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.page-checkout .form-group.full{
+    grid-column:span 2;
+}
+
+.page-checkout .form-group label{
+    margin-bottom:8px;
+    font-weight:600;
+    font-size:14px;
+}
+
+.page-checkout .form-group input,
+.page-checkout .form-group select,
+.page-checkout .form-group textarea{
+    width:100%;
+    min-width:0;
+
+    border:1px solid #ddd;
+    border-radius:6px;
+
+    padding:14px 16px;
+
+    outline:none;
+    font-family:inherit;
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.page-checkout .form-group input:focus,
+.page-checkout .form-group select:focus,
+.page-checkout .form-group textarea:focus{
+    border-color:#2f7ecb;
+}
+
+.page-checkout .form-group textarea{
+    resize:none;
+    min-height:110px;
+}
+
+.page-checkout .checkout-radio-row{
+    display:flex;
+    gap:24px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.page-checkout .checkout-radio{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+    font-weight:500;
+}
+
+.page-checkout .checkout-radio input{
+    width:18px;
+    height:18px;
+    accent-color:#2f7ecb;
+}
+
+/* ==========================
+   SUMMARY
+========================== */
+
+.page-checkout .checkout-summary{
+    position:sticky;
+    top:100px;
+
+    background:white;
+    padding:28px;
+    border-radius:12px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+}
+
+.page-checkout .checkout-summary h2{
+    font-size:19px;
+    margin-bottom:20px;
+}
+
+.page-checkout .checkout-summary-items{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+
+    padding-bottom:18px;
+    margin-bottom:18px;
+
+    border-bottom:1px solid #eef1f5;
+}
+
+.page-checkout .checkout-summary-item{
+    display:grid;
+    grid-template-columns:44px 1fr auto;
+    align-items:center;
+    gap:12px;
+}
+
+.page-checkout .checkout-summary-item img{
+    width:44px;
+    height:44px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+.page-checkout .checkout-summary-item-info{
+    display:flex;
+    flex-direction:column;
+    font-size:13px;
+}
+
+.page-checkout .checkout-summary-item-info .name{
+    font-weight:600;
+    color:#1a2433;
+}
+
+.page-checkout .checkout-summary-item-info .qty{
+    color:#888;
+}
+
+.page-checkout .checkout-summary-item .line-total{
+    font-weight:600;
+    font-size:14px;
+    white-space:nowrap;
+}
+
+.page-checkout .checkout-summary-total{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+
+    font-size:20px;
+    font-weight:800;
+    color:#1b60ad;
+
+    margin-bottom:24px;
+}
+
+.page-checkout .checkout-primary-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    height:54px;
+    padding:0 30px;
+
+    border:none;
+    border-radius:40px;
+
+    background:#9fc63b;
+    color:white;
+
+    font-weight:700;
+    font-size:15px;
+    text-decoration:none;
+    cursor:pointer;
+
+    transition:background .25s;
+}
+
+.page-checkout .checkout-primary-btn:hover{
+    background:#88b12f;
+}
+
+.page-checkout .checkout-submit{
+    width:100%;
+}
+
+.page-checkout .checkout-secondary-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    height:54px;
+    padding:0 30px;
+
+    border:1px solid #d5dce4;
+    border-radius:40px;
+
+    background:white;
+    color:#1a2433;
+
+    font-weight:600;
+    font-size:15px;
+    text-decoration:none;
+
+    transition:.25s;
+}
+
+.page-checkout .checkout-secondary-btn:hover{
+    border-color:#2f7ecb;
+    color:#2f7ecb;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+    .page-checkout .checkout-layout{
+        grid-template-columns:1fr;
+    }
+
+    .page-checkout .checkout-summary{
+        position:static;
+    }
+
+}
+
+@media(max-width:640px){
+
+    .page-checkout .checkout-hero h1{
+        font-size:30px;
+    }
+
+    .page-checkout .form-grid{
+        grid-template-columns:minmax(0,1fr);
+    }
+
+    .page-checkout .form-group.full{
+        grid-column:auto;
+    }
+
+}

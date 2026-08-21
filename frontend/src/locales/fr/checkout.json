@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "badge": "COMMANDE",
+    "title": "Finaliser votre commande"
+  },
+  "empty": {
+    "text": "Votre panier est vide, il n'y a rien à commander pour l'instant.",
+    "cta": "Découvrir la boutique"
+  },
+  "summary": {
+    "title": "Votre commande",
+    "total": "Total à payer"
+  },
+  "form": {
+    "contactTitle": "Vos coordonnées",
+    "fields": {
+      "name": { "label": "Nom complet", "placeholder": "Votre nom et prénom" },
+      "phone": { "label": "Téléphone", "placeholder": "+228 XX XX XX XX" },
+      "email": { "label": "Email", "placeholder": "vous@exemple.com" }
+    },
+    "deliveryTitle": "Mode de récupération",
+    "delivery": {
+      "pickup": "Retrait en station",
+      "home": "Livraison à domicile"
+    },
+    "stationLabel": "Station de retrait",
+    "stationPlaceholder": "Choisissez une station",
+    "addressLabel": "Adresse de livraison",
+    "addressPlaceholder": "Quartier, rue, points de repère...",
+    "paymentTitle": "Mode de paiement",
+    "payment": {
+      "cash": "Paiement à la livraison / en station",
+      "mobile": "Mobile Money"
+    },
+    "submitCta": "Confirmer la commande"
+  },
+  "success": {
+    "title": "Commande confirmée !",
+    "text": "Merci, votre commande {{orderNumber}} a bien été enregistrée. Notre équipe vous contactera pour la confirmer.",
+    "backHome": "Retour à l'accueil",
+    "backShop": "Continuer mes achats"
+  }
+}

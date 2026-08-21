@@ -1,0 +1,181 @@
+.portal-page-clientlogin{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+    linear-gradient(
+        rgba(27,96,173,.92),
+        rgba(27,96,173,.92)
+    ),
+    url('/images/about-hero.png');
+    background-size:cover;
+    background-position:center;
+    padding:20px;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.portal-page-clientlogin .login-card{
+
+    width:100%;
+    max-width:450px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.portal-page-clientlogin .subtitle{
+
+    text-align:center;
+    color:#64748b;
+    margin-bottom:35px;
+
+}
+
+.portal-page-clientlogin .form-group{
+
+    margin-bottom:20px;
+
+}
+
+.portal-page-clientlogin .form-group label{
+
+    display:block;
+    margin-bottom:8px;
+
+    color:#1e293b;
+    font-weight:600;
+
+}
+
+.portal-page-clientlogin .form-group input{
+
+    width:100%;
+    height:55px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    padding:0 15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.portal-page-clientlogin .form-group input:focus{
+
+    border-color:#1b60ad;
+
+}
+
+.portal-page-clientlogin .login-btn{
+
+    width:100%;
+    height:58px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#9fc63b;
+
+    color:white;
+
+    font-size:16px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.portal-page-clientlogin .login-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.portal-page-clientlogin .error-box{
+
+    background:#ffe8e8;
+
+    color:#dc2626;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+    font-size:14px;
+
+}
+
+.portal-page-clientlogin .footer-text{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+}
+
+.portal-page-clientlogin .logo{
+    text-align:center;
+    padding-bottom:10px;
+    border-bottom:1px solid #eef2f7;
+    margin-bottom:25px;
+}
+
+.portal-page-clientlogin .logo img{
+
+    width:160px;
+    height:auto;
+
+    object-fit:contain;
+
+    display:block;
+    margin:0 auto;
+
+    transition:.3s;
+}
+
+.portal-page-clientlogin .logo img:hover{
+    transform:scale(1.03);
+}
+
+@media(max-width:480px){
+
+    .portal-page-clientlogin .login-card{
+        padding:30px 22px;
+        border-radius:16px;
+    }
+
+    .portal-page-clientlogin .logo img{
+        width:130px;
+    }
+
+    .portal-page-clientlogin .form-group input{
+        height:50px;
+    }
+
+    .portal-page-clientlogin .login-btn{
+        height:52px;
+    }
+}

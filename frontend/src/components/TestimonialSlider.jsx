@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { testimonials } from '../data/mockData.js';
+import { pickLang } from '../utils/i18nData.js';
 
 function TestimonialSlider() {
+  const { i18n } = useTranslation();
   const [current, setCurrent] = useState(0);
   const active = testimonials[current];
 
@@ -16,14 +19,14 @@ function TestimonialSlider() {
   return (
     <div className="testimonial-card">
       <div className="testimonial-left">
-        <p id="testimonialText">{active.text}</p>
+        <p id="testimonialText">{pickLang(active.text, i18n.language)}</p>
 
         <div className="testimonial-author">
           <div className="author-square"></div>
 
           <div>
             <h4 id="testimonialName">{active.name}</h4>
-            <span id="testimonialRole">{active.role}</span>
+            <span id="testimonialRole">{pickLang(active.role, i18n.language)}</span>
           </div>
         </div>
 

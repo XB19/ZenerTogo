@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { offres } from '../data/mockData.js';
+import { pickLang } from '../utils/i18nData.js';
 import './JobDetail.css';
 
 const initialForm = { nom: '', email: '', telephone: '' };
 
 function JobDetail() {
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
   const { id } = useParams();
   const offre = offres.find((o) => String(o.id) === id);
 
@@ -29,10 +33,10 @@ function JobDetail() {
   if (!offre) {
     return (
       <div className="container" style={{ padding: '120px 0', textAlign: 'center' }}>
-        <h1>Offre introuvable</h1>
+        <h1>{t('careers.jobDetail.notFound.title')}</h1>
         <p>
-          Cette offre n'existe pas ou n'est plus disponible.{' '}
-          <Link to="/carrieres">Retour aux offres</Link>
+          {t('careers.jobDetail.notFound.text')}{' '}
+          <Link to="/carrieres">{t('careers.jobDetail.notFound.backLink')}</Link>
         </p>
       </div>
     );
@@ -44,23 +48,23 @@ function JobDetail() {
         <div id="success-popup">
           <div className="success-card">
             <div className="success-icon">🎉</div>
-            <h2>Félicitations !</h2>
-            <p>Votre candidature a été envoyée avec succès.</p>
-            <button onClick={() => setSuccess(false)}>Fermer</button>
+            <h2>{t('careers.jobDetail.success.title')}</h2>
+            <p>{t('careers.jobDetail.success.text')}</p>
+            <button onClick={() => setSuccess(false)}>{t('careers.jobDetail.success.close')}</button>
           </div>
         </div>
       )}
 
       <section className="job-hero">
         <div className="container">
-          <h1>{offre.titre}</h1>
+          <h1>{pickLang(offre.titre, lang)}</h1>
 
-          <p>Rejoignez ZENER et participez à la transformation énergétique du Togo.</p>
+          <p>{t('careers.jobDetail.hero.tagline')}</p>
 
           <div className="job-meta">
             <span>📍 {offre.ville}</span>
-            <span>{offre.type_contrat}</span>
-            <span>{offre.departement}</span>
+            <span>{pickLang(offre.type_contrat, lang)}</span>
+            <span>{pickLang(offre.departement, lang)}</span>
           </div>
         </div>
       </section>
@@ -68,28 +72,28 @@ function JobDetail() {
       <section className="job-wrapper">
         <div className="container">
           <Link to="/carrieres" className="back-link">
-            ← Retour aux offres
+            ← {t('careers.jobDetail.backLink')}
           </Link>
 
           <div className="job-layout">
             <div className="job-card">
               <div className="section-job">
-                <h2>Description du poste</h2>
-                {offre.description.split('\n').map((line, i) => (
+                <h2>{t('careers.jobDetail.sections.description')}</h2>
+                {pickLang(offre.description, lang).split('\n').map((line, i) => (
                   <p key={i}>{line}</p>
                 ))}
               </div>
 
               <div className="section-job">
-                <h2>Missions principales</h2>
-                {offre.missions.split('\n').map((line, i) => (
+                <h2>{t('careers.jobDetail.sections.missions')}</h2>
+                {pickLang(offre.missions, lang).split('\n').map((line, i) => (
                   <p key={i}>{line}</p>
                 ))}
               </div>
 
               <div className="section-job">
-                <h2>Profil recherché</h2>
-                {offre.profil.split('\n').map((line, i) => (
+                <h2>{t('careers.jobDetail.sections.profile')}</h2>
+                {pickLang(offre.profil, lang).split('\n').map((line, i) => (
                   <p key={i}>{line}</p>
                 ))}
               </div>
@@ -97,27 +101,27 @@ function JobDetail() {
 
             <div className="sidebar-card">
               <div className="info-item">
-                <span className="info-label">Localisation</span>
+                <span className="info-label">{t('careers.jobDetail.sidebar.location')}</span>
                 {offre.ville}
               </div>
 
               <div className="info-item">
-                <span className="info-label">Contrat</span>
-                {offre.type_contrat}
+                <span className="info-label">{t('careers.jobDetail.sidebar.contract')}</span>
+                {pickLang(offre.type_contrat, lang)}
               </div>
 
               <div className="info-item">
-                <span className="info-label">Département</span>
-                {offre.departement}
+                <span className="info-label">{t('careers.jobDetail.sidebar.department')}</span>
+                {pickLang(offre.departement, lang)}
               </div>
 
               <div className="info-item">
-                <span className="info-label">Date de publication</span>
-                {new Date(offre.created_at).toLocaleDateString('fr-FR')}
+                <span className="info-label">{t('careers.jobDetail.sidebar.publishedDate')}</span>
+                {new Date(offre.created_at).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR')}
               </div>
 
               <div className="info-item">
-                <span className="status-active">Offre active</span>
+                <span className="status-active">{t('careers.jobDetail.sidebar.active')}</span>
               </div>
             </div>
           </div>
@@ -127,44 +131,42 @@ function JobDetail() {
       <section className="apply-section">
         <div className="container">
           <div className="form-container">
-            <h2 className="form-title">Postuler à cette offre</h2>
-            <p className="form-subtitle">
-              Remplissez le formulaire ci-dessous pour envoyer votre candidature.
-            </p>
+            <h2 className="form-title">{t('careers.jobDetail.apply.title')}</h2>
+            <p className="form-subtitle">{t('careers.jobDetail.apply.subtitle')}</p>
 
             <form onSubmit={handleSubmit}>
               <div className="form-grid">
                 <div className="form-group">
-                  <label>Nom complet *</label>
+                  <label>{t('careers.jobDetail.apply.nameLabel')}</label>
                   <input type="text" name="nom" value={form.nom} onChange={handleChange} required />
                 </div>
 
                 <div className="form-group">
-                  <label>Email *</label>
+                  <label>{t('careers.jobDetail.apply.emailLabel')}</label>
                   <input type="email" name="email" value={form.email} onChange={handleChange} required />
                 </div>
 
                 <div className="form-group">
-                  <label>Téléphone *</label>
+                  <label>{t('careers.jobDetail.apply.phoneLabel')}</label>
                   <input type="tel" name="telephone" value={form.telephone} onChange={handleChange} required />
                 </div>
 
                 <div className="form-group">
-                  <label>CV *</label>
+                  <label>{t('careers.jobDetail.apply.cvLabel')}</label>
                   <input type="file" name="cv" required />
                 </div>
 
                 <div className="form-group full">
-                  <label>Motivation</label>
+                  <label>{t('careers.jobDetail.apply.motivationLabel')}</label>
                   <textarea
                     name="message"
-                    placeholder="Présentez votre profil, vos compétences et votre motivation..."
+                    placeholder={t('careers.jobDetail.apply.messagePlaceholder')}
                   ></textarea>
                 </div>
               </div>
 
               <button type="submit" className="submit-btn">
-                Envoyer ma candidature
+                {t('careers.jobDetail.apply.submit')}
               </button>
             </form>
           </div>

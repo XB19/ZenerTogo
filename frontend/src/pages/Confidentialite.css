@@ -1,0 +1,36 @@
+.page-confidentialite .container{
+    max-width:800px;
+    padding:120px 20px 100px;
+}
+
+.page-confidentialite h1{
+    color:#1b60ad;
+    font-size:38px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.page-confidentialite .draft-notice{
+    background:#fff4e5;
+    border-left:4px solid #e0a13a;
+    padding:14px 18px;
+    color:#8a5a12;
+    font-size:14px;
+    margin-bottom:30px;
+}
+
+.page-confidentialite p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+@media(max-width:576px){
+    .page-confidentialite .container{
+        padding:90px 20px 60px;
+    }
+
+    .page-confidentialite h1{
+        font-size:28px;
+    }
+}

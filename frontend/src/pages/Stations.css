@@ -100,8 +100,8 @@
 
 .page-stations .station-card{
     background:white;
-    padding:30px;
     border-radius:8px;
+    overflow:hidden;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
     transition:.3s;
 }
@@ -110,10 +110,33 @@
     transform:translateY(-8px);
 }
 
+.page-stations .station-image-link{
+    display:block;
+}
+
+.page-stations .station-card img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+}
+
+.page-stations .station-content{
+    padding:26px 30px 30px;
+}
+
 .page-stations .station-card h3{
     color:#1b60ad;
     margin-bottom:15px;
     font-size:20px;
+}
+
+.page-stations .station-card h3 a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.page-stations .station-card h3 a:hover{
+    color:#2f7ecb;
 }
 
 .page-stations .station-city{
@@ -125,6 +148,28 @@
 .page-stations .station-card p{
     color:#666;
     line-height:1.7;
+}
+
+.page-stations .station-address{
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.page-stations .station-phone{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    color:#1b60ad;
+    font-weight:600;
+    font-size:14px;
+
+    text-decoration:none;
+}
+
+.page-stations .station-phone:hover{
+    color:#2f7ecb;
+    text-decoration:underline;
 }
 
 /* =========================

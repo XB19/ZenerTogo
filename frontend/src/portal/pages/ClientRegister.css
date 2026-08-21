@@ -1,0 +1,173 @@
+.portal-page-clientregister{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+    linear-gradient(
+        rgba(27,96,173,.92),
+        rgba(27,96,173,.92)
+    ),
+    url('/images/about-hero.png');
+    background-size:cover;
+    background-position:center;
+    padding:20px;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.portal-page-clientregister .register-card{
+    width:100%;
+    max-width:600px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.15);
+}
+
+.portal-page-clientregister .subtitle{
+    text-align:center;
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+.portal-page-clientregister .form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px 20px;
+    margin-bottom:25px;
+}
+
+.portal-page-clientregister .form-group.full{
+    grid-column:span 2;
+}
+
+.portal-page-clientregister .form-group label{
+    display:block;
+    margin-bottom:8px;
+
+    color:#1e293b;
+    font-weight:600;
+    font-size:14px;
+}
+
+.portal-page-clientregister .form-group input{
+    width:100%;
+    height:50px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    padding:0 15px;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+.portal-page-clientregister .form-group input:focus{
+    border-color:#1b60ad;
+}
+
+.portal-page-clientregister .register-btn{
+    width:100%;
+    height:58px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#9fc63b;
+
+    color:white;
+
+    font-size:16px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.portal-page-clientregister .register-btn:hover{
+    transform:translateY(-2px);
+}
+
+.portal-page-clientregister .register-btn:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+    transform:none;
+}
+
+.portal-page-clientregister .error-box{
+    background:#ffe8e8;
+
+    color:#dc2626;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+    font-size:14px;
+}
+
+.portal-page-clientregister .footer-text{
+    margin-top:25px;
+    text-align:center;
+    color:#94a3b8;
+    font-size:13px;
+}
+
+.portal-page-clientregister .logo{
+    text-align:center;
+    padding-bottom:10px;
+    border-bottom:1px solid #eef2f7;
+    margin-bottom:25px;
+}
+
+.portal-page-clientregister .logo img{
+    width:160px;
+    height:auto;
+
+    object-fit:contain;
+
+    display:block;
+    margin:0 auto;
+}
+
+@media(max-width:576px){
+
+    .portal-page-clientregister .register-card{
+        padding:30px 22px;
+        border-radius:16px;
+    }
+
+    .portal-page-clientregister .logo img{
+        width:130px;
+    }
+
+    .portal-page-clientregister .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .portal-page-clientregister .form-group.full{
+        grid-column:auto;
+    }
+
+    .portal-page-clientregister .form-group input{
+        height:48px;
+    }
+
+    .portal-page-clientregister .register-btn{
+        height:52px;
+    }
+}

@@ -1,0 +1,55 @@
+.share-buttons{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.share-label{
+    font-weight:600;
+    color:#1b2733;
+    margin-right:2px;
+}
+
+.share-buttons a,
+.share-buttons button{
+    position:relative;
+
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#f0f4f9;
+    color:#1b60ad;
+
+    text-decoration:none;
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.share-buttons a:hover,
+.share-buttons button:hover{
+    background:#2f7ecb;
+    color:#fff;
+}
+
+.share-copied{
+    position:absolute;
+    bottom:120%;
+    left:50%;
+    transform:translateX(-50%);
+
+    background:#1b60ad;
+    color:#fff;
+
+    font-size:12px;
+    white-space:nowrap;
+
+    padding:4px 10px;
+    border-radius:6px;
+}

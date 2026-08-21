@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "badge": "ZENER NETWORK",
+    "title": "Find our stations across Togo",
+    "text": "Browse ZENER stations, find the one closest to you and get directions in a single click."
+  },
+  "map": {
+    "title": "Interactive station map",
+    "text": "Click on a station to view its details and get directions.",
+    "popupCta": "Get directions",
+    "ariaLabel": "Map of ZENER stations in Togo"
+  },
+  "list": {
+    "title": "Our main stations"
+  },
+  "card": {
+    "call": "Call this station"
+  },
+  "cta": {
+    "title": "Always a station near you",
+    "text": "ZENER continues to grow its network, bringing its services closer to individuals and businesses across the entire country.",
+    "button": "Contact us"
+  },
+  "detail": {
+    "notFoundTitle": "Station not found",
+    "backToStations": "Back to stations",
+    "servicesTitle": "Available services",
+    "directionsCta": "Get directions"
+  }
+}
