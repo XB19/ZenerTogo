@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: zener
+      POSTGRES_USER: zener
+      POSTGRES_PASSWORD: zener
+    volumes:
+      - zener_db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend:/app
+      - zener_media:/app/media
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  zener_db_data:
+  zener_media:
