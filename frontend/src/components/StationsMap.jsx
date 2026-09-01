@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import './TogoStationsMap.css';
+import './StationsMap.css';
 
 // Marqueur maison (SVG inline) : évite le bug classique des icônes Leaflet
 // cassées une fois passées par un bundler (chemins d'images par défaut non
@@ -20,8 +20,10 @@ const markerIcon = L.divIcon({
   popupAnchor: [0, -36],
 });
 
-const TOGO_CENTER = [8.6195, 0.8248];
-const TOGO_ZOOM = 7;
+// Centre par défaut : Cotonou (siège Zener Bénin), avant que fitBounds ne
+// recadre sur les marqueurs réels une fois chargés.
+const DEFAULT_CENTER = [6.3677, 2.4253];
+const DEFAULT_ZOOM = 12;
 
 function openDirections(destLat, destLng, originLat, originLng) {
   const origin = originLat != null ? `${originLat},${originLng}/` : '';
@@ -41,7 +43,7 @@ function goToStation(lat, lng) {
   );
 }
 
-function TogoStationsMap({ stations }) {
+function StationsMap({ stations }) {
   const { t, i18n } = useTranslation();
   const containerRef = useRef(null);
   const mapRef = useRef(null);
@@ -54,7 +56,7 @@ function TogoStationsMap({ stations }) {
     const map = L.map(containerRef.current, {
       scrollWheelZoom: false,
       tap: true,
-    }).setView(TOGO_CENTER, TOGO_ZOOM);
+    }).setView(DEFAULT_CENTER, DEFAULT_ZOOM);
     mapRef.current = map;
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -112,7 +114,7 @@ function TogoStationsMap({ stations }) {
     });
 
     if (bounds.length > 0) {
-      map.fitBounds(bounds, { padding: [36, 36], maxZoom: 12 });
+      map.fitBounds(bounds, { padding: [36, 36], maxZoom: 13 });
     }
 
     const onPopupOpen = (e) => {
@@ -136,4 +138,4 @@ function TogoStationsMap({ stations }) {
   );
 }
 
-export default TogoStationsMap;
+export default StationsMap;

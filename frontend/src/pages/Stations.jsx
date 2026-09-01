@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import StationCard from '../components/StationCard.jsx';
-import TogoStationsMap from '../components/TogoStationsMap.jsx';
+import StationsMap from '../components/StationsMap.jsx';
 import { stations } from '../data/stations.js';
 import './Stations.css';
 
@@ -32,7 +32,7 @@ function Stations() {
           </div>
 
           <div className="map-wrapper">
-            <TogoStationsMap stations={stations} />
+            <StationsMap stations={stations} />
           </div>
         </div>
       </section>

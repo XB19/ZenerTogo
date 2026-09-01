@@ -1,14 +1,14 @@
 {
   "hero": {
     "badge": "ABOUT ZENER",
-    "title": "Powering Togo's development",
-    "description": "An African energy group present in Togo, Benin and Guinea-Bissau."
+    "title": "Powering Benin's development",
+    "description": "An African energy group present in Benin, Togo and Guinea-Bissau."
   },
   "company": {
     "subtitle": "Zener in a few words",
-    "title": "Energy expertise rooted in Togo, with a regional ambition",
-    "p1": "ZENER is a leading player in Togo's energy sector, present across the entire value chain: fuel, gas, lubricants, mobility and energy solutions for individuals, businesses and institutions. Over the years, the Group has built up infrastructure, a distribution network and strong brands to serve these needs.",
-    "p2": "Building on its long-standing presence in Togo, ZENER pursues regional growth with operations in Benin and Guinea-Bissau, driven by strong operational expertise, closeness to markets and innovation — making energy more accessible and closer to everyday uses.",
+    "title": "Energy expertise rooted in Benin, with a regional ambition",
+    "p1": "ZENER is a leading player in Benin's energy sector, present across the entire value chain: fuel, gas, lubricants, mobility and energy solutions for individuals, businesses and institutions. Over the years, the Group has built up infrastructure, a distribution network and strong brands to serve these needs.",
+    "p2": "Building on its presence in Benin, ZENER pursues regional growth with operations in Togo and Guinea-Bissau, driven by strong operational expertise, closeness to markets and innovation — making energy more accessible and closer to everyday uses.",
     "badge": "years of energy expertise",
     "list": {
       "quality": "Certified quality",
@@ -38,7 +38,7 @@
   "presence": {
     "eyebrow": "Geographic presence",
     "title": "Geographic presence",
-    "p1": "ZENER operates in Togo, Benin and Guinea-Bissau, with teams and activities closely attuned to the realities of each market.",
+    "p1": "ZENER operates in Benin, Togo and Guinea-Bissau, with teams and activities closely attuned to the realities of each market.",
     "p2": "Building on its strong footing in West Africa, ZENER continues its regional expansion with the ambition of strengthening its presence and progressively deploying its expertise in new markets.",
     "cta": "See all our stations"
   },
@@ -142,7 +142,7 @@
   },
   "cta": {
     "title": "Let's build tomorrow's energy together",
-    "text": "We support your energy needs everywhere in Togo.",
+    "text": "We support your energy needs everywhere in Benin.",
     "button": "Contact us"
   }
 }

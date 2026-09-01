@@ -1,24 +1,24 @@
 {
   "hero": {
-    "badge": "ZENER NETWORK",
-    "title": "Find our stations across Togo",
-    "text": "Browse ZENER stations, find the one closest to you and get directions in a single click."
+    "badge": "ZENER BENIN",
+    "title": "Find us in Benin",
+    "text": "Check our contact details, find our head office and get directions in a single click."
   },
   "map": {
-    "title": "Interactive station map",
-    "text": "Click on a station to view its details and get directions.",
+    "title": "Map",
+    "text": "Click to view our details and get directions.",
     "popupCta": "Get directions",
-    "ariaLabel": "Map of ZENER stations in Togo"
+    "ariaLabel": "Map of Zener Benin"
   },
   "list": {
-    "title": "Our main stations"
+    "title": "Our head office"
   },
   "card": {
     "call": "Call this station"
   },
   "cta": {
-    "title": "Always a station near you",
-    "text": "ZENER continues to grow its network, bringing its services closer to individuals and businesses across the entire country.",
+    "title": "Zener Benin is growing",
+    "text": "ZENER continues to grow its network in Benin, bringing its services closer to individuals and businesses across the country.",
     "button": "Contact us"
   },
   "detail": {

@@ -34,14 +34,14 @@ export const faqs = [
   {
     id: 3,
     category: 'stations',
-    question: { fr: 'Où puis-je trouver la station ZENER la plus proche ?', en: 'Where can I find the nearest ZENER station?' },
+    question: { fr: 'Où puis-je trouver ZENER Bénin ?', en: 'Where can I find Zener Benin?' },
     answer: {
       fr:
-        'La page Stations propose une carte interactive de toutes nos stations-services sur le territoire ' +
-        "togolais, avec la possibilité d'obtenir votre itinéraire en un clic.",
+        'La page Stations indique notre siège à Cotonou, avec la possibilité d\'obtenir votre itinéraire ' +
+        "en un clic. Notre réseau au Bénin est en développement.",
       en:
-        'The Stations page offers an interactive map of all our service stations across Togo, with the ' +
-        'option to get directions in one click.',
+        'The Stations page shows our head office in Cotonou, with the option to get directions in one ' +
+        'click. Our network in Benin is growing.',
     },
   },
   {

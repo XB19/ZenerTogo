@@ -15,7 +15,7 @@
     "contactTitle": "Vos coordonnées",
     "fields": {
       "name": { "label": "Nom complet", "placeholder": "Votre nom et prénom" },
-      "phone": { "label": "Téléphone", "placeholder": "+228 XX XX XX XX" },
+      "phone": { "label": "Téléphone", "placeholder": "+229 XX XX XX XX" },
       "email": { "label": "Email", "placeholder": "vous@exemple.com" }
     },
     "deliveryTitle": "Mode de récupération",

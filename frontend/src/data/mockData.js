@@ -16,7 +16,7 @@ export const offres = [
   {
     id: 1,
     titre: { fr: 'Responsable Commercial', en: 'Sales Manager' },
-    ville: 'Lomé',
+    ville: 'Cotonou',
     type_contrat: { fr: 'CDI', en: 'Permanent contract' },
     departement: { fr: 'Direction Commerciale', en: 'Sales Department' },
     date_limite: '2026-09-30',
@@ -59,7 +59,7 @@ export const offres = [
   {
     id: 2,
     titre: { fr: 'Technicien Maintenance Stations', en: 'Station Maintenance Technician' },
-    ville: 'Kara',
+    ville: 'Cotonou',
     type_contrat: { fr: 'CDD', en: 'Fixed-term contract' },
     departement: { fr: 'Exploitation', en: 'Operations' },
     date_limite: '2026-08-15',
@@ -97,7 +97,7 @@ export const offres = [
   {
     id: 3,
     titre: { fr: 'Chargé(e) de Clientèle ZenCard', en: 'ZenCard Customer Advisor' },
-    ville: 'Lomé',
+    ville: 'Cotonou',
     type_contrat: { fr: 'Stage', en: 'Internship' },
     departement: { fr: 'Relation Client', en: 'Customer Relations' },
     date_limite: null,
@@ -141,14 +141,14 @@ export const actualites = [
     image: '/images/station-banner.png',
     contenu: {
       fr:
-        "ZENER poursuit l'extension de son réseau national avec l'ouverture de nouvelles " +
+        "ZENER Bénin poursuit l'extension de son réseau avec l'ouverture de nouvelles " +
         "stations-services, renforçant ainsi sa proximité avec les particuliers et les " +
-        "entreprises sur l'ensemble du territoire togolais. Cette nouvelle phase " +
+        "entreprises sur l'ensemble du territoire béninois. Cette nouvelle phase " +
         "d'investissement s'inscrit dans la stratégie de développement durable du groupe.",
       en:
-        "ZENER continues to expand its national network with the opening of new service " +
+        "ZENER Bénin continues to expand its network with the opening of new service " +
         "stations, strengthening its proximity to individuals and businesses across " +
-        "Togo. This new investment phase is part of the group's sustainable development " +
+        "Benin. This new investment phase is part of the group's sustainable development " +
         "strategy.",
     },
   },
@@ -160,11 +160,11 @@ export const actualites = [
     image: '/images/qualite2.jpg',
     contenu: {
       fr:
-        "Tous les jours, nous apportons de l'énergie au Togo et nous nous engageons à le " +
+        "Tous les jours, nous apportons de l'énergie au Bénin et nous nous engageons à le " +
         "faire dans le respect le plus strict des normes de qualité, d'hygiène, de sécurité " +
         "et d'environnement. Notre politique QHSE guide chacune de nos actions.",
       en:
-        "Every day, we bring energy to Togo, and we are committed to doing so in strict " +
+        "Every day, we bring energy to Benin, and we are committed to doing so in strict " +
         "compliance with quality, health, safety and environmental standards. Our QHSE " +
         "policy guides every one of our actions.",
     },
@@ -178,32 +178,31 @@ export const actualites = [
     contenu: {
       fr:
         "La carte ZenCard poursuit son succès auprès des particuliers et des entreprises " +
-        "togolaises, simplifiant chaque jour un peu plus la gestion des dépenses carburant " +
+        "béninoises, simplifiant chaque jour un peu plus la gestion des dépenses carburant " +
         "grâce à un paiement rapide et sécurisé dans tout le réseau ZENER.",
       en:
         "The ZenCard keeps growing in popularity among individuals and businesses in " +
-        "Togo, making fuel expense management simpler every day thanks to fast, secure " +
+        "Benin, making fuel expense management simpler every day thanks to fast, secure " +
         "payment across the entire ZENER network.",
     },
   },
 ];
 
-// NOTE: id 4 (Evalu 50kg) utilise en attendant la photo de la bouteille bleue
-// 12.5kg, faute d'une vraie photo Evalu 50kg fournie par le client — à remplacer.
+// Gamme Enora.bj (Zener Bénin) — mêmes 5 formats que sur la plaquette
+// produit du client (3 / 6 / 12,5 / 25 / 50 kg). Seules 2 vraies photos
+// de bouteilles Enora (vertes) sont disponibles ; elles sont réutilisées
+// pour les 5 tailles en attendant les vraies photos enora.bj (jaunes) du
+// client — volontairement PAS les anciennes photos bleues "Sodigaz", qui
+// affichent un autre nom de marque écrit sur la bouteille. Prix du 3kg
+// estimé par extrapolation (pas de référence client) — à confirmer ; les
+// autres formats reprennent des prix déjà communiqués par le client pour
+// ce gabarit de bouteille.
 export const boutiqueProducts = [
-  { id: 1, name: 'Bouteille Multi Usage (25kg)', price: '67 250 FCFA', image: '/images/gaz/gaz.jpeg', category: 'gas' },
-  { id: 2, name: 'Enora de 12.5Kg', price: '34 875 FCFA', image: '/images/gaz/enora-gaz-consigne-125kg.jpg', category: 'gas' },
-  { id: 3, name: 'Enora de 6Kg', price: '19 750 FCFA', image: '/images/gaz/enora-6kg.jpg', category: 'gas' },
-  {
-    id: 4,
-    name: 'Evalu (50kg)',
-    price: '104 500 FCFA',
-    oldPrice: '105 200 FCFA',
-    discount: '-1%',
-    image: '/images/gaz/sodigaz-12-kg-consigne.jpg',
-    category: 'gas',
-  },
-  { id: 5, name: 'La petite butane (Sikavi 6kg)', price: '19 740 FCFA', image: '/images/gaz/sodigaz-recharge-b6.jpg', category: 'gas' },
+  { id: 1, name: 'Enora 3Kg', price: '9 900 FCFA', image: '/images/gaz/enora-6kg.jpg', category: 'gas' },
+  { id: 2, name: 'Enora 6Kg', price: '19 750 FCFA', image: '/images/gaz/enora-6kg.jpg', category: 'gas' },
+  { id: 3, name: 'Enora 12,5Kg', price: '34 875 FCFA', image: '/images/gaz/enora-gaz-consigne-125kg.jpg', category: 'gas' },
+  { id: 4, name: 'Enora 25Kg', price: '67 250 FCFA', image: '/images/gaz/enora-gaz-consigne-125kg.jpg', category: 'gas' },
+  { id: 5, name: 'Enora 50Kg', price: '104 500 FCFA', image: '/images/gaz/enora-gaz-consigne-125kg.jpg', category: 'gas' },
 ];
 
 export const testimonials = [

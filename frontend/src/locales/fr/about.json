@@ -2,13 +2,13 @@
   "hero": {
     "badge": "À PROPOS DE ZENER",
     "title": "L'énergie au service du développement",
-    "description": "Groupe énergétique africain présent au Togo, au Bénin et en Guinée-Bissau."
+    "description": "Groupe énergétique africain présent au Bénin, au Togo et en Guinée-Bissau."
   },
   "company": {
     "subtitle": "Zener en quelques mots",
-    "title": "Une expertise énergétique ancrée au Togo, une ambition régionale",
-    "p1": "ZENER est un acteur majeur du secteur de l'énergie au Togo, présent sur l'ensemble de la chaîne de valeur : carburants, gaz, lubrifiants, mobilité et solutions énergétiques pour les particuliers, les entreprises et les institutions. Au fil des années, le Groupe a développé des infrastructures, un réseau de distribution et des marques fortes au service de ces usages.",
-    "p2": "Fort de son ancrage historique au Togo, ZENER poursuit une dynamique de développement régional avec une présence au Bénin et en Guinée-Bissau, portée par la maîtrise de ses métiers, la proximité avec ses marchés et l'innovation — au service d'une énergie plus accessible et plus proche des usages.",
+    "title": "Une expertise énergétique ancrée au Bénin, une ambition régionale",
+    "p1": "ZENER est un acteur majeur du secteur de l'énergie au Bénin, présent sur l'ensemble de la chaîne de valeur : carburants, gaz, lubrifiants, mobilité et solutions énergétiques pour les particuliers, les entreprises et les institutions. Au fil des années, le Groupe a développé des infrastructures, un réseau de distribution et des marques fortes au service de ces usages.",
+    "p2": "Fort de son ancrage au Bénin, ZENER poursuit une dynamique de développement régional avec une présence au Togo et en Guinée-Bissau, portée par la maîtrise de ses métiers, la proximité avec ses marchés et l'innovation — au service d'une énergie plus accessible et plus proche des usages.",
     "badge": "ans d'expertise énergétique",
     "list": {
       "quality": "Qualité certifiée",
@@ -38,7 +38,7 @@
   "presence": {
     "eyebrow": "Présence géographique",
     "title": "Présence géographique",
-    "p1": "ZENER est présent au Togo, au Bénin et en Guinée-Bissau, avec des activités et des équipes au plus près des réalités de chaque marché.",
+    "p1": "ZENER est présent au Bénin, au Togo et en Guinée-Bissau, avec des activités et des équipes au plus près des réalités de chaque marché.",
     "p2": "Fort de cet ancrage en Afrique de l'Ouest, ZENER poursuit son développement régional avec l'ambition de renforcer sa présence et de déployer progressivement ses expertises sur de nouveaux marchés.",
     "cta": "Voir toutes nos stations"
   },
@@ -142,7 +142,7 @@
   },
   "cta": {
     "title": "Construisons l'énergie de demain ensemble",
-    "text": "Nous accompagnons vos besoins énergétiques partout au Togo.",
+    "text": "Nous accompagnons vos besoins énergétiques partout au Bénin.",
     "button": "Nous contacter"
   }
 }

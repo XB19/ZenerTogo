@@ -11,16 +11,16 @@
     },
     "address": {
       "title": "Adresse",
-      "line1": "Lomé, Togo",
-      "line2": "Siège social ZENER"
+      "line1": "Carré 426, Quartier Gbenan, Cotonou, Bénin",
+      "line2": "7ème arrondissement, en face de l'Église Évangélique Source de Vie"
     },
     "phone": {
       "title": "Téléphone",
-      "value": "+228 XX XX XX XX"
+      "value": "01 92 35 00 00"
     },
     "email": {
       "title": "Email",
-      "value": "contact@zener.tg"
+      "value": "Salomon.agbogan@zener.bj"
     },
     "hours": {
       "title": "Horaires",
@@ -40,7 +40,7 @@
     "fields": {
       "name": { "label": "Nom complet *", "placeholder": "Votre nom complet" },
       "email": { "label": "Adresse email *", "placeholder": "exemple@email.com" },
-      "phone": { "label": "Téléphone", "placeholder": "+228 XX XX XX XX" },
+      "phone": { "label": "Téléphone", "placeholder": "+229 XX XX XX XX" },
       "subject": { "label": "Sujet *", "placeholder": "Objet de votre demande" },
       "message": { "label": "Votre message *", "placeholder": "Décrivez votre demande..." }
     },
