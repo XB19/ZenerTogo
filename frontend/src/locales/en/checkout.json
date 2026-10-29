@@ -15,7 +15,7 @@
     "contactTitle": "Your details",
     "fields": {
       "name": { "label": "Full name", "placeholder": "Your first and last name" },
-      "phone": { "label": "Phone", "placeholder": "+229 XX XX XX XX" },
+      "phone": { "label": "Phone", "placeholder": "+228 XX XX XX XX" },
       "email": { "label": "Email", "placeholder": "you@example.com" }
     },
     "deliveryTitle": "Pickup method",

@@ -1,12 +1,20 @@
 import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { boutiqueProducts } from '../data/mockData.js';
 import './Contact.css';
 
 const initialForm = { nom: '', email: '', telephone: '', sujet: '', message: '' };
 
 function Contact() {
   const { t } = useTranslation();
-  const [form, setForm] = useState(initialForm);
+  const [searchParams] = useSearchParams();
+  const requestedProduct = boutiqueProducts.find((p) => p.slug === searchParams.get('produit'));
+  const [form, setForm] = useState(() =>
+    requestedProduct
+      ? { ...initialForm, sujet: t('boutique.detail.requestSubject', { name: requestedProduct.name }) }
+      : initialForm
+  );
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
@@ -187,7 +195,15 @@ function Contact() {
           <section className="map-section">
             <div className="container">
               <h2>{t('contact.map.title')}</h2>
-              <div className="map-box">{t('contact.map.placeholder')}</div>
+              <div className="map-box">
+                <iframe
+                  title={t('contact.map.title')}
+                  src="https://www.google.com/maps?q=Zone+industrielle+de+Lom%C3%A9,+route+d%27An%C3%A9ho,+Lom%C3%A9,+Togo&output=embed"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </section>
         </div>

@@ -37,9 +37,9 @@
     bottom:148px;
     z-index:999;
 
-    width:340px;
+    width:370px;
     max-width:calc(100vw - 32px);
-    max-height:480px;
+    height:min(560px, calc(100vh - 190px));
 
     display:flex;
     flex-direction:column;
@@ -81,8 +81,25 @@
     gap:10px;
 }
 
+.chat-message{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    animation:chatIn .3s ease both;
+}
+
+.chat-message-bot{ align-items:flex-start; }
+.chat-message-user{ align-items:flex-end; }
+
+@keyframes chatIn{
+    from{ opacity:0; transform:translateY(8px); }
+    to{ opacity:1; transform:none; }
+}
+
 .chat-bubble{
-    max-width:85%;
+    white-space:pre-line;
+    overflow-wrap:anywhere;
+    max-width:88%;
     padding:10px 14px;
     border-radius:14px;
     line-height:1.5;
@@ -135,7 +152,8 @@
 }
 
 .chat-input-row input{
-    flex-grow:1;
+    flex:1 1 auto;
+    min-width:0;
     border:1px solid #ddd;
     border-radius:20px;
     padding:10px 16px;
@@ -177,5 +195,67 @@
         left:16px;
         width:auto;
         bottom:132px;
+    }
+}
+
+.chat-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    max-width:92%;
+}
+
+.chat-links a{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:7px 12px;
+    border:1px solid #cfe0f2;
+    border-radius:20px;
+    background:#fff;
+    color:#1b60ad;
+    font-size:12.5px;
+    font-weight:600;
+    text-decoration:none;
+    transition:background .2s, color .2s, border-color .2s;
+}
+
+.chat-links a i{
+    font-size:10px;
+}
+
+.chat-links a:hover{
+    background:#1b60ad;
+    border-color:#1b60ad;
+    color:#fff;
+}
+
+.chat-typing{
+    display:flex;
+    gap:4px;
+    align-items:center;
+    padding:14px 16px;
+}
+
+.chat-typing span{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#8aa4c2;
+    animation:chatDot 1.1s infinite ease-in-out;
+}
+
+.chat-typing span:nth-child(2){ animation-delay:.15s; }
+.chat-typing span:nth-child(3){ animation-delay:.3s; }
+
+@keyframes chatDot{
+    0%, 80%, 100%{ transform:translateY(0); opacity:.5; }
+    40%{ transform:translateY(-5px); opacity:1; }
+}
+
+@media (prefers-reduced-motion: reduce){
+    .chat-message,
+    .chat-typing span{
+        animation:none;
     }
 }

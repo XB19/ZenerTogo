@@ -28,10 +28,11 @@ function NewsDetail() {
   const titre = pickLang(actualite.titre, lang);
   const categorie = pickLang(actualite.categorie, lang);
   const contenu = pickLang(actualite.contenu, lang);
+  const plainText = contenu.replace(/^## /gm, '');
 
   const pageUrl = `${window.location.origin}/news/${actualite.id}`;
   const image = actualite.image || FALLBACK_IMAGE;
-  const excerpt = contenu.slice(0, 160);
+  const excerpt = plainText.slice(0, 160);
 
   return (
     <div className="page-newsdetail news-container">
@@ -83,10 +84,18 @@ function NewsDetail() {
       </div>
 
       <div className="news-body">
-        {contenu.split('\n').map((line, i) => (
-          <p key={i}>{line}</p>
-        ))}
+        {contenu.split('\n').map((line, i) =>
+          line.startsWith('## ') ? <h2 key={i}>{line.slice(3)}</h2> : <p key={i}>{line}</p>
+        )}
       </div>
+
+      {actualite.gallery?.length > 0 && (
+        <div className="news-gallery">
+          {actualite.gallery.map((src) => (
+            <img key={src} src={src} alt={titre} loading="lazy" />
+          ))}
+        </div>
+      )}
 
       <div className="back-area">
         <Link to="/actualites" className="back-btn">

@@ -20,10 +20,10 @@ const markerIcon = L.divIcon({
   popupAnchor: [0, -36],
 });
 
-// Centre par défaut : Cotonou (siège Zener Bénin), avant que fitBounds ne
+// Centre par défaut : le Togo (réseau Oasis), avant que fitBounds ne
 // recadre sur les marqueurs réels une fois chargés.
-const DEFAULT_CENTER = [6.3677, 2.4253];
-const DEFAULT_ZOOM = 12;
+const DEFAULT_CENTER = [8.6195, 0.8248];
+const DEFAULT_ZOOM = 7;
 
 function openDirections(destLat, destLng, originLat, originLng) {
   const origin = originLat != null ? `${originLat},${originLng}/` : '';

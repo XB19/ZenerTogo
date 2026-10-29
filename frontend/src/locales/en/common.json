@@ -16,7 +16,7 @@
     "openMenu": "Open menu"
   },
   "footer": {
-    "tagline": "We bring you energy",
+    "tagline": "Energy at the heart of everyday uses",
     "quickLinks": "Quick Links",
     "ourServices": "Our Services",
     "fuels": "Fuels",
@@ -33,7 +33,7 @@
     "socialNetworks": "Social Media",
     "qhse": "QHSE Policy",
     "rse": "CSR Policy",
-    "locations": "Cotonou",
+    "locations": "Ramatou - Agoè - Nyékonapoè - Aného - Kpalimé - Kara - Telessou - Tsévié - Doumassesse - Blita - Atakpamé",
     "joinUs": "Follow us",
     "privacyPolicy": "Privacy Policy",
     "copyright": "COPYRIGHT © ZENER 2026"
@@ -55,7 +55,8 @@
     "welcome": "Hi 👋 How can we help you today?",
     "placeholder": "Type your message...",
     "inputLabel": "Your message",
-    "send": "Send"
+    "send": "Send",
+    "typing": "The assistant is typing…"
   },
   "shareButtons": {
     "label": "Share:",

@@ -7,7 +7,7 @@ export function getSearchIndex(lang) {
       type: 'news',
       id: `actualite-${a.id}`,
       title: pickLang(a.titre, lang),
-      text: pickLang(a.contenu, lang),
+      text: pickLang(a.contenu, lang).replace(/^## /gm, ''),
       url: `/news/${a.id}`,
     })),
     ...boutiqueProducts.map((p) => ({
@@ -15,7 +15,7 @@ export function getSearchIndex(lang) {
       id: `produit-${p.id}`,
       title: p.name,
       text: p.price,
-      url: '/boutique',
+      url: `/produits/${p.slug}`,
     })),
   ];
 }

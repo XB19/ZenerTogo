@@ -28,9 +28,9 @@ function About() {
   ];
 
   const aboutStats = [
-    { target: 25, label: t('about.stats.stations') },
-    { target: 15, label: t('about.stats.partners') },
-    { target: 5000000, label: t('about.stats.clients') },
+    { target: 11, label: t('about.stats.stations') },
+    { target: 600, label: t('about.stats.partners') },
+    { target: 3, label: t('about.stats.clients') },
     { target: 15, label: t('about.stats.experience') },
   ];
 
@@ -38,16 +38,22 @@ function About() {
     { icon: 'fa-credit-card', title: t('about.digital.cards.zencard.title'), text: t('about.digital.cards.zencard.text') },
     { icon: 'fa-users', title: t('about.digital.cards.zenfamili.title'), text: t('about.digital.cards.zenfamili.text') },
     { icon: 'fa-shield-halved', title: t('about.digital.cards.security.title'), text: t('about.digital.cards.security.text') },
-    { icon: 'fa-route', title: t('about.digital.cards.zenmobility.title'), text: t('about.digital.cards.zenmobility.text') },
+    { icon: 'fa-headset', title: t('about.digital.cards.zenmobility.title'), text: t('about.digital.cards.zenmobility.text') },
   ];
 
   useEffect(() => {
     if (!window.Swiper || !metiersSwiperRef.current) return undefined;
 
     const swiper = new window.Swiper(metiersSwiperRef.current, {
-      slidesPerView: 'auto',
-      spaceBetween: 16,
-      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      rewind: true,
+      speed: 700,
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        960: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 },
+      },
       keyboard: { enabled: true },
       navigation: {
         nextEl: '.metiers-next',
@@ -89,7 +95,7 @@ function About() {
         <div className="container">
           <div className="about-grid">
             <div className="about-image">
-              <img src="/images/about-company.png" alt="" loading="lazy" />
+              <img src="/images/zenertg/groupe.jpg" alt="" loading="lazy" />
 
               <div className="about-image-badge">
                 <span className="about-image-badge-number">15+</span>
@@ -154,7 +160,7 @@ function About() {
         <div className="container">
           <div className="about-grid reverse">
             <div className="about-image">
-              <img src="/images/qualite2.jpg" alt="" loading="lazy" />
+              <img src="/images/zenertg/comite-executif-2.jpg" alt="" loading="lazy" />
             </div>
 
             <div className="about-text">
@@ -172,7 +178,7 @@ function About() {
         <div className="container">
           <div className="about-grid">
             <div className="about-image">
-              <img src="/images/station-banner.png" alt="" loading="lazy" />
+              <img src="/images/zenertg/equipe.jpeg" alt="" loading="lazy" />
             </div>
 
             <div className="about-text">

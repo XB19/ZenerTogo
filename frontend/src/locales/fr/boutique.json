@@ -1,22 +1,93 @@
 {
+  "breadcrumb": {
+    "home": "Accueil",
+    "catalog": "Catalogue",
+    "products": "Produits"
+  },
   "hero": {
-    "badge": "BOUTIQUE ZENER",
-    "title": "Découvrez notre espace boutique",
-    "description": "Retrouvez une sélection de produits, équipements et accessoires proposés par ZENER."
+    "badge": "CATALOGUE ZENER",
+    "title": "Produits et offres",
+    "description": "Découvrez nos solutions énergétiques et trouvez le format adapté à vos usages domestiques ou professionnels."
   },
-  "categories": {
-    "all": "Tout",
-    "fuel": "Carburant",
-    "gas": "Gaz",
-    "lubricant": "Lubrifiant",
-    "uncategorized": "Non classé"
+  "search": {
+    "eyebrow": "Recherche ciblée",
+    "title": "Quel produit recherchez-vous ?",
+    "viewCart": "Voir mon panier",
+    "query": "Produit ou référence",
+    "queryPlaceholder": "Ex. bouteille 6 kg",
+    "submit": "Afficher les résultats",
+    "reset": "Réinitialiser"
   },
-  "products": {
-    "filterAriaLabel": "Filtrer par catégorie",
-    "error": "Une erreur est survenue lors du chargement des produits.",
-    "retry": "Réessayer",
-    "empty": "Aucun produit disponible pour le moment.",
-    "emptyCategory": "Aucun produit dans cette catégorie pour le moment."
+  "filters": {
+    "type": "Type",
+    "allTypes": "Tous les types",
+    "marque": "Marque",
+    "allBrands": "Toutes les marques",
+    "metier": "Métier",
+    "allMetiers": "Tous les métiers",
+    "public": "Public",
+    "allPublics": "Tous les publics"
+  },
+  "options": {
+    "type": {
+      "carburants": "Carburants",
+      "gaz": "Gaz",
+      "lubrifiants": "Lubrifiants",
+      "produits-automobiles": "Produits automobiles",
+      "energie": "Énergie",
+      "equipements": "Équipements",
+      "offres-professionnelles": "Offres professionnelles",
+      "autres": "Autres"
+    },
+    "marque": {
+      "oasis": "Oasis",
+      "sodigaz": "Sodigaz",
+      "enora": "Enora",
+      "zencard": "ZenCard"
+    },
+    "metier": {
+      "distribution-de-carburants": "Distribution de carburants",
+      "gaz-energie": "Gaz / énergie",
+      "mobilite-services": "Mobilité & services",
+      "lubrifiants": "Lubrifiants",
+      "solutions-b2b": "Solutions B2B"
+    },
+    "public": {
+      "particuliers": "Particuliers",
+      "entreprises-pme": "Entreprises / PME",
+      "industriels": "Industriels",
+      "horeca": "HORECA",
+      "transport-flotte": "Transport / flotte",
+      "institutions-partenaires": "Institutions / partenaires"
+    }
+  },
+  "results": {
+    "eyebrow": "Notre sélection",
+    "countOne": "{{count}} produit",
+    "countMany": "{{count}} produits",
+    "range": "Affichage de 1 à {{count}}",
+    "empty": "Aucun produit publié pour le moment."
+  },
+  "card": {
+    "view": "Voir le produit",
+    "noImage": "Visuel bientôt disponible"
+  },
+  "detail": {
+    "notFoundTitle": "Produit introuvable",
+    "notFoundText": "Ce produit n'existe pas ou n'est plus disponible.",
+    "backToCatalog": "Retour au catalogue",
+    "requestInfo": "Demander une information",
+    "addToCart": "Ajouter au panier",
+    "added": "Ajouté au panier",
+    "viewCart": "Voir mon panier",
+    "advisor": "Parler à un conseiller",
+    "aboutEyebrow": "À propos du produit",
+    "descriptionTitle": "Description",
+    "requestSubject": "Demande d'information : {{name}}"
+  },
+  "home": {
+    "eyebrow": "Notre offre",
+    "viewAll": "Voir tous nos produits"
   },
   "cta": {
     "title": "Besoin d'informations ?",

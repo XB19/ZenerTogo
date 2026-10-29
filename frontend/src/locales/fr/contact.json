@@ -1,48 +1,63 @@
 {
   "hero": {
     "badge": "CONTACTEZ-NOUS",
-    "title": "Parlons de vos besoins énergétiques",
-    "description": "Notre équipe est à votre écoute pour répondre à toutes vos questions et vous accompagner dans vos projets."
+    "title": "Nous contacter",
+    "description": "Une présence au Togo, au Bénin et en Guinée-Bissau. Parlons de vos projets énergétiques, de mobilité ou de partenariats."
   },
   "info": {
     "header": {
-      "title": "Nos coordonnées",
-      "text": "Retrouvez toutes les informations utiles pour joindre rapidement les équipes ZENER."
+      "title": "Coordonnées",
+      "text": "Bureau — Togo. Pour les projets institutionnels, partenariats techniques ou collaborations stratégiques, écrivez-nous via le formulaire."
     },
     "address": {
       "title": "Adresse",
-      "line1": "Carré 426, Quartier Gbenan, Cotonou, Bénin",
-      "line2": "7ème arrondissement, en face de l'Église Évangélique Source de Vie"
+      "line1": "Zone industrielle de Lomé, route d'Aného",
+      "line2": "08 BP 8535 Lomé, Togo"
     },
     "phone": {
       "title": "Téléphone",
-      "value": "01 92 35 00 00"
+      "value": "+228 22 27 20 00"
     },
     "email": {
       "title": "Email",
-      "value": "Salomon.agbogan@zener.bj"
+      "value": "info@zener.tg"
     },
     "hours": {
       "title": "Horaires",
-      "days": "Lun - Ven",
-      "time": "08h00 à 17h00"
+      "days": "Lun – Ven : 8 h – 16 h 45",
+      "time": "Samedi – Dimanche : Fermé"
     }
   },
   "form": {
     "header": {
-      "title": "Envoyez-nous un message",
-      "text": "Remplissez ce formulaire et notre équipe vous répondra dans les meilleurs délais."
+      "title": "Demande commerciale",
+      "text": "Nous vous répondons dans les meilleurs délais."
     },
     "success": {
       "title": "Message envoyé avec succès",
       "text": "Merci pour votre prise de contact. Notre équipe vous répondra dans les plus brefs délais."
     },
     "fields": {
-      "name": { "label": "Nom complet *", "placeholder": "Votre nom complet" },
-      "email": { "label": "Adresse email *", "placeholder": "exemple@email.com" },
-      "phone": { "label": "Téléphone", "placeholder": "+229 XX XX XX XX" },
-      "subject": { "label": "Sujet *", "placeholder": "Objet de votre demande" },
-      "message": { "label": "Votre message *", "placeholder": "Décrivez votre demande..." }
+      "name": {
+        "label": "Nom complet *",
+        "placeholder": "Votre nom complet"
+      },
+      "email": {
+        "label": "Adresse email *",
+        "placeholder": "exemple@email.com"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "placeholder": "+228 XX XX XX XX"
+      },
+      "subject": {
+        "label": "Sujet *",
+        "placeholder": "Objet de votre demande"
+      },
+      "message": {
+        "label": "Votre message *",
+        "placeholder": "Décrivez votre demande..."
+      }
     },
     "submitCta": "Envoyer le message"
   },

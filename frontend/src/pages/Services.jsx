@@ -9,8 +9,8 @@ function Services() {
   const services = [
     { img: '/images/card1.jpg', title: t('services.grid.cards.fuel.title'), text: t('services.grid.cards.fuel.text') },
     { img: '/images/card2.jpg', title: t('services.grid.cards.gas.title'), text: t('services.grid.cards.gas.text') },
-    { img: '/images/card3.jpg', title: t('services.grid.cards.lubricants.title'), text: t('services.grid.cards.lubricants.text') },
-    { img: '/images/card4.jpg', title: t('services.grid.cards.proximity.title'), text: t('services.grid.cards.proximity.text') },
+    { img: '/images/card4.jpg', title: t('services.grid.cards.lubricants.title'), text: t('services.grid.cards.lubricants.text') },
+    { img: '/images/card3.jpg', title: t('services.grid.cards.proximity.title'), text: t('services.grid.cards.proximity.text') },
     { img: '/images/card5.jpg', title: t('services.grid.cards.environment.title'), text: t('services.grid.cards.environment.text') },
   ];
 

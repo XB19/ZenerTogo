@@ -8,7 +8,7 @@ import { boutiqueProducts, actualites } from '../data/mockData.js';
 import { faqs } from '../data/faq.js';
 import { pickLang } from '../utils/i18nData.js';
 
-const homeFaqIds = [1, 3, 4, 5, 6];
+const homeFaqIds = [3, 9, 6, 1, 5];
 
 function Home() {
   const { t, i18n } = useTranslation();
@@ -50,6 +50,7 @@ function Home() {
       slidesPerView: 3,
       spaceBetween: 30,
       loop: true,
+      speed: 700,
       navigation: {
         nextEl: '.shop-next',
         prevEl: '.shop-prev',
@@ -72,10 +73,16 @@ function Home() {
     if (!window.Swiper || !expertiseSwiperRef.current) return undefined;
 
     const swiper = new window.Swiper(expertiseSwiperRef.current, {
-      slidesPerView: 'auto',
-      spaceBetween: 16,
-      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      rewind: true,
+      speed: 700,
       keyboard: { enabled: true },
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        960: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 },
+      },
       a11y: {
         enabled: true,
         prevSlideMessage: t('home.expertise.prevAria'),
@@ -259,6 +266,7 @@ function Home() {
 
       {/* BOUTIQUE */}
       <section className="shop-section">
+        <p className="shop-eyebrow">{t('boutique.home.eyebrow')}</p>
         <div className="shop-title">{t('home.shop.title')}</div>
 
         <div className="container">
@@ -267,13 +275,17 @@ function Home() {
               <div className="swiper-wrapper">
                 {boutiqueProducts.map((product) => (
                   <div className="swiper-slide" key={product.id}>
-                    <Link to="/boutique" className="shop-product-card">
+                    <Link to={`/produits/${product.slug}`} className="shop-product-card">
                       {product.discount && <span className="product-discount-badge">{product.discount}</span>}
                       <img src={product.image} alt={product.name} loading="lazy" />
+                      <span className="shop-product-brand">{t(`boutique.options.marque.${product.brand}`)}</span>
                       <h4>{product.name}</h4>
                       <span className="product-price-row">
                         {product.oldPrice && <span className="product-old-price">{product.oldPrice}</span>}
                         <span className="product-price">{product.price}</span>
+                      </span>
+                      <span className="shop-product-view">
+                        {t('boutique.card.view')} <span aria-hidden="true">→</span>
                       </span>
                     </Link>
                   </div>
@@ -290,8 +302,8 @@ function Home() {
           </div>
 
           <div className="shop-footer">
-            <Link to="/boutique" className="shop-btn">
-              {t('home.shop.cta')}
+            <Link to="/produits" className="shop-btn">
+              {t('boutique.home.viewAll')} <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
@@ -304,16 +316,21 @@ function Home() {
         <div className="news-wrapper">
           <div className="news-grid">
             {actualites.slice(0, 3).map((item) => (
-              <article className="news-card" key={item.id}>
-                <span>
-                  {t('home.news.badge')} · {new Date(item.created_at).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR')}
-                </span>
-                <h3>{pickLang(item.titre, lang)}</h3>
-                <p>{pickLang(item.contenu, lang)}</p>
-                <Link to={`/news/${item.id}`}>
-                  <i className="fa-solid fa-arrow-right"></i>
-                </Link>
-              </article>
+              <Link to={`/news/${item.id}`} className="news-card" key={item.id}>
+                <div className="news-card-image">
+                  <img src={item.image} alt="" loading="lazy" />
+                </div>
+                <div className="news-card-body">
+                  <span>
+                    {t('home.news.badge')} · {new Date(item.created_at).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR')}
+                  </span>
+                  <h3>{pickLang(item.titre, lang)}</h3>
+                  <p>{pickLang(item.contenu, lang).replace(/^## /gm, '')}</p>
+                  <span className="news-card-arrow">
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
 

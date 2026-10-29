@@ -9,7 +9,7 @@
   },
   "presentation": {
     "badge": "Un groupe énergétique africain en mouvement",
-    "text": "ZENER développe et déploie des solutions énergétiques adaptées aux réalités des marchés africains. À travers ses activités dans les carburants, le gaz, les lubrifiants, la mobilité et les services énergétiques, le Groupe accompagne au quotidien les particuliers, les professionnels, les entreprises et les institutions. Présent au Bénin, au Togo et en Guinée-Bissau, ZENER poursuit son développement régional en s'appuyant sur une connaissance approfondie de ses marchés, des infrastructures dédiées et une culture d'innovation orientée vers les usages."
+    "text": "ZENER développe et déploie des solutions énergétiques adaptées aux réalités des marchés africains. À travers ses activités dans les carburants, le gaz, les lubrifiants, la mobilité et les services énergétiques, le Groupe accompagne au quotidien les particuliers, les professionnels, les entreprises et les institutions. Présent au Togo, au Bénin et en Guinée-Bissau, ZENER poursuit son développement régional en s'appuyant sur une connaissance approfondie de ses marchés, des infrastructures dédiées et une culture d'innovation orientée vers les usages."
   },
   "stats": {
     "countries": "Pays de présence",
@@ -19,52 +19,52 @@
   },
   "expertise": {
     "sectionTitle": "NOS MARQUES ET SOLUTIONS",
-    "subtitle": "Des marques de référence et des solutions innovantes au service de l'énergie et de la mobilité.",
+    "subtitle": "ZENER déploie des métiers complémentaires au service de l'énergie, de la mobilité et des usages associés.",
     "label": "Nos métiers",
     "prevAria": "Métier précédent",
     "nextAria": "Métier suivant",
     "paginationAria": "Navigation du carrousel",
     "cards": {
       "fuel": {
-        "title": "Distribution de carburant",
-        "text": "De l'approvisionnement à la distribution, ZENER déploie son expertise à travers ses infrastructures de stockage et son réseau de stations-service, avec une attention constante portée à la qualité, à la sécurité et à la disponibilité des produits."
+        "title": "Distribution de carburants",
+        "text": "ZENER assure la distribution de carburants à travers un réseau structuré de stations et d'infrastructures répondant aux standards de sécurité et de qualité internationaux."
       },
       "gas": {
-        "title": "Gaz & solutions énergétiques",
-        "text": "De l'usage domestique aux applications industrielles, ZENER déploie son expertise gazière et développe des solutions énergétiques adaptées aux nouveaux enjeux, notamment à travers le Gas-to-Power."
+        "title": "Gaz / énergie",
+        "text": "ZENER développe des solutions de gaz et d'énergie domestique sûres et accessibles, adaptées aux usages des ménages et des activités de proximité."
       },
       "mobility": {
-        "title": "Mobilité & Services",
-        "text": "À travers un écosystème de services digitaux et de solutions de mobilité, ZENER simplifie l'accès à l'énergie, fluidifie les usages et fait évoluer l'expérience client. Ces solutions prolongent nos métiers et ouvrent la voie à de nouveaux usages de l'énergie et de la mobilité."
+        "title": "Mobilité & services",
+        "text": "ZENER conçoit des services de mobilité intégrés pour accompagner les déplacements, les usages professionnels et les nouvelles attentes des usagers."
       },
       "lubricants": {
-        "title": "Lubrifiants et produits spécialisés",
-        "text": "ZENER complète son offre énergétique par une gamme de lubrifiants et d'accessoires, pensée pour conjuguer performance, fiabilité et qualité d'usage."
+        "title": "Lubrifiants",
+        "text": "ZENER propose une gamme de lubrifiants et d'accessoires sélectionnés pour garantir la performance, la durabilité et la protection des équipements."
       },
       "business": {
-        "title": "Solutions pour entreprises et institutions",
-        "text": "ZENER met l'ensemble de ses expertises au service des entreprises et des institutions, à travers des solutions adaptées à leurs enjeux énergétiques, opérationnels et de continuité d'activité."
+        "title": "Solutions B2B",
+        "text": "ZENER accompagne les entreprises et les institutions avec des solutions énergétiques et des services B2B conçus pour répondre à des besoins opérationnels complexes."
       }
     }
   },
   "banner": {
-    "title": "ZENER Bénin, à vos côtés",
-    "text": "Basés à Cotonou, nous garantissons une proximité et une disponibilité permanente de nos produits et services, avec l'ambition de développer notre réseau sur tout le territoire national.",
+    "title": "Oasis, le réseau des stations Zener",
+    "text": "Oasis rassemble les stations ZENER : carburants, services de proximité et un accueil pensé pour les trajets du quotidien comme pour les flottes. Un lieu de détente et de services sur tout le territoire.",
     "cta": "Nous retrouver"
   },
   "engagements": {
-    "sectionTitle": "Nos engagements",
+    "sectionTitle": "Impact & RSE",
     "quality": {
-      "title": "Qualité",
-      "text": "Nous garantissons des produits et services conformes aux normes les plus exigeantes du secteur."
+      "title": "Gouvernance et éthique",
+      "text": "Des standards rigoureux en matière d'éthique, de transparence et de conformité, au service d'une entreprise sûre, dynamique et responsable."
     },
     "security": {
-      "title": "Sécurité",
-      "text": "La protection de nos clients, collaborateurs et infrastructures demeure notre priorité absolue."
+      "title": "Sensibiliser pour davantage de sécurité",
+      "text": "Un programme de sensibilisation à la sécurité dans l'utilisation du GPL et des carburants, pour promouvoir les bonnes pratiques et réduire les risques."
     },
     "responsibility": {
-      "title": "Responsabilité",
-      "text": "Nous favorisons un développement durable à travers des actions responsables et respectueuses de l'environnement."
+      "title": "Préserver l'environnement",
+      "text": "Des solutions et pratiques destinées à limiter les émissions, réduire les déchets et favoriser une transition énergétique durable."
     }
   },
   "shop": {
@@ -80,7 +80,7 @@
     "title": "Ils nous font confiance"
   },
   "faq": {
-    "sectionTitle": "Questions fréquentes",
+    "sectionTitle": "FAQ",
     "cta": "Voir toutes les questions fréquentes"
   }
 }

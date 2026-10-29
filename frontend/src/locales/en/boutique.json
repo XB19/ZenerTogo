@@ -1,22 +1,93 @@
 {
+  "breadcrumb": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "products": "Products"
+  },
   "hero": {
-    "badge": "ZENER SHOP",
-    "title": "Discover our online shop",
-    "description": "Browse a selection of products, equipment and accessories offered by ZENER."
+    "badge": "ZENER CATALOG",
+    "title": "Products and offers",
+    "description": "Discover our energy solutions and find the right format for your household or professional needs."
   },
-  "categories": {
-    "all": "All",
-    "fuel": "Fuel",
-    "gas": "Gas",
-    "lubricant": "Lubricant",
-    "uncategorized": "Uncategorized"
+  "search": {
+    "eyebrow": "Targeted search",
+    "title": "What product are you looking for?",
+    "viewCart": "View my cart",
+    "query": "Product or reference",
+    "queryPlaceholder": "E.g. 6 kg cylinder",
+    "submit": "Show results",
+    "reset": "Reset"
   },
-  "products": {
-    "filterAriaLabel": "Filter by category",
-    "error": "An error occurred while loading products.",
-    "retry": "Try again",
-    "empty": "No products available at the moment.",
-    "emptyCategory": "No products in this category at the moment."
+  "filters": {
+    "type": "Type",
+    "allTypes": "All types",
+    "marque": "Brand",
+    "allBrands": "All brands",
+    "metier": "Business",
+    "allMetiers": "All businesses",
+    "public": "Audience",
+    "allPublics": "All audiences"
+  },
+  "options": {
+    "type": {
+      "carburants": "Fuels",
+      "gaz": "Gas",
+      "lubrifiants": "Lubricants",
+      "produits-automobiles": "Automotive products",
+      "energie": "Energy",
+      "equipements": "Equipment",
+      "offres-professionnelles": "Professional offers",
+      "autres": "Other"
+    },
+    "marque": {
+      "oasis": "Oasis",
+      "sodigaz": "Sodigaz",
+      "enora": "Enora",
+      "zencard": "ZenCard"
+    },
+    "metier": {
+      "distribution-de-carburants": "Fuel distribution",
+      "gaz-energie": "Gas / energy",
+      "mobilite-services": "Mobility & services",
+      "lubrifiants": "Lubricants",
+      "solutions-b2b": "B2B solutions"
+    },
+    "public": {
+      "particuliers": "Individuals",
+      "entreprises-pme": "Businesses / SMEs",
+      "industriels": "Industrial companies",
+      "horeca": "HORECA",
+      "transport-flotte": "Transport / fleet",
+      "institutions-partenaires": "Institutions / partners"
+    }
+  },
+  "results": {
+    "eyebrow": "Our selection",
+    "countOne": "{{count}} product",
+    "countMany": "{{count}} products",
+    "range": "Showing 1 to {{count}}",
+    "empty": "No products published at the moment."
+  },
+  "card": {
+    "view": "View product",
+    "noImage": "Image coming soon"
+  },
+  "detail": {
+    "notFoundTitle": "Product not found",
+    "notFoundText": "This product does not exist or is no longer available.",
+    "backToCatalog": "Back to the catalog",
+    "requestInfo": "Request information",
+    "addToCart": "Add to cart",
+    "added": "Added to cart",
+    "viewCart": "View my cart",
+    "advisor": "Talk to an advisor",
+    "aboutEyebrow": "About the product",
+    "descriptionTitle": "Description",
+    "requestSubject": "Information request: {{name}}"
+  },
+  "home": {
+    "eyebrow": "Our offer",
+    "viewAll": "View all our products"
   },
   "cta": {
     "title": "Need more information?",

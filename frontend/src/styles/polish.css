@@ -1,0 +1,1214 @@
+/* ======================================================
+   FINITIONS DE MISE EN PAGE & ANIMATIONS
+   Chargé après les CSS de page (voir App.jsx) : corrige
+   débordements et alignements, ajoute du mouvement, sans
+   toucher à la charte (bleu #2f7ecb, vert #9BC53D, Poppins).
+====================================================== */
+
+.client-app{
+    --zn-blue:#2f7ecb;
+    --zn-blue-dark:#1b60ad;
+    --zn-green:#9BC53D;
+    --zn-ease:cubic-bezier(.22,.61,.36,1);
+}
+
+.client-app img{
+    max-width:100%;
+}
+
+/* ======================================
+   EN-TÊTE : compact au scroll + menu qui
+   ne déborde plus sur les écrans moyens
+====================================== */
+
+.client-app .main-header{
+    transition:height .35s var(--zn-ease), box-shadow .35s var(--zn-ease);
+}
+
+.client-app .logo img{
+    transition:height .35s var(--zn-ease), transform .3s;
+}
+
+@media (min-width:1281px){
+    .client-app .nav-menu,
+    .client-app .nav-links,
+    .client-app .nav-links li,
+    .client-app .nav-links a{
+        height:100%;
+    }
+
+    .zr-scrolled .client-app .main-header{
+        height:78px;
+        box-shadow:0 8px 30px rgba(15,45,90,.10);
+    }
+
+    .zr-scrolled .client-app .logo img{
+        height:68px;
+    }
+
+    .zr-scrolled .client-app .nav-links a::after{
+        bottom:14px;
+    }
+}
+
+@media (min-width:1281px) and (max-width:1560px){
+    .client-app .header-container{
+        padding:0 28px;
+        column-gap:18px;
+    }
+
+    .client-app .nav-links{
+        gap:clamp(14px, 1.35vw, 26px);
+    }
+
+    .client-app .nav-links a{
+        font-size:14.5px;
+    }
+
+    .client-app .header-actions{
+        gap:10px;
+    }
+
+    .client-app .nav-contact-btn{
+        min-width:0;
+        height:50px;
+        padding:0 22px;
+        font-size:15px;
+    }
+
+    .client-app .logo img{
+        height:80px;
+    }
+}
+
+/* Menu burger dès 1280px (avant, les liens chevauchaient les icônes). */
+@media (max-width:1280px){
+    .client-app .main-header{
+        height:85px;
+    }
+
+    .client-app .logo img{
+        height:70px;
+    }
+
+    .client-app .burger{
+        display:flex;
+    }
+
+    .client-app .nav-overlay{
+        display:block;
+    }
+
+    .client-app .header-actions{
+        gap:12px;
+    }
+
+    .client-app .nav-menu{
+        position:fixed;
+        top:85px;
+        left:-100%;
+        width:min(420px, 100%);
+        height:calc(100vh - 85px);
+        background:#fff;
+        display:flex;
+        justify-content:flex-start;
+        padding:20px;
+        overflow-y:auto;
+        opacity:0;
+        visibility:hidden;
+        transition:left .35s ease, opacity .35s ease, visibility .35s ease;
+        box-shadow:6px 0 25px rgba(0,0,0,.08);
+        z-index:9999;
+    }
+
+    .client-app .nav-menu.active{
+        left:0;
+        opacity:1;
+        visibility:visible;
+    }
+
+    .client-app .nav-links{
+        flex-direction:column;
+        align-items:stretch;
+        gap:2px;
+        width:100%;
+    }
+
+    .client-app .nav-links a{
+        height:auto;
+        width:100%;
+        padding:16px 10px;
+        font-size:17px;
+        justify-content:flex-start;
+        border-bottom:1px solid #f0f0f0;
+    }
+
+    .client-app .nav-links a::after{
+        display:none;
+    }
+
+    .client-app .nav-menu.active .nav-links li{
+        animation:znMenuItem .45s var(--zn-ease) both;
+    }
+
+    .client-app .nav-menu.active .nav-links li:nth-child(2){ animation-delay:.04s; }
+    .client-app .nav-menu.active .nav-links li:nth-child(3){ animation-delay:.08s; }
+    .client-app .nav-menu.active .nav-links li:nth-child(4){ animation-delay:.12s; }
+    .client-app .nav-menu.active .nav-links li:nth-child(5){ animation-delay:.16s; }
+    .client-app .nav-menu.active .nav-links li:nth-child(6){ animation-delay:.20s; }
+    .client-app .nav-menu.active .nav-links li:nth-child(7){ animation-delay:.24s; }
+    .client-app .nav-menu.active .nav-links li:nth-child(8){ animation-delay:.28s; }
+    .client-app .nav-menu.active .nav-links li:nth-child(9){ animation-delay:.32s; }
+}
+
+@media (max-width:991px){
+    .client-app .nav-menu{
+        width:100%;
+    }
+}
+
+@keyframes znMenuItem{
+    from{ opacity:0; transform:translateX(-18px); }
+    to{ opacity:1; transform:none; }
+}
+
+/* ======================================
+   BOUTONS : reflet au survol
+====================================== */
+
+.client-app .hero-btn,
+.client-app .nav-contact-btn,
+.client-app .shop-btn,
+.client-app .news-btn,
+.client-app .banner-btn,
+.client-app .cta-btn{
+    position:relative;
+    overflow:hidden;
+    isolation:isolate;
+    transition:background .3s, color .3s, transform .3s var(--zn-ease), box-shadow .3s;
+}
+
+.client-app .hero-btn::before,
+.client-app .nav-contact-btn::before,
+.client-app .shop-btn::before,
+.client-app .news-btn::before,
+.client-app .banner-btn::before,
+.client-app .cta-btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-75%;
+    width:50%;
+    height:100%;
+    background:linear-gradient(120deg, transparent, rgba(255,255,255,.38), transparent);
+    transform:skewX(-20deg);
+    z-index:-1;
+    pointer-events:none;
+}
+
+.client-app .hero-btn:hover::before,
+.client-app .nav-contact-btn:hover::before,
+.client-app .shop-btn:hover::before,
+.client-app .news-btn:hover::before,
+.client-app .banner-btn:hover::before,
+.client-app .cta-btn:hover::before{
+    animation:znShine .75s ease;
+}
+
+.client-app .shop-btn:hover,
+.client-app .news-btn:hover,
+.client-app .banner-btn:hover,
+.client-app .cta-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 24px rgba(47,126,203,.22);
+}
+
+@keyframes znShine{
+    to{ left:130%; }
+}
+
+/* ======================================
+   ACCUEIL — HERO : entrée animée
+====================================== */
+
+.client-app .hero .hero-line{
+    animation:znRise .9s var(--zn-ease) both;
+}
+
+.client-app .hero .hero-line:nth-child(2){ animation-delay:.15s; }
+.client-app .hero .hero-line:nth-child(3){ animation-delay:.3s; }
+
+.client-app .hero .hero-description{
+    animation:znRise .9s var(--zn-ease) .45s both;
+}
+
+.client-app .hero .hero-buttons{
+    animation:znRise .9s var(--zn-ease) .6s both;
+}
+
+.client-app .hero .hero-video{
+    animation:znSlowZoom 18s ease-out both;
+}
+
+@keyframes znRise{
+    from{ opacity:0; transform:translateY(36px); }
+    to{ opacity:1; transform:none; }
+}
+
+@keyframes znSlowZoom{
+    from{ transform:scale(1.08); }
+    to{ transform:scale(1); }
+}
+
+/* Bandeaux de titre de section : trait vert qui se dessine */
+.client-app .section-title{
+    position:relative;
+    overflow:hidden;
+}
+
+.client-app .section-title::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:4px;
+    width:100%;
+    background:var(--zn-green);
+    transform-origin:left;
+    transition:transform 1s var(--zn-ease) .35s;
+}
+
+/* Le trait part de zéro tant que le bandeau n'est pas apparu (classe zr). */
+.client-app .section-title.zr::after{
+    transform:scaleX(0);
+}
+
+.client-app .section-title.zr.zr-in::after{
+    transform:scaleX(1);
+}
+
+/* ======================================
+   ACCUEIL — STATISTIQUES
+====================================== */
+
+.client-app .stat-item{
+    transition:opacity .7s var(--zn-ease), transform .7s var(--zn-ease), box-shadow .35s;
+}
+
+.client-app .stat-item:hover{
+    box-shadow:0 18px 40px rgba(47,126,203,.16);
+}
+
+.client-app .stat-item:hover .stat-circle{
+    transform:scale(1.06) rotate(-4deg);
+}
+
+.client-app .stat-circle{
+    transition:transform .45s var(--zn-ease);
+}
+
+/* ======================================
+   CARROUSELS MÉTIERS : cartes entières
+====================================== */
+
+.client-app .expertise-card,
+.page-about .metiers-card{
+    width:auto;
+    border-radius:10px;
+    box-shadow:0 10px 26px rgba(16,52,99,.12);
+}
+
+.client-app .expertise-card{
+    height:300px;
+}
+
+.client-app .card-overlay{
+    transition:background .45s var(--zn-ease);
+}
+
+.client-app .card-overlay h3{
+    font-size:18px;
+}
+
+.client-app .card-overlay p{
+    font-size:13.5px;
+    line-height:1.55;
+}
+
+.client-app .expertise-card:hover .card-overlay,
+.page-about .metiers-card:hover .card-overlay{
+    background:linear-gradient(to top, rgba(27,96,173,.98), rgba(34,97,173,.55));
+}
+
+.client-app .expertise-prev,
+.client-app .expertise-next{
+    box-shadow:0 8px 18px rgba(47,126,203,.3);
+    transition:background .2s, transform .25s var(--zn-ease);
+}
+
+.client-app .expertise-prev:hover,
+.client-app .expertise-next:hover{
+    transform:scale(1.08);
+}
+
+.client-app .expertise-pagination .swiper-pagination-bullet{
+    transition:width .3s var(--zn-ease), background .3s;
+}
+
+.client-app .expertise-pagination .swiper-pagination-bullet-active{
+    width:24px;
+    border-radius:6px;
+}
+
+/* ======================================
+   ACCUEIL — BANNIÈRE OASIS
+====================================== */
+
+.client-app .expertise-banner{
+    background-attachment:fixed;
+}
+
+@media (max-width:991px), (hover:none){
+    .client-app .expertise-banner{
+        background-attachment:scroll;
+    }
+}
+
+.client-app .expertise-banner-overlay{
+    background:linear-gradient(135deg, rgba(27,96,173,.9), rgba(47,126,203,.78));
+}
+
+.client-app .banner-title{
+    font-size:20px;
+    letter-spacing:.2px;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.client-app .expertise-banner-content p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* ======================================
+   ACCUEIL — IMPACT & RSE
+====================================== */
+
+.client-app .engagements-grid{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 340px));
+    justify-content:center;
+    gap:30px;
+}
+
+.client-app .engagement-card{
+    width:auto;
+    min-height:0;
+    border-radius:12px;
+    transition:transform .4s var(--zn-ease), box-shadow .4s var(--zn-ease);
+}
+
+.client-app .engagement-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 44px rgba(16,52,99,.16);
+}
+
+.client-app .engagement-card img{
+    height:220px;
+    transition:transform .7s var(--zn-ease);
+}
+
+.client-app .engagement-card:hover img{
+    transform:scale(1.06);
+}
+
+.client-app .engagement-card > img{
+    display:block;
+}
+
+.client-app .engagement-content{
+    position:relative;
+    justify-content:flex-start;
+    padding:28px 26px 32px;
+    background:#fff;
+    border-top:4px solid var(--zn-green);
+}
+
+.client-app .engagement-content h3{
+    font-size:20px;
+    line-height:1.3;
+    margin-bottom:12px;
+}
+
+.client-app .engagement-content p{
+    max-width:none;
+    font-size:14.5px;
+    line-height:1.75;
+}
+
+@media (max-width:991px){
+    .client-app .engagements-grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width:640px){
+    .client-app .engagements-grid{
+        grid-template-columns:minmax(0, 1fr);
+    }
+}
+
+/* ======================================
+   ACCUEIL — BOUTIQUE
+====================================== */
+
+.client-app .shop-product-card{
+    transition:transform .4s var(--zn-ease), box-shadow .4s var(--zn-ease);
+}
+
+.client-app .shop-product-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 36px rgba(16,52,99,.14);
+}
+
+.client-app .shop-product-card img{
+    transition:transform .5s var(--zn-ease);
+}
+
+.client-app .shop-product-card:hover img{
+    transform:scale(1.07) rotate(-2deg);
+}
+
+/* ======================================
+   ACCUEIL — ACTUALITÉS (débordements)
+====================================== */
+
+.home-page .news-section .news-wrapper{
+    border:1px solid #d9e2ec;
+    border-radius:14px;
+    background:#fff;
+    padding:36px;
+}
+
+.home-page .news-section .news-grid{
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:28px;
+}
+
+.home-page .news-section .news-card{
+    display:flex;
+    flex-direction:column;
+    padding:0;
+    min-height:0;
+    min-width:0;
+    border-radius:12px;
+    overflow:hidden;
+    color:#fff;
+    text-decoration:none;
+    background:#337dc1;
+    box-shadow:0 10px 28px rgba(16,52,99,.12);
+    transition:transform .4s var(--zn-ease), box-shadow .4s var(--zn-ease);
+}
+
+.home-page .news-section .news-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 24px 48px rgba(16,52,99,.2);
+}
+
+.client-app .news-card-image{
+    height:230px;
+    overflow:hidden;
+}
+
+.client-app .news-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .8s var(--zn-ease);
+}
+
+.home-page .news-section .news-card:hover .news-card-image img{
+    transform:scale(1.07);
+}
+
+.client-app .news-card-body{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:28px 30px 30px;
+}
+
+.home-page .news-section .news-card span{
+    font-size:12px;
+    letter-spacing:.6px;
+    text-transform:uppercase;
+}
+
+.home-page .news-section .news-card h3{
+    margin:12px 0 14px;
+    font-size:22px;
+    line-height:1.3;
+    overflow-wrap:break-word;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+.home-page .news-section .news-card p{
+    font-size:14.5px;
+    line-height:1.7;
+    opacity:.92;
+    margin-bottom:24px;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+.home-page .news-section .news-card .news-card-arrow{
+    margin-top:auto;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#fff;
+    color:#337dc1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    transition:transform .35s var(--zn-ease), background .3s, color .3s;
+}
+
+.home-page .news-section .news-card:hover .news-card-arrow{
+    transform:translateX(6px);
+    background:var(--zn-green);
+    color:#fff;
+}
+
+@media (max-width:576px){
+    .home-page .news-section .news-wrapper{
+        padding:18px;
+    }
+
+    .client-app .news-card-body{
+        padding:22px;
+    }
+
+    .home-page .news-section .news-card h3{
+        font-size:19px;
+    }
+}
+
+/* ======================================
+   FAQ
+====================================== */
+
+.client-app .accordion-item{
+    transition:box-shadow .3s, transform .3s var(--zn-ease);
+}
+
+.client-app .accordion-item:hover{
+    box-shadow:0 10px 24px rgba(16,52,99,.08);
+}
+
+/* ======================================
+   BANNIÈRES DES PAGES : plus de texte
+   qui déborde (hauteur auto + entrée)
+====================================== */
+
+.page-about .about-hero,
+.page-actualites .news-hero,
+.page-boutique .shop-hero,
+.page-carrieres .career-hero,
+.page-contact .contact-hero,
+.page-services .services-hero,
+.page-zencard .zencard-hero,
+.page-stations .stations-hero{
+    height:auto;
+    min-height:500px;
+    padding-bottom:90px;
+    overflow:hidden;
+}
+
+.page-faq .faq-hero{
+    height:auto;
+    min-height:400px;
+    padding-bottom:70px;
+}
+
+.page-zencard .zencard-content h1,
+.page-boutique .shop-hero-content h1,
+.page-actualites .news-hero-content h1{
+    font-size:clamp(32px, 4.2vw, 56px);
+    line-height:1.15;
+}
+
+@media (max-width:991px){
+    .page-about .about-hero,
+    .page-actualites .news-hero,
+    .page-boutique .shop-hero,
+    .page-carrieres .career-hero,
+    .page-contact .contact-hero,
+    .page-services .services-hero,
+    .page-zencard .zencard-hero,
+    .page-stations .stations-hero{
+        min-height:400px;
+        padding-bottom:60px;
+    }
+}
+
+@media (max-width:576px){
+    .page-zencard .zencard-content{
+        padding-top:70px;
+    }
+}
+
+/* ======================================
+   À PROPOS
+====================================== */
+
+.page-about .about-text ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    list-style:none;
+    padding:0;
+    margin-top:22px;
+}
+
+.page-about .about-text ul li{
+    padding:9px 18px 9px 34px;
+    border-radius:30px;
+    background:#eef5fc;
+    color:var(--zn-blue-dark);
+    font-weight:600;
+    font-size:14px;
+    position:relative;
+    transition:background .3s, color .3s, transform .3s var(--zn-ease);
+}
+
+.page-about .about-text ul li::before{
+    content:"";
+    position:absolute;
+    left:16px;
+    top:50%;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--zn-green);
+    transform:translateY(-50%);
+}
+
+.page-about .about-text ul li:hover{
+    background:var(--zn-blue);
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+.page-about .about-image img{
+    transition:transform .8s var(--zn-ease);
+}
+
+.page-about .about-image:hover img{
+    transform:scale(1.03);
+}
+
+.page-about .zn-card,
+.page-about .mission-card,
+.page-about .stat-box{
+    transition:transform .4s var(--zn-ease), box-shadow .4s var(--zn-ease);
+}
+
+.page-about .zn-card:hover,
+.page-about .mission-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(16,52,99,.14);
+}
+
+.page-about .zn-card-icon{
+    transition:transform .45s var(--zn-ease);
+}
+
+.page-about .zn-card:hover .zn-card-icon{
+    transform:rotate(-8deg) scale(1.08);
+}
+
+.page-about .metiers-card{
+    height:420px;
+}
+
+/* ======================================
+   SERVICES : 5 cartes, 3 + 2 centrées
+====================================== */
+
+@media (min-width:992px){
+    .page-services .services-grid{
+        grid-template-columns:repeat(6, minmax(0, 1fr));
+    }
+
+    .page-services .services-grid > *{
+        grid-column:span 2;
+    }
+
+    .page-services .services-grid > :nth-child(4):nth-last-child(2){
+        grid-column:2 / span 2;
+    }
+}
+
+.page-services .service-card,
+.page-services .process-card{
+    transition:transform .4s var(--zn-ease), box-shadow .4s var(--zn-ease);
+}
+
+.page-services .service-card img{
+    transition:transform .7s var(--zn-ease);
+}
+
+.page-services .service-card:hover img{
+    transform:scale(1.06);
+}
+
+.page-services .service-card{
+    overflow:hidden;
+}
+
+.page-services .process-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 36px rgba(16,52,99,.12);
+}
+
+/* ======================================
+   BOUTIQUE : cartes alignées
+====================================== */
+
+.page-boutique .product-card{
+    display:flex;
+    flex-direction:column;
+    border-radius:12px;
+    transition:transform .4s var(--zn-ease), box-shadow .4s var(--zn-ease);
+}
+
+.page-boutique .product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 44px rgba(16,52,99,.14);
+}
+
+.page-boutique .product-card img{
+    object-fit:contain;
+    padding:18px;
+    background:#fff;
+    transition:transform .6s var(--zn-ease);
+}
+
+.page-boutique .product-card:hover img{
+    transform:scale(1.06);
+}
+
+.page-boutique .product-content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.page-boutique .product-content h3{
+    min-height:2.6em;
+    line-height:1.3;
+}
+
+.page-boutique .product-content .shop-btn{
+    margin-top:auto;
+    align-self:flex-start;
+}
+
+.page-boutique .price-row{
+    margin-bottom:18px;
+}
+
+/* ======================================
+   ACTUALITÉS (liste)
+====================================== */
+
+.page-actualites .news-intro{
+    padding-bottom:30px;
+}
+
+.page-actualites .news-card{
+    display:flex;
+    flex-direction:column;
+    border-radius:12px;
+}
+
+.page-actualites .news-card:hover{
+    box-shadow:0 24px 48px rgba(16,52,99,.16);
+}
+
+.page-actualites .news-card .news-image-link{
+    overflow:hidden;
+}
+
+.page-actualites .news-card img{
+    display:block;
+    transition:transform .8s var(--zn-ease);
+}
+
+.page-actualites .news-card:hover img{
+    transform:scale(1.07);
+}
+
+.page-actualites .news-content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.page-actualites .news-content h3{
+    font-size:21px;
+    line-height:1.35;
+}
+
+.page-actualites .news-content .news-btn{
+    margin-top:auto;
+}
+
+.page-actualites .news-content .news-btn:hover{
+    transform:none;
+    box-shadow:none;
+}
+
+.page-actualites .news-content .news-btn::before{
+    display:none;
+}
+
+/* ======================================
+   ARTICLE : contenu centré et lisible
+   (le sélecteur d'origine ne s'appliquait
+   pas, d'où le texte bord à bord)
+====================================== */
+
+.page-newsdetail.news-container{
+    max-width:980px;
+    margin:0 auto;
+    padding:50px 24px 90px;
+}
+
+.page-newsdetail .news-hero{
+    margin-top:18px;
+    height:480px;
+    box-shadow:0 24px 50px rgba(16,52,99,.18);
+}
+
+.page-newsdetail .news-hero img{
+    animation:znSlowZoom 12s ease-out both;
+}
+
+.page-newsdetail .news-hero-overlay{
+    background:linear-gradient(to top, rgba(10,38,78,.85), rgba(10,38,78,.05) 70%);
+}
+
+.page-newsdetail .news-hero-text h1{
+    font-size:clamp(24px, 3.2vw, 38px);
+    animation:znRise .9s var(--zn-ease) .15s both;
+}
+
+.page-newsdetail .news-meta{
+    animation:znRise .9s var(--zn-ease) .3s both;
+}
+
+.page-newsdetail .news-body{
+    max-width:760px;
+    margin:50px auto 0;
+    font-size:17px;
+    line-height:1.9;
+}
+
+.page-newsdetail .news-body p:first-child{
+    font-size:19px;
+    color:#1f2d3d;
+    font-weight:500;
+}
+
+.page-newsdetail .news-body h2{
+    position:relative;
+    margin:38px 0 14px;
+    padding-left:18px;
+    color:var(--zn-blue-dark);
+    font-size:23px;
+    line-height:1.35;
+}
+
+.page-newsdetail .news-body h2::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:4px;
+    bottom:4px;
+    width:5px;
+    border-radius:4px;
+    background:var(--zn-green);
+}
+
+.page-newsdetail .news-gallery{
+    max-width:760px;
+    margin:36px auto 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:18px;
+}
+
+.page-newsdetail .news-gallery img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 12px 30px rgba(16,52,99,.12);
+    transition:transform .5s var(--zn-ease);
+}
+
+.page-newsdetail .news-gallery img:hover{
+    transform:scale(1.02);
+}
+
+.page-newsdetail .back-area{
+    max-width:760px;
+    margin:50px auto 0;
+    padding-top:28px;
+    border-top:1px solid #e3e9f0;
+}
+
+@media (max-width:768px){
+    .page-newsdetail .news-hero{
+        height:340px;
+    }
+
+    .page-newsdetail .news-body{
+        margin-top:34px;
+        font-size:16px;
+    }
+}
+
+@media (max-width:576px){
+    .page-newsdetail.news-container{
+        padding:30px 16px 60px;
+    }
+
+    .page-newsdetail .news-hero{
+        height:260px;
+    }
+
+    .page-newsdetail .news-body h2{
+        font-size:19px;
+    }
+}
+
+/* ======================================
+   CONTACT : vraie carte
+====================================== */
+
+.page-contact .map-box{
+    padding:0;
+    overflow:hidden;
+    border-radius:14px;
+    box-shadow:0 16px 40px rgba(16,52,99,.12);
+}
+
+.page-contact .map-box iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+}
+
+/* ======================================
+   PIED DE PAGE
+====================================== */
+
+.client-app .zener-footer a{
+    transition:color .25s, padding-left .25s var(--zn-ease);
+}
+
+.client-app .footer-column a:hover{
+    padding-left:4px;
+}
+
+.client-app .footer-socials a{
+    transition:transform .3s var(--zn-ease), background .3s, color .3s;
+}
+
+.client-app .footer-socials a:hover{
+    transform:translateY(-4px);
+}
+
+/* ======================================
+   ACCESSIBILITÉ : pas d'animation si
+   l'utilisateur l'a demandé
+====================================== */
+
+@media (prefers-reduced-motion: reduce){
+    .client-app *,
+    .client-app *::before,
+    .client-app *::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.01ms !important;
+    }
+
+    .client-app .expertise-banner{
+        background-attachment:scroll;
+    }
+}
+
+/* ======================================
+   EN-TÊTE MOBILE : le bouton contact passe
+   dans le menu pour ne plus déborder
+====================================== */
+
+.client-app .nav-menu-cta{
+    display:none;
+}
+
+@media (max-width:1280px){
+    .client-app .nav-menu{
+        flex-direction:column;
+    }
+
+    .client-app .nav-menu-cta{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-top:22px;
+        height:52px;
+        border-radius:6px;
+        background:var(--zn-green);
+        color:#fff;
+        font-weight:600;
+        text-decoration:none;
+        flex-shrink:0;
+    }
+}
+
+@media (max-width:576px){
+    .client-app .header-actions > .nav-contact-btn{
+        display:none;
+    }
+
+    .client-app .header-actions{
+        gap:6px;
+    }
+}
+
+@media (max-width:400px){
+    .client-app .header-container{
+        padding:0 10px;
+        gap:6px;
+    }
+
+    .client-app .logo img{
+        height:50px;
+    }
+
+    .client-app .cart-btn,
+    .client-app .burger{
+        width:34px;
+        height:34px;
+    }
+
+    .client-app .cart-btn svg{
+        width:22px;
+        height:22px;
+    }
+
+    .client-app .header-actions{
+        gap:2px;
+    }
+}
+
+/* ======================================
+   ACCUEIL — « NOTRE OFFRE » (cartes
+   produit menant à la fiche, cf. zener.tg)
+====================================== */
+
+.client-app .shop-eyebrow{
+    text-align:center;
+    color:#c9e77a;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:14px;
+}
+
+.client-app .shop-product-card .shop-product-brand{
+    display:block;
+    color:var(--zn-blue);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.6px;
+    text-transform:uppercase;
+    margin-top:6px;
+}
+
+.client-app .shop-product-card .shop-product-view{
+    display:inline-flex;
+    gap:6px;
+    margin-top:10px;
+    color:var(--zn-blue-dark);
+    font-size:13px;
+    font-weight:600;
+}
+
+.client-app .shop-product-card .shop-product-view span{
+    transition:transform .3s;
+}
+
+.client-app .shop-product-card:hover .shop-product-view{
+    color:var(--zn-green);
+}
+
+.client-app .shop-product-card:hover .shop-product-view span{
+    transform:translateX(5px);
+}
+
+/* Photos de bouteilles sur fond presque blanc : le fond se fond dans la
+   carte au lieu de dessiner un carré clair. */
+.page-boutique .product-card img,
+.page-product .product-visual img,
+.client-app .shop-product-card img{
+    mix-blend-mode:multiply;
+}
+
+.client-app .shop-footer .shop-btn{
+    width:auto;
+    min-width:240px;
+    padding:0 34px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    font-size:15px;
+}
+
+/* Titre « Découvrez nos produits gaz et accessoires » : cadre ajusté au
+   texte (et non plus sur toute la largeur), texte plus grand. */
+.client-app .shop-section .shop-title{
+    width:fit-content;
+    max-width:calc(100% - 32px);
+    min-height:0;
+    margin:0 auto 50px;
+    padding:16px 44px;
+    font-size:clamp(20px, 2.4vw, 30px);
+    font-weight:800;
+    letter-spacing:.5px;
+    line-height:1.25;
+    border-width:2px;
+    background:rgba(255,255,255,.08);
+    box-shadow:0 14px 34px rgba(10,40,90,.18);
+}
+
+@media (max-width:576px){
+    .client-app .shop-section .shop-title{
+        padding:12px 22px;
+        border-radius:28px;
+    }
+}

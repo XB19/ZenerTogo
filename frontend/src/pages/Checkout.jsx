@@ -67,7 +67,7 @@ function Checkout() {
               <Link to="/" className="checkout-secondary-btn">
                 {t('checkout.success.backHome')}
               </Link>
-              <Link to="/boutique" className="checkout-primary-btn">
+              <Link to="/produits" className="checkout-primary-btn">
                 {t('checkout.success.backShop')}
               </Link>
             </div>
@@ -91,7 +91,7 @@ function Checkout() {
           <div className="checkout-empty">
             <i className="fa-solid fa-cart-shopping"></i>
             <p>{t('checkout.empty.text')}</p>
-            <Link to="/boutique" className="checkout-primary-btn">
+            <Link to="/produits" className="checkout-primary-btn">
               {t('checkout.empty.cta')}
             </Link>
           </div>

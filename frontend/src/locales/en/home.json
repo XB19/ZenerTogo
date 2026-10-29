@@ -9,7 +9,7 @@
   },
   "presentation": {
     "badge": "An African energy group on the move",
-    "text": "ZENER develops and deploys energy solutions tailored to the realities of African markets. Through its activities in fuel, gas, lubricants, mobility and energy services, the Group supports individuals, professionals, businesses and institutions every day. Present in Benin, Togo and Guinea-Bissau, ZENER continues its regional growth, drawing on an in-depth understanding of its markets, dedicated infrastructure and a culture of usage-driven innovation."
+    "text": "ZENER develops and deploys energy solutions tailored to the realities of African markets. Through its activities in fuel, gas, lubricants, mobility and energy services, the Group supports individuals, professionals, businesses and institutions every day. Present in Togo, Benin and Guinea-Bissau, ZENER continues its regional growth, drawing on an in-depth understanding of its markets, dedicated infrastructure and a culture of usage-driven innovation."
   },
   "stats": {
     "countries": "Countries of presence",
@@ -19,52 +19,52 @@
   },
   "expertise": {
     "sectionTitle": "OUR BRANDS AND SOLUTIONS",
-    "subtitle": "Leading brands and innovative solutions serving energy and mobility.",
+    "subtitle": "ZENER runs complementary businesses serving energy, mobility and related uses.",
     "label": "Our business lines",
     "prevAria": "Previous business line",
     "nextAria": "Next business line",
     "paginationAria": "Carousel navigation",
     "cards": {
       "fuel": {
-        "title": "Fuel Distribution",
-        "text": "From supply to distribution, ZENER deploys its expertise through its storage infrastructure and network of service stations, with constant attention to quality, safety and product availability."
+        "title": "Fuel distribution",
+        "text": "ZENER distributes fuel through a structured network of stations and infrastructure meeting international safety and quality standards."
       },
       "gas": {
-        "title": "Gas & Energy Solutions",
-        "text": "From household use to industrial applications, ZENER deploys its gas expertise and develops energy solutions tailored to new challenges, notably through Gas-to-Power."
+        "title": "Gas / energy",
+        "text": "ZENER develops safe and accessible gas and household energy solutions, tailored to the needs of households and local businesses."
       },
       "mobility": {
-        "title": "Mobility & Services",
-        "text": "Through an ecosystem of digital services and mobility solutions, ZENER simplifies access to energy, streamlines usage and enhances the customer experience. These solutions extend our core businesses and pave the way for new energy and mobility uses."
+        "title": "Mobility & services",
+        "text": "ZENER designs integrated mobility services to support travel, professional uses and the new expectations of users."
       },
       "lubricants": {
-        "title": "Lubricants & Specialty Products",
-        "text": "ZENER complements its energy offering with a range of lubricants and accessories designed to combine performance, reliability and quality of use."
+        "title": "Lubricants",
+        "text": "ZENER offers a range of lubricants and accessories selected to ensure the performance, durability and protection of equipment."
       },
       "business": {
-        "title": "Solutions for Businesses & Institutions",
-        "text": "ZENER puts all of its expertise at the service of businesses and institutions, through solutions tailored to their energy, operational and business continuity needs."
+        "title": "B2B solutions",
+        "text": "ZENER supports businesses and institutions with energy solutions and B2B services designed to meet complex operational needs."
       }
     }
   },
   "banner": {
-    "title": "ZENER Benin, by your side",
-    "text": "Based in Cotonou, we guarantee constant proximity and availability of our products and services, with the ambition to grow our network across the country.",
+    "title": "Oasis, the Zener station network",
+    "text": "Oasis brings together ZENER stations: fuel, neighborhood services and a welcome designed for everyday journeys as well as fleets. A place to relax and access services across the country.",
     "cta": "Find us"
   },
   "engagements": {
-    "sectionTitle": "Our commitments",
+    "sectionTitle": "Impact & CSR",
     "quality": {
-      "title": "Quality",
-      "text": "We guarantee products and services that meet the industry's most demanding standards."
+      "title": "Governance and ethics",
+      "text": "Rigorous standards of ethics, transparency and compliance, for a safe, dynamic and responsible company."
     },
     "security": {
-      "title": "Safety",
-      "text": "Protecting our customers, employees and infrastructure remains our top priority."
+      "title": "Raising awareness for greater safety",
+      "text": "A safety awareness program on the use of LPG and fuel, to promote good practices and reduce risks."
     },
     "responsibility": {
-      "title": "Responsibility",
-      "text": "We promote sustainable development through responsible, environmentally-conscious actions."
+      "title": "Protecting the environment",
+      "text": "Solutions and practices designed to limit emissions, reduce waste and support a sustainable energy transition."
     }
   },
   "shop": {
@@ -80,7 +80,7 @@
     "title": "They trust us"
   },
   "faq": {
-    "sectionTitle": "Frequently asked questions",
+    "sectionTitle": "FAQ",
     "cta": "See all frequently asked questions"
   }
 }

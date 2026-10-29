@@ -1,24 +1,24 @@
 {
   "hero": {
-    "badge": "ZENER BÉNIN",
-    "title": "Retrouvez-nous au Bénin",
-    "text": "Consultez nos coordonnées, trouvez notre siège et obtenez votre itinéraire en un clic."
+    "badge": "RÉSEAU ZENER",
+    "title": "Retrouvez nos stations partout au Togo",
+    "text": "Consultez les stations ZENER, trouvez celle la plus proche de vous et obtenez votre itinéraire en un clic."
   },
   "map": {
-    "title": "Carte",
-    "text": "Cliquez pour consulter nos informations et obtenir votre itinéraire.",
+    "title": "Carte interactive des stations",
+    "text": "Cliquez sur une station pour consulter ses informations et obtenir votre itinéraire.",
     "popupCta": "Voir mon itinéraire",
-    "ariaLabel": "Carte de Zener Bénin"
+    "ariaLabel": "Carte des stations ZENER au Togo"
   },
   "list": {
-    "title": "Notre siège"
+    "title": "Nos stations principales"
   },
   "card": {
     "call": "Appeler la station"
   },
   "cta": {
-    "title": "Zener Bénin se développe",
-    "text": "ZENER poursuit le développement de son réseau au Bénin afin de rapprocher ses services des particuliers et des entreprises sur toute l'étendue du territoire.",
+    "title": "Toujours une station proche de vous",
+    "text": "ZENER poursuit le développement de son réseau afin de rapprocher ses services des particuliers et des entreprises sur toute l'étendue du territoire.",
     "button": "Nous contacter"
   },
   "detail": {

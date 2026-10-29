@@ -6,10 +6,12 @@ import ScrollRestoration from './components/ScrollRestoration.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import ChatWidget from './components/ChatWidget.jsx';
 import PromoModal from './components/PromoModal.jsx';
+import SiteAnimations from './components/SiteAnimations.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Services from './pages/Services.jsx';
 import Boutique from './pages/Boutique.jsx';
+import ProductDetail from './pages/ProductDetail.jsx';
 import Cart from './pages/Cart.jsx';
 import Checkout from './pages/Checkout.jsx';
 import Contact from './pages/Contact.jsx';
@@ -72,12 +74,15 @@ import BOZencard from './backoffice/pages/BOZencard.jsx';
 import SAP from './backoffice/pages/SAP.jsx';
 import Statistiques from './backoffice/pages/Statistiques.jsx';
 import Reporting from './backoffice/pages/Reporting.jsx';
+// Chargé en dernier : ajustements de mise en page qui priment sur les CSS de page.
+import './styles/polish.css';
 
 function ClientLayout({ children }) {
   const [chatOpen, setChatOpen] = useState(false);
 
   return (
     <div className="client-app">
+      <SiteAnimations />
       <Navbar />
       <main>{children}</main>
       <Footer />
@@ -105,9 +110,12 @@ function App() {
                     <Route path="/a-propos" element={<ClientLayout><About /></ClientLayout>} />
                     <Route path="/services" element={<ClientLayout><Services /></ClientLayout>} />
                     <Route path="/boutique" element={<ClientLayout><Boutique /></ClientLayout>} />
+                    <Route path="/produits" element={<ClientLayout><Boutique /></ClientLayout>} />
+                    <Route path="/produits/:slug" element={<ClientLayout><ProductDetail /></ClientLayout>} />
                     <Route path="/panier" element={<ClientLayout><Cart /></ClientLayout>} />
                     <Route path="/commande" element={<ClientLayout><Checkout /></ClientLayout>} />
                     <Route path="/contact" element={<ClientLayout><Contact /></ClientLayout>} />
+                    <Route path="/devis" element={<ClientLayout><Contact /></ClientLayout>} />
                     <Route path="/carrieres" element={<ClientLayout><Carrieres /></ClientLayout>} />
                     <Route path="/carrieres/offre/:id" element={<ClientLayout><JobDetail /></ClientLayout>} />
                     <Route path="/actualites" element={<ClientLayout><Actualites /></ClientLayout>} />

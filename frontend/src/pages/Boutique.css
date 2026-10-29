@@ -418,3 +418,232 @@
         width:100%;
     }
 }
+
+/* ==========================
+   CATALOGUE (parcours zener.tg)
+========================== */
+
+.page-boutique .zn-breadcrumb{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:22px;
+    font-size:14px;
+    color:rgba(255,255,255,.85);
+}
+
+.page-boutique .zn-breadcrumb a{
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.page-boutique .zn-breadcrumb a:hover{
+    color:#c9e77a;
+}
+
+.page-boutique .catalog-search{
+    background:#fff;
+    border-radius:16px;
+    padding:36px 40px;
+    box-shadow:0 16px 40px rgba(16,52,99,.08);
+    margin-bottom:60px;
+}
+
+.page-boutique .catalog-search-head,
+.page-boutique .catalog-results-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:16px;
+}
+
+.page-boutique .catalog-search-head{
+    margin-bottom:28px;
+}
+
+.page-boutique .catalog-eyebrow{
+    color:#2f7ecb;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+    margin-bottom:6px;
+}
+
+.page-boutique .catalog-search h2,
+.page-boutique .catalog-results-head h2{
+    font-size:28px;
+    font-weight:800;
+    color:#1a2433;
+}
+
+.page-boutique .catalog-cart-link{
+    color:#1b60ad;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.page-boutique .catalog-cart-link span,
+.page-boutique .product-view-link span{
+    display:inline-block;
+    transition:transform .3s;
+}
+
+.page-boutique .catalog-cart-link:hover{
+    color:#9fc63b;
+}
+
+.page-boutique .catalog-cart-link:hover span,
+.page-boutique .product-view-link:hover span{
+    transform:translateX(5px);
+}
+
+.page-boutique .catalog-fields{
+    display:grid;
+    grid-template-columns:1.4fr repeat(4, minmax(0, 1fr));
+    gap:16px;
+}
+
+.page-boutique .catalog-field{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    font-size:13px;
+    font-weight:600;
+    color:#3c4a5b;
+}
+
+.page-boutique .catalog-field input,
+.page-boutique .catalog-field select{
+    height:50px;
+    padding:0 14px;
+    border:1px solid #dce5f0;
+    border-radius:10px;
+    background:#f9fbfd;
+    font-family:inherit;
+    font-size:14px;
+    color:#1a2433;
+    transition:border-color .2s, box-shadow .2s, background .2s;
+}
+
+.page-boutique .catalog-field input:focus,
+.page-boutique .catalog-field select:focus{
+    outline:none;
+    border-color:#2f7ecb;
+    background:#fff;
+    box-shadow:0 0 0 4px rgba(47,126,203,.12);
+}
+
+.page-boutique .catalog-actions{
+    display:flex;
+    align-items:center;
+    gap:22px;
+    margin-top:24px;
+}
+
+.page-boutique .catalog-submit{
+    height:52px;
+    padding:0 34px;
+    border:none;
+    border-radius:40px;
+    background:#2f7ecb;
+    color:#fff;
+    font-family:inherit;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:background .3s, transform .3s, box-shadow .3s;
+}
+
+.page-boutique .catalog-submit:hover{
+    background:#1b60ad;
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px rgba(47,126,203,.25);
+}
+
+.page-boutique .catalog-reset{
+    color:#6b7a8c;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.page-boutique .catalog-reset:hover{
+    color:#1b60ad;
+}
+
+.page-boutique .catalog-results-head{
+    margin-bottom:30px;
+}
+
+.page-boutique .catalog-results-head > p{
+    color:#6b7a8c;
+}
+
+.page-boutique .product-card-image{
+    display:block;
+    overflow:hidden;
+}
+
+.page-boutique .product-brand{
+    color:#2f7ecb;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+    margin-bottom:8px;
+}
+
+.page-boutique .product-content h3 a{
+    color:#1a2433;
+    text-decoration:none;
+}
+
+.page-boutique .product-content h3 a:hover{
+    color:#2f7ecb;
+}
+
+.page-boutique .product-view-link{
+    margin-top:auto;
+    color:#1b60ad;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.page-boutique .product-view-link:hover{
+    color:#9fc63b;
+}
+
+@media (max-width:1100px){
+    .page-boutique .catalog-fields{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+
+    .page-boutique .catalog-field-query{
+        grid-column:1 / -1;
+    }
+}
+
+@media (max-width:576px){
+    .page-boutique .catalog-search{
+        padding:26px 20px;
+    }
+
+    .page-boutique .catalog-fields{
+        grid-template-columns:minmax(0, 1fr);
+    }
+
+    .page-boutique .catalog-search h2,
+    .page-boutique .catalog-results-head h2{
+        font-size:22px;
+    }
+
+    .page-boutique .catalog-submit{
+        width:100%;
+    }
+
+    .page-boutique .catalog-actions{
+        flex-direction:column;
+    }
+}

@@ -23,7 +23,7 @@ function Cart() {
           <div className="cart-empty">
             <i className="fa-solid fa-cart-shopping"></i>
             <p>{t('cart.empty.text')}</p>
-            <Link to="/boutique" className="cart-empty-cta">
+            <Link to="/produits" className="cart-empty-cta">
               {t('cart.empty.cta')}
             </Link>
           </div>
@@ -91,7 +91,7 @@ function Cart() {
                 <i className="fa-solid fa-arrow-right"></i>
               </Link>
 
-              <Link to="/boutique" className="cart-continue-link">
+              <Link to="/produits" className="cart-continue-link">
                 {t('cart.summary.continue')}
               </Link>
             </aside>

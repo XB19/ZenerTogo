@@ -51,16 +51,16 @@ function Footer() {
               <h4>{t('footer.ourServices')}</h4>
               <ul>
                 <li>
-                  <a href="#">{t('footer.fuels')}</a>
+                  <Link to="/services">{t('footer.fuels')}</Link>
                 </li>
                 <li>
-                  <a href="#">{t('footer.gas')}</a>
+                  <Link to="/produits?type=gaz">{t('footer.gas')}</Link>
                 </li>
                 <li>
-                  <a href="#">{t('footer.lubricants')}</a>
+                  <Link to="/services">{t('footer.lubricants')}</Link>
                 </li>
                 <li>
-                  <a href="#">{t('footer.gasStations')}</a>
+                  <Link to="/stations">{t('footer.gasStations')}</Link>
                 </li>
               </ul>
             </div>
@@ -81,16 +81,16 @@ function Footer() {
               <h4>{t('footer.contact')}</h4>
               <ul>
                 <li>
-                  <a href="#">{t('footer.phone')}</a>
+                  <a href="tel:+22822272000">{t('footer.phone')}</a>
                 </li>
                 <li>
-                  <a href="#">{t('footer.email')}</a>
+                  <a href="mailto:info@zener.tg">{t('footer.email')}</a>
                 </li>
                 <li>
-                  <a href="#">{t('footer.address')}</a>
+                  <Link to="/contact">{t('footer.address')}</Link>
                 </li>
                 <li>
-                  <a href="#">{t('footer.socialNetworks')}</a>
+                  <a href="https://www.facebook.com/zenertg" target="_blank" rel="noopener noreferrer">{t('footer.socialNetworks')}</a>
                 </li>
               </ul>
             </div>
@@ -101,7 +101,7 @@ function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <div className="footer-policies-row">
-            <Link to="/news/2">{t('footer.qhse')}</Link>
+            <Link to="/a-propos#politique-rse">{t('footer.qhse')}</Link>
             <span className="footer-policies-sep">|</span>
             <Link to="/a-propos#politique-rse">{t('footer.rse')}</Link>
             <span className="footer-policies-sep">|</span>

@@ -33,15 +33,11 @@ export const faqs = [
   },
   {
     id: 3,
-    category: 'stations',
-    question: { fr: 'Où puis-je trouver ZENER Bénin ?', en: 'Where can I find Zener Benin?' },
+    category: 'groupe',
+    question: { fr: 'Où le groupe ZENER est-il implanté ?', en: 'Where does the ZENER group operate?' },
     answer: {
-      fr:
-        'La page Stations indique notre siège à Cotonou, avec la possibilité d\'obtenir votre itinéraire ' +
-        "en un clic. Notre réseau au Bénin est en développement.",
-      en:
-        'The Stations page shows our head office in Cotonou, with the option to get directions in one ' +
-        'click. Our network in Benin is growing.',
+      fr: "ZENER est présent en Afrique de l'Ouest, avec des activités au Togo, au Bénin et en Guinée-Bissau.",
+      en: 'ZENER is present in West Africa, with operations in Togo, Benin and Guinea-Bissau.',
     },
   },
   {
@@ -63,24 +59,25 @@ export const faqs = [
     question: { fr: 'Quels produits propose la boutique ZENER ?', en: 'What products does the ZENER shop offer?' },
     answer: {
       fr:
-        'Notre boutique propose des lubrifiants, du gaz domestique, des accessoires et équipements liés à ' +
-        'nos stations-services. Retrouvez la sélection complète sur la page Boutique.',
+        'Notre boutique propose les bouteilles de gaz Sodigaz (Sikavi 6kg, Aboe Nomou 6kg, Abiré 12,5kg, ' +
+        'Multi Usage 25kg, Evalu 50kg, Apefa 3kg) et Enora (6kg et 12,5kg). Retrouvez la sélection complète ' +
+        'sur la page Boutique.',
       en:
-        'Our shop offers lubricants, household gas, and accessories and equipment related to our service ' +
-        'stations. See the full selection on the Shop page.',
+        'Our shop offers Sodigaz gas cylinders (Sikavi 6kg, Aboe Nomou 6kg, Abiré 12.5kg, Multi Usage 25kg, ' +
+        'Evalu 50kg, Apefa 3kg) and Enora cylinders (6kg and 12.5kg). See the full selection on the Shop page.',
     },
   },
   {
     id: 6,
     category: 'contact',
-    question: { fr: 'Comment contacter le service client ?', en: 'How do I contact customer service?' },
+    question: { fr: 'Comment contacter ZENER ?', en: 'How do I contact ZENER?' },
     answer: {
       fr:
-        "Depuis la page Contact, par téléphone, ou directement via votre Portail Client une fois connecté. " +
-        "Notre équipe s'engage à répondre dans les meilleurs délais.",
+        'Les coordonnées et le formulaire de contact sont disponibles depuis la page Contact, ainsi que dans ' +
+        'le pied de page : +228 22 27 20 00, info@zener.tg.',
       en:
-        "From the Contact page, by phone, or directly via your Client Portal once logged in. Our team is " +
-        "committed to responding as quickly as possible.",
+        'Contact details and the contact form are available on the Contact page and in the footer: ' +
+        '+228 22 27 20 00, info@zener.tg.',
     },
   },
   {
@@ -109,6 +106,19 @@ export const faqs = [
       en:
         "Yes, ZENER supports businesses, SMEs and institutions with energy and payment solutions tailored " +
         "to their operational needs. Contact our sales team from the Contact page to discuss your needs.",
+    },
+  },
+  {
+    id: 9,
+    category: 'groupe',
+    question: { fr: 'Quels métiers ZENER déploie-t-il ?', en: 'What businesses does ZENER operate?' },
+    answer: {
+      fr:
+        "Le Groupe opère dans la distribution de carburants, le gaz et l'énergie, la mobilité et les services, " +
+        'les lubrifiants et les solutions B2B.',
+      en:
+        'The Group operates in fuel distribution, gas and energy, mobility and services, lubricants and B2B ' +
+        'solutions.',
     },
   },
 ];

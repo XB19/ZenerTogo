@@ -61,6 +61,10 @@ function Navbar() {
               </li>
             ))}
           </ul>
+
+          <Link to="/contact" className="nav-menu-cta" onClick={closeMenu}>
+            {t('nav.contactCta')}
+          </Link>
         </nav>
 
         <div className="header-actions">

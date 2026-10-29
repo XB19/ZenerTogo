@@ -1,48 +1,63 @@
 {
   "hero": {
     "badge": "CONTACT US",
-    "title": "Let's talk about your energy needs",
-    "description": "Our team is here to answer all your questions and support you in your projects."
+    "title": "Contact us",
+    "description": "A presence in Togo, Benin and Guinea-Bissau. Let's talk about your energy, mobility or partnership projects."
   },
   "info": {
     "header": {
-      "title": "Our contact details",
-      "text": "Find all the information you need to quickly reach the ZENER teams."
+      "title": "Contact details",
+      "text": "Office — Togo. For institutional projects, technical partnerships or strategic collaborations, write to us using the form."
     },
     "address": {
       "title": "Address",
-      "line1": "Carré 426, Gbenan District, Cotonou, Benin",
-      "line2": "7th arrondissement, opposite Église Évangélique Source de Vie"
+      "line1": "Lomé Industrial Zone, Aného road",
+      "line2": "08 BP 8535 Lomé, Togo"
     },
     "phone": {
       "title": "Phone",
-      "value": "01 92 35 00 00"
+      "value": "+228 22 27 20 00"
     },
     "email": {
       "title": "Email",
-      "value": "Salomon.agbogan@zener.bj"
+      "value": "info@zener.tg"
     },
     "hours": {
       "title": "Opening hours",
-      "days": "Mon - Fri",
-      "time": "8:00 AM - 5:00 PM"
+      "days": "Mon – Fri: 8 am – 4:45 pm",
+      "time": "Saturday – Sunday: Closed"
     }
   },
   "form": {
     "header": {
-      "title": "Send us a message",
-      "text": "Fill out this form and our team will get back to you as soon as possible."
+      "title": "Sales inquiry",
+      "text": "We will get back to you as soon as possible."
     },
     "success": {
       "title": "Message sent successfully",
       "text": "Thank you for reaching out. Our team will respond as soon as possible."
     },
     "fields": {
-      "name": { "label": "Full name *", "placeholder": "Your full name" },
-      "email": { "label": "Email address *", "placeholder": "example@email.com" },
-      "phone": { "label": "Phone", "placeholder": "+229 XX XX XX XX" },
-      "subject": { "label": "Subject *", "placeholder": "Subject of your request" },
-      "message": { "label": "Your message *", "placeholder": "Describe your request..." }
+      "name": {
+        "label": "Full name *",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email address *",
+        "placeholder": "example@email.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+228 XX XX XX XX"
+      },
+      "subject": {
+        "label": "Subject *",
+        "placeholder": "Subject of your request"
+      },
+      "message": {
+        "label": "Your message *",
+        "placeholder": "Describe your request..."
+      }
     },
     "submitCta": "Send message"
   },

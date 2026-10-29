@@ -1,34 +1,34 @@
 {
   "hero": {
-    "badge": "NOS SERVICES",
-    "title": "Des solutions énergétiques adaptées à vos besoins"
+    "badge": "NOS MÉTIERS",
+    "title": "Énergie, mobilité et usages associés"
   },
   "intro": {
-    "title": "Une expertise énergétique complète",
-    "text": "Grâce à son réseau national et à son savoir-faire, ZENER propose des services de qualité répondant aux besoins des particuliers comme des professionnels."
+    "title": "Les métiers du Groupe",
+    "text": "ZENER déploie des métiers complémentaires au service de l'énergie, de la mobilité et des usages associés. Cette organisation permet au Groupe d'accompagner efficacement les besoins des particuliers, des entreprises et des institutions."
   },
   "grid": {
     "sectionTitle": "Nos domaines d'intervention",
     "cards": {
       "fuel": {
         "title": "Distribution de carburants",
-        "text": "Réseau national de stations-services offrant des carburants de qualité."
+        "text": "Réseau de stations et d'infrastructures de distribution."
       },
       "gas": {
-        "title": "Gaz domestique",
-        "text": "Solutions énergétiques adaptées aux ménages."
+        "title": "Gaz / énergie",
+        "text": "Solutions de gaz et d'énergie domestique."
       },
       "lubricants": {
         "title": "Lubrifiants",
-        "text": "Produits performants pour véhicules et industries."
+        "text": "Lubrifiants et accessoires pour les équipements."
       },
       "proximity": {
-        "title": "Services de proximité",
-        "text": "Des solutions innovantes pour simplifier le quotidien."
+        "title": "Mobilité & services",
+        "text": "Services de mobilité intégrés."
       },
       "environment": {
-        "title": "Environnement & écosystème",
-        "text": "Initiatives durables et actions en faveur de la préservation de l'environnement."
+        "title": "Solutions B2B",
+        "text": "Solutions énergétiques pour entreprises et institutions."
       }
     }
   },
@@ -52,8 +52,8 @@
     }
   },
   "cta": {
-    "title": "Besoin d'une solution énergétique ?",
-    "text": "Nos équipes sont à votre disposition.",
+    "title": "Demander un devis",
+    "text": "Parlons de vos besoins énergétiques, de mobilité ou de partenariats.",
     "button": "Nous contacter"
   }
 }

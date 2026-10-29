@@ -1,34 +1,34 @@
 {
   "hero": {
-    "badge": "OUR SERVICES",
-    "title": "Energy solutions tailored to your needs"
+    "badge": "OUR BUSINESSES",
+    "title": "Energy, mobility and related uses"
   },
   "intro": {
-    "title": "Comprehensive energy expertise",
-    "text": "Backed by its national network and expertise, ZENER offers quality services that meet the needs of individuals and professionals alike."
+    "title": "The Group's businesses",
+    "text": "ZENER runs complementary businesses serving energy, mobility and related uses. This organization allows the Group to effectively meet the needs of individuals, businesses and institutions."
   },
   "grid": {
     "sectionTitle": "Our areas of expertise",
     "cards": {
       "fuel": {
         "title": "Fuel Distribution",
-        "text": "A national network of service stations offering quality fuels."
+        "text": "A network of stations and distribution infrastructure."
       },
       "gas": {
-        "title": "Household Gas",
-        "text": "Energy solutions tailored to households."
+        "title": "Gas / energy",
+        "text": "Gas and household energy solutions."
       },
       "lubricants": {
         "title": "Lubricants",
-        "text": "High-performance products for vehicles and industry."
+        "text": "Lubricants and accessories for equipment."
       },
       "proximity": {
-        "title": "Convenience Services",
-        "text": "Innovative solutions to simplify everyday life."
+        "title": "Mobility & services",
+        "text": "Integrated mobility services."
       },
       "environment": {
-        "title": "Environment & Ecosystem",
-        "text": "Sustainable initiatives and actions to help protect the environment."
+        "title": "B2B solutions",
+        "text": "Energy solutions for businesses and institutions."
       }
     }
   },
@@ -52,8 +52,8 @@
     }
   },
   "cta": {
-    "title": "Need an energy solution?",
-    "text": "Our teams are ready to assist you.",
+    "title": "Request a quote",
+    "text": "Let's talk about your energy, mobility or partnership needs.",
     "button": "Contact us"
   }
 }

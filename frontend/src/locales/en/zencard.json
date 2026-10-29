@@ -1,27 +1,27 @@
 {
   "hero": {
     "badge": "ZENCARD",
-    "title": "The card that simplifies your fuel purchases"
+    "title": "Card and payment to secure, track and manage energy use"
   },
   "benefits": {
-    "heading": "Why choose the ZenCard?",
+    "heading": "Included features and services",
     "imageAlt": "ZENER ZenCard",
     "cards": {
       "speed": {
-        "title": "Fast payment",
-        "text": "Save time on every visit to a service station."
+        "title": "Dedicated cards",
+        "text": "Issuing and managing payment cards for your employees and partners."
       },
       "security": {
-        "title": "Secure",
-        "text": "A reliable solution for your transactions."
+        "title": "Rules and limits",
+        "text": "Limits by site, product, time or amount to prevent unauthorized use."
       },
       "tracking": {
-        "title": "Easy tracking",
-        "text": "Keep control of your fuel spending."
+        "title": "Traceability",
+        "text": "Transaction history for internal control and invoicing."
       },
       "accepted": {
-        "title": "Accepted everywhere",
-        "text": "Usable across the entire ZENER station network."
+        "title": "Management",
+        "text": "Dashboards to track consumption and adjust authorizations."
       }
     }
   },
@@ -67,8 +67,8 @@
     "moreLink": "See all frequently asked questions →"
   },
   "cta": {
-    "title": "Join ZenCard users",
-    "text": "A modern solution designed to make your mobility easier.",
+    "title": "Request a ZenCard setup",
+    "text": "Tell us your volume, sites and type of use: we will come back with a scoping proposal and next steps.",
     "button": "Apply now"
   }
 }

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getQuickQuestions, sendMessage } from '../services/chatService.js';
 import './ChatWidget.css';
@@ -51,7 +52,7 @@ function ChatWidget({ open, onOpenChange }) {
 
     try {
       const reply = await sendMessage(trimmed, i18n.language);
-      pushMessage({ id: `bot-${Date.now()}`, from: 'bot', text: reply });
+      pushMessage({ id: `bot-${Date.now()}`, from: 'bot', text: reply.text, links: reply.links });
     } finally {
       setSending(false);
     }
@@ -87,12 +88,29 @@ function ChatWidget({ open, onOpenChange }) {
 
           <div className="chat-messages">
             {messages.map((m) => (
-              <div className={`chat-bubble chat-bubble-${m.from}`} key={m.id}>
-                {m.text}
+              <div className={`chat-message chat-message-${m.from}`} key={m.id}>
+                <div className={`chat-bubble chat-bubble-${m.from}`}>{m.text}</div>
+                {m.links?.length > 0 && (
+                  <div className="chat-links">
+                    {m.links.map((l) => (
+                      <Link key={l.to} to={l.to} onClick={() => onOpenChange(false)}>
+                        {l.label} <i className="fa-solid fa-arrow-right"></i>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
 
-            {messages.length === 1 && (
+            {sending && (
+              <div className="chat-bubble chat-bubble-bot chat-typing" aria-label={t('chat.typing')}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            )}
+
+            {messages.length === 1 && !sending && (
               <div className="chat-suggestions">
                 {quickQuestions.map((q) => (
                   <button type="button" key={q} onClick={() => submitText(q)}>

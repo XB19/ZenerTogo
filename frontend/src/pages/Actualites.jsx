@@ -99,7 +99,7 @@ function Actualites() {
             ) : (
               filtered.map((act) => {
                 const titre = pickLang(act.titre, lang);
-                const contenu = pickLang(act.contenu, lang);
+                const contenu = pickLang(act.contenu, lang).replace(/^## /gm, '');
                 return (
                   <article className="news-card" key={act.id}>
                     <Link to={`/news/${act.id}`} className="news-image-link">
