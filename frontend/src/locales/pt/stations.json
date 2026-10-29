@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "badge": "REDE ZENER",
+    "title": "Encontre os nossos postos em todo o Togo",
+    "text": "Consulte os postos ZENER, encontre o mais próximo de si e obtenha o seu itinerário num clique."
+  },
+  "map": {
+    "title": "Mapa interativo dos postos",
+    "text": "Clique num posto para consultar as suas informações e obter o seu itinerário.",
+    "popupCta": "Ver o meu itinerário",
+    "ariaLabel": "Mapa dos postos ZENER no Togo"
+  },
+  "list": {
+    "title": "Os nossos principais postos"
+  },
+  "card": {
+    "call": "Ligar para o posto"
+  },
+  "cta": {
+    "title": "Sempre um posto perto de si",
+    "text": "A ZENER prossegue o desenvolvimento da sua rede para aproximar os seus serviços dos particulares e das empresas em todo o território.",
+    "button": "Contacte-nos"
+  },
+  "detail": {
+    "notFoundTitle": "Posto não encontrado",
+    "backToStations": "Voltar aos postos",
+    "servicesTitle": "Serviços disponíveis",
+    "directionsCta": "Obter o meu itinerário"
+  }
+}

@@ -1,10 +1,12 @@
+import { dateLocale } from './i18nData.js';
+
 export function parsePrice(priceStr) {
   const digits = String(priceStr).replace(/[^\d]/g, '');
   return digits ? parseInt(digits, 10) : 0;
 }
 
 export function formatPrice(amount, lang) {
-  const locale = lang === 'en' ? 'en-US' : 'fr-FR';
+  const locale = dateLocale(lang);
   // toLocaleString('fr-FR') groups digits with a narrow no-break space
   // (U+202F), which renders almost invisibly in most fonts. Swap it for a
   // regular space to match the spacing already used in the hardcoded

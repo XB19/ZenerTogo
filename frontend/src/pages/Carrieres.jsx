@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { offres } from '../data/mockData.js';
-import { pickLang } from '../utils/i18nData.js';
+import { dateLocale, pickLang } from '../utils/i18nData.js';
 import './Carrieres.css';
 
 const initialForm = { nom: '', email: '', telephone: '', poste: '', message: '' };
@@ -142,7 +142,7 @@ function Carrieres() {
                     {offre.date_limite && (
                       <div className="job-date">
                         {t('careers.jobs.deadline')} :{' '}
-                        {new Date(offre.date_limite).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR')}
+                        {new Date(offre.date_limite).toLocaleDateString(dateLocale(lang))}
                       </div>
                     )}
                   </div>

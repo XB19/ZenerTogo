@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ShareButtons from '../components/ShareButtons.jsx';
 import { actualites } from '../data/mockData.js';
-import { pickLang } from '../utils/i18nData.js';
+import { dateLocale, pickLang } from '../utils/i18nData.js';
 import './NewsDetail.css';
 
 const FALLBACK_IMAGE = '/images/station-banner.png';
@@ -72,7 +72,7 @@ function NewsDetail() {
           <div className="news-meta">
             <span>
               📅{' '}
-              {new Date(actualite.created_at).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR', {
+              {new Date(actualite.created_at).toLocaleDateString(dateLocale(lang), {
                 day: 'numeric',
                 month: 'short',
                 year: 'numeric',

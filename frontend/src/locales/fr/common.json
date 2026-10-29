@@ -85,5 +85,9 @@
     "submitError": "L'inscription a échoué. Merci de réessayer.",
     "consentPrefix": "J'accepte que mes données soient utilisées conformément à la",
     "privacyPolicy": "politique de confidentialité"
+  },
+  "a11y": {
+    "breadcrumb": "Fil d'Ariane",
+    "backToTop": "Retour en haut de page"
   }
 }

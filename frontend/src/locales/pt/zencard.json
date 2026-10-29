@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "badge": "ZENCARD",
+    "title": "Cartão e pagamento para proteger, rastrear e gerir as utilizações energéticas"
+  },
+  "benefits": {
+    "heading": "Funcionalidades e serviços incluídos",
+    "imageAlt": "ZenCard ZENER",
+    "cards": {
+      "speed": {
+        "title": "Cartões dedicados",
+        "text": "Emissão e gestão dos meios de pagamento para os seus colaboradores e parceiros."
+      },
+      "security": {
+        "title": "Regras e limites",
+        "text": "Limitação por local, produto, horário ou montante para evitar utilizações não autorizadas."
+      },
+      "tracking": {
+        "title": "Rastreabilidade",
+        "text": "Histórico das transações para o controlo interno e a faturação."
+      },
+      "accepted": {
+        "title": "Gestão",
+        "text": "Painéis de controlo para acompanhar os consumos e ajustar as autorizações."
+      }
+    }
+  },
+  "steps": {
+    "heading": "Como obter o seu ZenCard?",
+    "items": {
+      "form": {
+        "title": "Preencha o formulário",
+        "text": "Bastam algumas informações."
+      },
+      "validation": {
+        "title": "Validação",
+        "text": "A nossa equipa trata o seu pedido."
+      },
+      "pickup": {
+        "title": "Levante o seu cartão",
+        "text": "O seu ZenCard está pronto a ser utilizado."
+      }
+    }
+  },
+  "form": {
+    "heading": "Pedido de ZenCard",
+    "successMessage": "O seu pedido foi enviado. A nossa equipa entrará em contacto consigo em breve.",
+    "labels": {
+      "fullName": "Nome completo",
+      "phone": "Telefone",
+      "email": "E-mail",
+      "city": "Cidade",
+      "type": "Tipo de pedido",
+      "station": "Posto de levantamento",
+      "idPhoto": "Foto do documento de identificação"
+    },
+    "typeOptions": {
+      "select": "Selecionar",
+      "individual": "Particular",
+      "business": "Empresa"
+    },
+    "stationPlaceholder": "Escolher um posto",
+    "submitCta": "Enviar o meu pedido"
+  },
+  "faq": {
+    "heading": "Perguntas frequentes",
+    "moreLink": "Ver todas as perguntas frequentes →"
+  },
+  "cta": {
+    "title": "Pedir a implementação do ZenCard",
+    "text": "Indique o seu volume, os seus locais e o tipo de utilização: voltamos com um enquadramento e os próximos passos.",
+    "button": "Pedir agora"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "badge": "CONTACTE-NOS",
+    "title": "Contacte-nos",
+    "description": "Uma presença no Togo, no Benim e na Guiné-Bissau. Falemos dos seus projetos energéticos, de mobilidade ou de parcerias."
+  },
+  "info": {
+    "header": {
+      "title": "Contactos",
+      "text": "Escritório — Togo. Para projetos institucionais, parcerias técnicas ou colaborações estratégicas, escreva-nos através do formulário."
+    },
+    "address": {
+      "title": "Morada",
+      "line1": "Zona industrial de Lomé, estrada de Aného",
+      "line2": "08 BP 8535 Lomé, Togo"
+    },
+    "phone": {
+      "title": "Telefone",
+      "value": "+228 22 27 20 00"
+    },
+    "email": {
+      "title": "E-mail",
+      "value": "info@zener.tg"
+    },
+    "hours": {
+      "title": "Horário",
+      "days": "Seg. – Sex.: 8h00 – 16h45",
+      "time": "Sábado – Domingo: Encerrado"
+    }
+  },
+  "form": {
+    "header": {
+      "title": "Pedido comercial",
+      "text": "Respondemos com a maior brevidade possível."
+    },
+    "success": {
+      "title": "Mensagem enviada com sucesso",
+      "text": "Obrigado pelo seu contacto. A nossa equipa responderá com a maior brevidade possível."
+    },
+    "fields": {
+      "name": {
+        "label": "Nome completo *",
+        "placeholder": "O seu nome completo"
+      },
+      "email": {
+        "label": "Endereço de e-mail *",
+        "placeholder": "exemplo@email.com"
+      },
+      "phone": {
+        "label": "Telefone",
+        "placeholder": "+228 XX XX XX XX"
+      },
+      "subject": {
+        "label": "Assunto *",
+        "placeholder": "Assunto do seu pedido"
+      },
+      "message": {
+        "label": "A sua mensagem *",
+        "placeholder": "Descreva o seu pedido..."
+      }
+    },
+    "submitCta": "Enviar a mensagem"
+  },
+  "map": {
+    "title": "Onde estamos",
+    "placeholder": "Google Maps aqui"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "badge": "NOTÍCIAS ZENER",
+    "title": "Acompanhe as últimas informações e eventos da ZENER",
+    "text": "A ZENER partilha as suas notícias, projetos estruturantes e tomadas de posição para esclarecer o seu desenvolvimento e os desafios do setor da energia na África Ocidental."
+  },
+  "intro": {
+    "subtitle": "As nossas publicações",
+    "title": "Todas as notícias da ZENER",
+    "text": "Encontre regularmente as últimas novidades sobre as nossas atividades, inovações, compromissos e a evolução do setor energético no Togo."
+  },
+  "filters": {
+    "ariaLabel": "Filtrar por categoria",
+    "all": "Todas"
+  },
+  "empty": "Ainda não há notícias nesta categoria.",
+  "readMore": "Ler o artigo →",
+  "cta": {
+    "title": "Mantenha-se ligado",
+    "text": "Acompanhe todas as notícias da ZENER e os nossos próximos eventos.",
+    "button": "Contacte-nos"
+  },
+  "notFound": {
+    "title": "Notícia não encontrada",
+    "back": "Voltar às notícias"
+  },
+  "detail": {
+    "back": "← Voltar às notícias",
+    "author": "Notícias ZENER"
+  }
+}

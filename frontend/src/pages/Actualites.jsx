@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { actualites } from '../data/mockData.js';
-import { pickLang } from '../utils/i18nData.js';
+import { dateLocale, pickLang } from '../utils/i18nData.js';
 import './Actualites.css';
 
 const FALLBACK_IMAGE = '/images/station-banner.png';
@@ -118,7 +118,7 @@ function Actualites() {
                       <div className="news-meta">
                         <span className="news-category-badge">{pickLang(act.categorie, lang)}</span>
                         {' • '}
-                        {new Date(act.created_at).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR', { day: 'numeric', month: 'short', year: 'numeric' })}
+                        {new Date(act.created_at).toLocaleDateString(dateLocale(lang), { day: 'numeric', month: 'short', year: 'numeric' })}
                       </div>
 
                       <h3>

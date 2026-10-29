@@ -1,0 +1,100 @@
+{
+  "successMessage": "A sua candidatura foi enviada.",
+  "hero": {
+    "badge": "CARREIRAS",
+    "title": "Construa o seu futuro com a ZENER",
+    "text": "Junte-se a uma empresa dinâmica que participa ativamente no desenvolvimento energético do Togo e investe no talento dos seus colaboradores."
+  },
+  "intro": {
+    "title": "Porquê juntar-se à ZENER?",
+    "text": "Na ZENER, acreditamos que o nosso sucesso assenta nas mulheres e nos homens que compõem a nossa equipa. Favorecemos o desenvolvimento de competências, a inovação e o espírito de equipa."
+  },
+  "values": {
+    "sectionTitle": "Os nossos compromissos de RH",
+    "training": {
+      "title": "Formação",
+      "text": "Desenvolver as competências."
+    },
+    "innovation": {
+      "title": "Inovação",
+      "text": "Incentivar novas ideias."
+    },
+    "growth": {
+      "title": "Evolução",
+      "text": "Oferecer perspetivas de carreira."
+    },
+    "wellbeing": {
+      "title": "Bem-estar",
+      "text": "Valorizar cada colaborador."
+    }
+  },
+  "stats": {
+    "partners": "Parceiros",
+    "stations": "Postos",
+    "experience": "Anos de experiência",
+    "commitment": "Compromisso"
+  },
+  "jobs": {
+    "sectionTitle": "Ofertas de emprego",
+    "emptyTitle": "De momento não há ofertas disponíveis",
+    "emptyText": "Volte em breve para descobrir as nossas novas oportunidades.",
+    "deadline": "Data limite",
+    "apply": "Candidatar-se"
+  },
+  "application": {
+    "title": "Candidatura espontânea",
+    "text": "Não encontra uma oferta que corresponda ao seu perfil? Envie-nos a sua candidatura e a nossa equipa irá analisá-la com atenção.",
+    "namePlaceholder": "Nome completo",
+    "emailPlaceholder": "Endereço de e-mail",
+    "phonePlaceholder": "Telefone",
+    "positionPlaceholder": "Cargo pretendido",
+    "cvLabel": "Curriculum Vitae (CV) *",
+    "coverLetterLabel": "Carta de motivação",
+    "messagePlaceholder": "Apresente brevemente o seu perfil, as suas competências ou a sua motivação...",
+    "submit": "Enviar a minha candidatura"
+  },
+  "cta": {
+    "title": "Junte-se à aventura ZENER",
+    "text": "Juntos, construamos a energia de amanhã.",
+    "button": "Contacte-nos"
+  },
+  "jobDetail": {
+    "notFound": {
+      "title": "Oferta não encontrada",
+      "text": "Esta oferta não existe ou já não está disponível.",
+      "backLink": "Voltar às ofertas"
+    },
+    "success": {
+      "title": "Parabéns!",
+      "text": "A sua candidatura foi enviada com sucesso.",
+      "close": "Fechar"
+    },
+    "hero": {
+      "tagline": "Junte-se à ZENER e participe na transformação energética do Togo."
+    },
+    "backLink": "Voltar às ofertas",
+    "sections": {
+      "description": "Descrição do cargo",
+      "missions": "Principais funções",
+      "profile": "Perfil procurado"
+    },
+    "sidebar": {
+      "location": "Localização",
+      "contract": "Contrato",
+      "department": "Departamento",
+      "publishedDate": "Data de publicação",
+      "active": "Oferta ativa"
+    },
+    "apply": {
+      "title": "Candidatar-se a esta oferta",
+      "subtitle": "Preencha o formulário abaixo para enviar a sua candidatura.",
+      "nameLabel": "Nome completo *",
+      "emailLabel": "E-mail *",
+      "phoneLabel": "Telefone *",
+      "cvLabel": "CV *",
+      "motivationLabel": "Motivação",
+      "messagePlaceholder": "Apresente o seu perfil, as suas competências e a sua motivação...",
+      "submit": "Enviar a minha candidatura"
+    }
+  }
+}

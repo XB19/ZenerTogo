@@ -1,0 +1,148 @@
+{
+  "hero": {
+    "badge": "O GRUPO",
+    "title": "A energia no centro das utilizações",
+    "description": "Grupo energético africano, a ZENER desenvolve soluções de combustíveis, gás, mobilidade e serviços para apoiar de forma duradoura particulares, empresas e instituições."
+  },
+  "company": {
+    "subtitle": "A Zener em poucas palavras",
+    "title": "Uma especialização energética enraizada no Togo, uma ambição regional",
+    "p1": "A ZENER é um ator de referência do setor da energia no Togo, presente em toda a cadeia de valor através da distribuição de combustíveis e gás, dos lubrificantes, dos serviços de mobilidade e das soluções energéticas destinadas a particulares, profissionais, empresas e instituições. Ao longo dos anos, a ZENER desenvolveu infraestruturas, uma rede de distribuição, marcas fortes e um ecossistema de serviços que lhe permitem responder à evolução das utilizações e das necessidades energéticas.",
+    "p2": "Com uma presença histórica no Togo, a ZENER inscreve-se numa dinâmica de desenvolvimento regional com presença no Benim e na Guiné-Bissau. Esta abertura traduz uma ambição: fazer crescer um modelo energético africano assente no domínio das áreas de negócio, na proximidade aos mercados e na inovação. Hoje, a ZENER prossegue a sua transformação com a vontade de conjugar desempenho operacional, qualidade de serviço e desenvolvimento de novas soluções ao serviço de uma energia mais acessível e mais próxima das utilizações.",
+    "badge": "anos de especialização energética",
+    "list": {
+      "quality": "Liberdade",
+      "coverage": "Inovação",
+      "support": "Modernidade",
+      "innovation": "Mobilidade"
+    }
+  },
+  "stats": {
+    "stations": "Postos Oasis",
+    "partners": "Colaboradores",
+    "clients": "Países de presença",
+    "experience": "Anos de experiência"
+  },
+  "vision": {
+    "eyebrow": "Visão e estratégia",
+    "title": "Tornar-se um parceiro de referência na África Ocidental e Central",
+    "p1": "A ZENER tem a ambição de se tornar um parceiro energético de referência na África Ocidental e Central, desenvolvendo soluções adaptadas às realidades dos mercados e à evolução das utilizações.",
+    "p2": "A sua estratégia assenta na consolidação das suas áreas de negócio históricas, no desenvolvimento de novas soluções energéticas e de mobilidade, na inovação nos serviços e no reforço progressivo da sua presença regional. Esta ambição inscreve-se numa abordagem de crescimento responsável, assente no domínio das operações, na qualidade de serviço e na capacidade de responder de forma duradoura às necessidades dos territórios, das empresas e das populações."
+  },
+  "governance": {
+    "eyebrow": "Governação",
+    "title": "Governação",
+    "p1": "A governação da ZENER assenta em órgãos de decisão e de gestão que definem as orientações estratégicas, asseguram o acompanhamento das atividades e zelam pelo desempenho da empresa.",
+    "p2": "Apoia-se numa organização estruturada, numa repartição clara das responsabilidades e numa cultura de responsabilização a todos os níveis. Esta governação acompanha as ambições da ZENER, sustenta o domínio das suas operações e contribui para inscrever o seu desenvolvimento no longo prazo."
+  },
+  "presence": {
+    "eyebrow": "Presença geográfica",
+    "title": "Presença geográfica",
+    "p1": "A ZENER está presente no Togo, no Benim e na Guiné-Bissau, com atividades e equipas próximas das realidades de cada mercado.",
+    "p2": "Com esta implantação na África Ocidental, a ZENER prossegue o seu desenvolvimento regional com a ambição de reforçar a sua presença e de implementar progressivamente as suas competências em novos mercados.",
+    "cta": "Ver todos os nossos postos"
+  },
+  "careers": {
+    "eyebrow": "Carreiras na Zener",
+    "title": "Desenvolva o seu potencial na Zener",
+    "text": "A ZENER constrói-se com mulheres e homens empenhados, que contribuem todos os dias para transformar os setores da energia e da mobilidade na África Ocidental. O Grupo valoriza a responsabilidade, o espírito de iniciativa e o desenvolvimento de competências, num ambiente que incentiva a aprendizagem e a colaboração. A ZENER oferece oportunidades de evolução em áreas variadas: operacionais, técnicas, comerciais e digitais. Juntar-se à ZENER é participar num projeto em crescimento, com sentido e virado para o futuro.",
+    "cta": "Ver as nossas ofertas"
+  },
+  "subsidiaries": {
+    "eyebrow": "Filiais e entidades",
+    "title": "Uma execução local, uma visão de grupo",
+    "intro": "A ZENER desenvolve as suas atividades através de filiais e entidades especializadas, organizadas por mercados e áreas de especialização. O Grupo apoia-se nomeadamente na ZenGrupo (Guiné-Bissau), na Zener Togo (Togo), na Zener Benin (Benim), na PLS (armazenamento e distribuição de propano) e na PGS (soluções energéticas).",
+    "metiersTitle": "As nossas áreas de negócio",
+    "metiersIntro": "A ZENER desenvolve áreas de negócio complementares ao serviço da energia, da mobilidade e das utilizações associadas. Esta organização permite ao Grupo acompanhar eficazmente as necessidades de particulares, empresas e instituições.",
+    "prevAria": "Área de negócio anterior",
+    "nextAria": "Área de negócio seguinte",
+    "paginationAria": "Navegação do carrossel",
+    "metiers": {
+      "maritime": {
+        "title": "Bunkering marítimo e aviação",
+        "text": "A ZENER assegura o fornecimento de combustível a navios (bunkering), apoiando-se em operações controladas que cumprem as exigências de segurança e de continuidade do abastecimento, com uma ambição na aviação."
+      },
+      "fuel": {
+        "title": "Distribuição de combustíveis",
+        "text": "A ZENER assegura a distribuição de combustíveis através de uma rede estruturada de postos e infraestruturas que cumprem as normas internacionais de segurança e qualidade."
+      },
+      "gas": {
+        "title": "Gás / energia",
+        "text": "A ZENER desenvolve soluções de gás e de energia doméstica seguras e acessíveis, adaptadas às necessidades das famílias e das atividades de proximidade, com as suas marcas Sodigaz e Enora."
+      },
+      "cards": {
+        "title": "ZenCard",
+        "subtitle": "Cartão e pagamento para proteger, rastrear e gerir as utilizações energéticas",
+        "text": "O ZenCard equipa frotas, locais e parceiros com um meio de pagamento dedicado à energia. Os consumos são registados, os limites são configuráveis e as equipas gerem as utilizações em tempo real."
+      },
+      "lubricants": {
+        "title": "Lubrificantes",
+        "text": "A ZENER propõe uma gama de lubrificantes e acessórios selecionados para garantir o desempenho, a durabilidade e a proteção dos equipamentos."
+      }
+    }
+  },
+  "profile": {
+    "eyebrow": "O seu perfil",
+    "title": "Soluções adaptadas às suas utilizações",
+    "cards": {
+      "business": {
+        "title": "Empresa / PME",
+        "text": "Soluções dedicadas às empresas para proteger as operações, controlar os custos e otimizar as utilizações energéticas."
+      },
+      "horeca": {
+        "title": "HORECA",
+        "text": "A ZENER acompanha hotéis, restaurantes, cafés e estabelecimentos de serviços com soluções energéticas fiáveis, adaptadas às exigências de exploração."
+      },
+      "partners": {
+        "title": "Parceiros e instituições",
+        "text": "A ZENER colabora com instituições públicas, parceiros técnicos e financeiros e organizações estruturantes."
+      }
+    }
+  },
+  "digital": {
+    "eyebrow": "Digital e inovação",
+    "title": "Gerir as utilizações energéticas",
+    "p1": "A ZENER integra a inovação e o digital como alavancas estruturantes de desempenho, transparência e experiência.",
+    "p2": "Plataformas e iniciativas: ZenCard, ZenFamili, Zenaya, Segurança e dados, Inovação e projetos-piloto.",
+    "cards": {
+      "zencard": {
+        "title": "ZenCard",
+        "text": "Solução de cartão e de pagamento dedicada, que permite proteger, rastrear e gerir as utilizações energéticas."
+      },
+      "zenfamili": {
+        "title": "ZenFamili",
+        "text": "Ecossistema digital de fidelização e de experiência do cliente, concebido para reforçar a relação, o envolvimento e a continuidade das utilizações."
+      },
+      "security": {
+        "title": "Segurança e dados",
+        "text": "Uma abordagem rigorosa da segurança das operações e da gestão dos dados, ao serviço da fiabilidade, da conformidade e da confiança."
+      },
+      "zenmobility": {
+        "title": "Zenaya",
+        "text": "Serviço de assistência e de relação com o cliente, que combina o digital e o acompanhamento humano para um serviço mais reativo e acessível."
+      }
+    }
+  },
+  "rse": {
+    "eyebrow": "Impacto e RSE",
+    "title": "As pessoas, a segurança e o ambiente",
+    "p1": "Consciente do seu papel e do seu impacto enquanto empresa cidadã, a ZENER integra plenamente a Responsabilidade Social das Empresas (RSE) na sua estratégia global. A nossa ambição é prosseguir o nosso desenvolvimento na inovação energética e digital, colocando as pessoas, a segurança e o ambiente no centro das nossas ações.",
+    "p2": "Governação e ética: padrões rigorosos em matéria de ética, transparência e conformidade, ao serviço de uma empresa segura, dinâmica e responsável. Sensibilizar para mais segurança: um programa de sensibilização para a segurança na utilização do GPL e dos combustíveis, para promover boas práticas e reduzir os riscos.",
+    "p3": "Melhorar as condições de vida: projetos sociais, ações comunitárias e iniciativas locais para apoiar as populações e o bem-estar das comunidades. Preservar o ambiente: soluções e práticas destinadas a limitar as emissões, reduzir os resíduos e favorecer uma transição energética sustentável."
+  },
+  "mission": {
+    "mission": {
+      "title": "A nossa missão",
+      "text": "Desenvolver soluções de combustíveis, gás, mobilidade e serviços para apoiar de forma duradoura particulares, empresas e instituições."
+    },
+    "vision": {
+      "title": "A nossa visão",
+      "text": "Tornar-se um parceiro energético de referência na África Ocidental e Central."
+    }
+  },
+  "cta": {
+    "title": "Contacte as nossas equipas",
+    "text": "Falemos das suas necessidades energéticas, de mobilidade ou de parcerias.",
+    "button": "Contacte-nos"
+  }
+}

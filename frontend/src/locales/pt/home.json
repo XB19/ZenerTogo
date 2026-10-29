@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "titleLine1": "ZENER,",
+    "titleLine2": "A ENERGIA NO CENTRO",
+    "titleLine3": "DAS UTILIZAÇÕES",
+    "description": "Grupo energético africano, a ZENER desenvolve soluções de combustíveis, gás, mobilidade e serviços para apoiar de forma duradoura particulares, empresas e instituições.",
+    "exploreCta": "Explorar as nossas soluções",
+    "zencardCta": "Obter o ZenCard"
+  },
+  "presentation": {
+    "badge": "Um grupo energético africano em movimento",
+    "text": "A ZENER desenvolve e implementa soluções energéticas adaptadas às realidades dos mercados africanos. Através das suas atividades nos combustíveis, no gás, nos lubrificantes, na mobilidade e nos serviços energéticos, o Grupo acompanha diariamente particulares, profissionais, empresas e instituições. Presente no Togo, no Benim e na Guiné-Bissau, a ZENER prossegue o seu desenvolvimento regional apoiando-se num conhecimento aprofundado dos seus mercados, em infraestruturas dedicadas e numa cultura de inovação orientada para as utilizações."
+  },
+  "stats": {
+    "countries": "Países de presença",
+    "employees": "Colaboradores",
+    "experience": "Anos de experiência",
+    "businesses": "Áreas de negócio estratégicas"
+  },
+  "expertise": {
+    "sectionTitle": "AS NOSSAS MARCAS E SOLUÇÕES",
+    "subtitle": "A ZENER desenvolve áreas de negócio complementares ao serviço da energia, da mobilidade e das utilizações associadas.",
+    "label": "As nossas áreas de negócio",
+    "prevAria": "Área de negócio anterior",
+    "nextAria": "Área de negócio seguinte",
+    "paginationAria": "Navegação do carrossel",
+    "cards": {
+      "fuel": {
+        "title": "Distribuição de combustíveis",
+        "text": "A ZENER assegura a distribuição de combustíveis através de uma rede estruturada de postos e infraestruturas que cumprem as normas internacionais de segurança e qualidade."
+      },
+      "gas": {
+        "title": "Gás / energia",
+        "text": "A ZENER desenvolve soluções de gás e de energia doméstica seguras e acessíveis, adaptadas às necessidades das famílias e das atividades de proximidade."
+      },
+      "mobility": {
+        "title": "Mobilidade e serviços",
+        "text": "A ZENER concebe serviços de mobilidade integrados para acompanhar as deslocações, as utilizações profissionais e as novas expectativas dos utilizadores."
+      },
+      "lubricants": {
+        "title": "Lubrificantes",
+        "text": "A ZENER propõe uma gama de lubrificantes e acessórios selecionados para garantir o desempenho, a durabilidade e a proteção dos equipamentos."
+      },
+      "business": {
+        "title": "Soluções B2B",
+        "text": "A ZENER acompanha empresas e instituições com soluções energéticas e serviços B2B concebidos para responder a necessidades operacionais complexas."
+      }
+    }
+  },
+  "banner": {
+    "title": "Oasis, a rede de postos Zener",
+    "text": "A Oasis reúne os postos ZENER: combustíveis, serviços de proximidade e um acolhimento pensado tanto para as deslocações do dia a dia como para as frotas. Um lugar de descanso e de serviços em todo o território.",
+    "cta": "Encontrar-nos"
+  },
+  "engagements": {
+    "sectionTitle": "Impacto e RSE",
+    "quality": {
+      "title": "Governação e ética",
+      "text": "Padrões rigorosos em matéria de ética, transparência e conformidade, ao serviço de uma empresa segura, dinâmica e responsável."
+    },
+    "security": {
+      "title": "Sensibilizar para mais segurança",
+      "text": "Um programa de sensibilização para a segurança na utilização do GPL e dos combustíveis, para promover boas práticas e reduzir os riscos."
+    },
+    "responsibility": {
+      "title": "Preservar o ambiente",
+      "text": "Soluções e práticas destinadas a limitar as emissões, reduzir os resíduos e favorecer uma transição energética sustentável."
+    }
+  },
+  "shop": {
+    "title": "Descubra os nossos produtos de gás e acessórios",
+    "cta": "Ver a loja"
+  },
+  "news": {
+    "sectionTitle": "Notícias e perspetivas",
+    "badge": "NOTÍCIA",
+    "cta": "Todas as notícias"
+  },
+  "testimonials": {
+    "title": "Confiam em nós"
+  },
+  "faq": {
+    "sectionTitle": "FAQ",
+    "cta": "Ver todas as perguntas frequentes"
+  }
+}

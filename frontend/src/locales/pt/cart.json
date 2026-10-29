@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "badge": "CARRINHO",
+    "title": "O seu carrinho"
+  },
+  "empty": {
+    "text": "O seu carrinho está vazio de momento.",
+    "cta": "Descobrir a loja"
+  },
+  "items": {
+    "remove": "Remover o artigo",
+    "decrease": "Diminuir a quantidade",
+    "increase": "Aumentar a quantidade"
+  },
+  "summary": {
+    "title": "Resumo",
+    "itemsCount_one": "{{count}} artigo",
+    "itemsCount_other": "{{count}} artigos",
+    "total": "Total",
+    "checkout": "Finalizar a encomenda",
+    "continue": "Continuar as compras"
+  }
+}

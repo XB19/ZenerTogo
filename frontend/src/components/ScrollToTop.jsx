@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './ScrollToTop.css';
 
 function ScrollToTop() {
+  const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
   const ticking = useRef(false);
 
@@ -30,7 +32,7 @@ function ScrollToTop() {
       type="button"
       className={`scroll-to-top${visible ? ' visible' : ''}`}
       onClick={handleClick}
-      aria-label="Retour en haut de page"
+      aria-label={t('a11y.backToTop')}
     >
       <i className="fa-solid fa-arrow-up"></i>
     </button>

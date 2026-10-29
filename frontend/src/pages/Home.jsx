@@ -6,7 +6,7 @@ import FAQSection from '../components/FAQSection.jsx';
 import useRevealOnScroll from '../hooks/useRevealOnScroll.js';
 import { boutiqueProducts, actualites } from '../data/mockData.js';
 import { faqs } from '../data/faq.js';
-import { pickLang } from '../utils/i18nData.js';
+import { dateLocale, pickLang } from '../utils/i18nData.js';
 
 const homeFaqIds = [3, 9, 6, 1, 5];
 
@@ -322,7 +322,7 @@ function Home() {
                 </div>
                 <div className="news-card-body">
                   <span>
-                    {t('home.news.badge')} · {new Date(item.created_at).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR')}
+                    {t('home.news.badge')} · {new Date(item.created_at).toLocaleDateString(dateLocale(lang))}
                   </span>
                   <h3>{pickLang(item.titre, lang)}</h3>
                   <p>{pickLang(item.contenu, lang).replace(/^## /gm, '')}</p>

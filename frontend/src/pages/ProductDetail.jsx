@@ -54,7 +54,7 @@ function ProductDetail() {
 
       <section className="product-main">
         <div className="container">
-          <nav className="product-breadcrumb" aria-label="Fil d'Ariane">
+          <nav className="product-breadcrumb" aria-label={t('a11y.breadcrumb')}>
             <Link to="/">{t('boutique.breadcrumb.home')}</Link>
             <span aria-hidden="true">/</span>
             <Link to="/produits">{t('boutique.breadcrumb.products')}</Link>

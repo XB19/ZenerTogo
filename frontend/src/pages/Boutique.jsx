@@ -121,7 +121,7 @@ function Boutique() {
 
         <div className="container">
           <div className="shop-hero-content">
-            <nav className="zn-breadcrumb" aria-label="Fil d'Ariane">
+            <nav className="zn-breadcrumb" aria-label={t('a11y.breadcrumb')}>
               <Link to="/">{t('boutique.breadcrumb.home')}</Link>
               <span aria-hidden="true">/</span>
               <span>{t('boutique.breadcrumb.catalog')}</span>

@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "AS NOSSAS ÁREAS DE NEGÓCIO",
+    "title": "Energia, mobilidade e utilizações associadas"
+  },
+  "intro": {
+    "title": "As áreas de negócio do Grupo",
+    "text": "A ZENER desenvolve áreas de negócio complementares ao serviço da energia, da mobilidade e das utilizações associadas. Esta organização permite ao Grupo acompanhar eficazmente as necessidades de particulares, empresas e instituições."
+  },
+  "grid": {
+    "sectionTitle": "As nossas áreas de intervenção",
+    "cards": {
+      "fuel": {
+        "title": "Distribuição de combustíveis",
+        "text": "Rede de postos e infraestruturas de distribuição."
+      },
+      "gas": {
+        "title": "Gás / energia",
+        "text": "Soluções de gás e de energia doméstica."
+      },
+      "lubricants": {
+        "title": "Lubrificantes",
+        "text": "Lubrificantes e acessórios para os equipamentos."
+      },
+      "proximity": {
+        "title": "Mobilidade e serviços",
+        "text": "Serviços de mobilidade integrados."
+      },
+      "environment": {
+        "title": "Soluções B2B",
+        "text": "Soluções energéticas para empresas e instituições."
+      }
+    }
+  },
+  "why": {
+    "title": "Porquê escolher a ZENER?",
+    "items": {
+      "network": "Uma rede nacional eficaz",
+      "products": "Produtos certificados e fiáveis",
+      "service": "Apoio ao cliente reativo",
+      "innovation": "Inovação permanente",
+      "team": "Uma equipa experiente"
+    }
+  },
+  "process": {
+    "title": "A nossa abordagem",
+    "steps": {
+      "analysis": "Análise",
+      "advice": "Aconselhamento",
+      "implementation": "Implementação",
+      "monitoring": "Acompanhamento"
+    }
+  },
+  "cta": {
+    "title": "Pedir um orçamento",
+    "text": "Falemos das suas necessidades energéticas, de mobilidade ou de parcerias.",
+    "button": "Contacte-nos"
+  }
+}

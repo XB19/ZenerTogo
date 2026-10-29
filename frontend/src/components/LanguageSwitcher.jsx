@@ -4,6 +4,7 @@ import './LanguageSwitcher.css';
 const LANGUAGES = [
   { code: 'fr', label: 'FR' },
   { code: 'en', label: 'EN' },
+  { code: 'pt', label: 'PT' },
 ];
 
 function LanguageSwitcher() {
@@ -11,7 +12,7 @@ function LanguageSwitcher() {
   const current = i18n.resolvedLanguage || 'fr';
 
   return (
-    <div className="language-switcher" role="group" aria-label="Choix de la langue / Language">
+    <div className="language-switcher" role="group" aria-label="Langue / Language / Idioma">
       {LANGUAGES.map((lang) => (
         <button
           type="button"

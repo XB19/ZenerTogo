@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre nós",
+    "services": "Serviços",
+    "stations": "Postos",
+    "zencard": "ZenCard",
+    "news": "Notícias",
+    "faq": "FAQ",
+    "careers": "Carreiras",
+    "bonPlan": "Promoções",
+    "contactCta": "Contacte-nos",
+    "clientSpace": "Área de cliente",
+    "cart": "Carrinho",
+    "search": "Pesquisar",
+    "openMenu": "Abrir o menu"
+  },
+  "footer": {
+    "tagline": "A energia no centro das utilizações",
+    "quickLinks": "Ligações rápidas",
+    "ourServices": "Os nossos serviços",
+    "fuels": "Combustíveis",
+    "gas": "Gás",
+    "lubricants": "Lubrificantes",
+    "gasStations": "Postos de abastecimento",
+    "spaces": "Áreas",
+    "clientPortal": "Portal do cliente",
+    "customerCare": "Apoio ao cliente",
+    "contact": "Contacto",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "address": "Morada",
+    "socialNetworks": "Redes sociais",
+    "qhse": "Política QHSE",
+    "rse": "Política de RSE",
+    "locations": "Ramatou - Agoè - Nyékonapoè - Aného - Kpalimé - Kara - Telessou - Tsévié - Doumassesse - Blita - Atakpamé",
+    "joinUs": "Siga-nos",
+    "privacyPolicy": "Política de privacidade",
+    "copyright": "COPYRIGHT © ZENER 2026"
+  },
+  "search": {
+    "placeholder": "Pesquisar uma notícia, um produto...",
+    "ariaLabel": "Pesquisar no site",
+    "close": "Fechar a pesquisa",
+    "hint": "Escreva para pesquisar nas notícias e na loja.",
+    "noResults": "Nenhum resultado para «{{query}}».",
+    "typeNews": "Notícia",
+    "typeProduct": "Produto"
+  },
+  "chat": {
+    "toggleOpen": "Abrir o chat",
+    "toggleClose": "Fechar o chat",
+    "windowLabel": "Assistência ZENER",
+    "header": "ZENER — Assistência",
+    "welcome": "Olá 👋 Como podemos ajudar hoje?",
+    "placeholder": "Escreva a sua mensagem...",
+    "inputLabel": "A sua mensagem",
+    "send": "Enviar",
+    "typing": "O assistente está a escrever…"
+  },
+  "shareButtons": {
+    "label": "Partilhar:",
+    "shareOn": "Partilhar no {{network}}",
+    "copyLink": "Copiar a ligação",
+    "copied": "Ligação copiada!"
+  },
+  "promoModal": {
+    "close": "Fechar"
+  },
+  "cards": {
+    "learnMore": "Saber mais",
+    "addToCart": "Adicionar ao carrinho",
+    "addToCartAria": "Adicionar {{name}} ao carrinho",
+    "added": "Adicionado"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Receba as nossas notícias e ofertas diretamente por e-mail.",
+    "placeholder": "O seu endereço de e-mail",
+    "submit": "Subscrever",
+    "submitting": "...",
+    "success": "Obrigado! A sua subscrição foi registada.",
+    "invalidEmail": "Indique um endereço de e-mail válido.",
+    "consentRequired": "Aceite a política de privacidade para continuar.",
+    "submitError": "A subscrição falhou. Tente novamente.",
+    "consentPrefix": "Aceito que os meus dados sejam utilizados de acordo com a",
+    "privacyPolicy": "política de privacidade"
+  },
+  "a11y": {
+    "breadcrumb": "Trilho de navegação",
+    "backToTop": "Voltar ao topo"
+  }
+}

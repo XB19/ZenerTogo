@@ -1,0 +1,48 @@
+{
+  "anniv": {
+    "badge": "15 ANOS",
+    "textBefore": "A ZENER celebra",
+    "textStrong": "15 anos de excelência energética",
+    "textAfter": "ao serviço de particulares, empresas e instituições no Togo."
+  },
+  "hero": {
+    "tag": "ZENER",
+    "titleLine1": "Promoções",
+    "titleAmp": "&",
+    "titleLine2": "ZenCard",
+    "text": "Ofertas especiais, promoções e vantagens exclusivas selecionadas para si.",
+    "cta": "💳 Carregar o meu ZenCard"
+  },
+  "section": {
+    "tag": "Ofertas e promoções",
+    "title": "As nossas promoções do momento"
+  },
+  "gallery": {
+    "badge": "ZenCard",
+    "enlarge": "🔍 Ampliar",
+    "items": {
+      "pub2": { "alt": "Publicidade ZenCard 2", "title": "ZenCard — Oferta especial" },
+      "pub3": { "alt": "Publicidade ZenCard 3", "title": "ZenCard — Promoção exclusiva" },
+      "pub5": { "alt": "Publicidade ZenCard 5", "title": "ZenCard — Promoção n.º 5" },
+      "pub5b": { "alt": "Publicidade ZenCard 5B", "title": "ZenCard — Edição especial" },
+      "pub6": { "alt": "Publicidade ZenCard 6", "title": "ZenCard — Promoção n.º 6" },
+      "pub6b": { "alt": "Publicidade ZenCard 6B", "title": "ZenCard — Oferta limitada" },
+      "pub7": { "alt": "Publicidade ZenCard 7", "title": "ZenCard — Promoção n.º 7" },
+      "product": { "alt": "Produto ZenCard", "title": "ZenCard — O produto" }
+    }
+  },
+  "textCard": {
+    "badge": "Promoção",
+    "title": "Formação gratuita: Excel RH",
+    "text": "A Kapi Consult oferece-lhe acesso gratuito à sua formação Excel RH.",
+    "link": "Ver o detalhe →"
+  },
+  "lightbox": {
+    "close": "✕"
+  },
+  "zencardModal": {
+    "close": "✕",
+    "title": "Carregamento ZenCard",
+    "text": "O sistema de carregamento estará disponível em breve."
+  }
+}

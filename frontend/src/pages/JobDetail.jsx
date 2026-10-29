@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { offres } from '../data/mockData.js';
-import { pickLang } from '../utils/i18nData.js';
+import { dateLocale, pickLang } from '../utils/i18nData.js';
 import './JobDetail.css';
 
 const initialForm = { nom: '', email: '', telephone: '' };
@@ -117,7 +117,7 @@ function JobDetail() {
 
               <div className="info-item">
                 <span className="info-label">{t('careers.jobDetail.sidebar.publishedDate')}</span>
-                {new Date(offre.created_at).toLocaleDateString(lang === 'en' ? 'en-GB' : 'fr-FR')}
+                {new Date(offre.created_at).toLocaleDateString(dateLocale(lang))}
               </div>
 
               <div className="info-item">

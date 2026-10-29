@@ -1,0 +1,97 @@
+{
+  "breadcrumb": {
+    "home": "Início",
+    "catalog": "Catálogo",
+    "products": "Produtos"
+  },
+  "hero": {
+    "badge": "CATÁLOGO ZENER",
+    "title": "Produtos e ofertas",
+    "description": "Descubra as nossas soluções energéticas e encontre o formato adaptado às suas utilizações domésticas ou profissionais."
+  },
+  "search": {
+    "eyebrow": "Pesquisa direcionada",
+    "title": "Que produto procura?",
+    "viewCart": "Ver o meu carrinho",
+    "query": "Produto ou referência",
+    "queryPlaceholder": "Ex. garrafa 6 kg",
+    "submit": "Mostrar os resultados",
+    "reset": "Repor"
+  },
+  "filters": {
+    "type": "Tipo",
+    "allTypes": "Todos os tipos",
+    "marque": "Marca",
+    "allBrands": "Todas as marcas",
+    "metier": "Área de negócio",
+    "allMetiers": "Todas as áreas",
+    "public": "Público",
+    "allPublics": "Todos os públicos"
+  },
+  "options": {
+    "type": {
+      "carburants": "Combustíveis",
+      "gaz": "Gás",
+      "lubrifiants": "Lubrificantes",
+      "produits-automobiles": "Produtos automóveis",
+      "energie": "Energia",
+      "equipements": "Equipamentos",
+      "offres-professionnelles": "Ofertas profissionais",
+      "autres": "Outros"
+    },
+    "marque": {
+      "oasis": "Oasis",
+      "sodigaz": "Sodigaz",
+      "enora": "Enora",
+      "zencard": "ZenCard"
+    },
+    "metier": {
+      "distribution-de-carburants": "Distribuição de combustíveis",
+      "gaz-energie": "Gás / energia",
+      "mobilite-services": "Mobilidade e serviços",
+      "lubrifiants": "Lubrificantes",
+      "solutions-b2b": "Soluções B2B"
+    },
+    "public": {
+      "particuliers": "Particulares",
+      "entreprises-pme": "Empresas / PME",
+      "industriels": "Industriais",
+      "horeca": "HORECA",
+      "transport-flotte": "Transporte / frota",
+      "institutions-partenaires": "Instituições / parceiros"
+    }
+  },
+  "results": {
+    "eyebrow": "A nossa seleção",
+    "countOne": "{{count}} produto",
+    "countMany": "{{count}} produtos",
+    "range": "A mostrar 1 a {{count}}",
+    "empty": "Ainda não há produtos publicados."
+  },
+  "card": {
+    "view": "Ver o produto",
+    "noImage": "Imagem disponível em breve"
+  },
+  "detail": {
+    "notFoundTitle": "Produto não encontrado",
+    "notFoundText": "Este produto não existe ou já não está disponível.",
+    "backToCatalog": "Voltar ao catálogo",
+    "requestInfo": "Pedir informações",
+    "addToCart": "Adicionar ao carrinho",
+    "added": "Adicionado ao carrinho",
+    "viewCart": "Ver o meu carrinho",
+    "advisor": "Falar com um conselheiro",
+    "aboutEyebrow": "Sobre o produto",
+    "descriptionTitle": "Descrição",
+    "requestSubject": "Pedido de informações: {{name}}"
+  },
+  "home": {
+    "eyebrow": "A nossa oferta",
+    "viewAll": "Ver todos os nossos produtos"
+  },
+  "cta": {
+    "title": "Precisa de informações?",
+    "text": "As nossas equipas estão à sua disposição para o aconselhar.",
+    "button": "Contacte-nos"
+  }
+}

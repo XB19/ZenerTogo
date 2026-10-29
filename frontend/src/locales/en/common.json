@@ -85,5 +85,9 @@
     "submitError": "Subscription failed. Please try again.",
     "consentPrefix": "I agree that my data will be used in accordance with the",
     "privacyPolicy": "privacy policy"
+  },
+  "a11y": {
+    "breadcrumb": "Breadcrumb",
+    "backToTop": "Back to top"
   }
 }

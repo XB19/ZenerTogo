@@ -23,12 +23,14 @@ export const stations = [
     description: {
       fr: 'Station de référence proposant carburants, gaz et services de proximité.',
       en: 'Flagship station offering fuel, gas and neighborhood services.',
+      pt: 'Posto de referência que oferece combustíveis, gás e serviços de proximidade.',
     },
     lat: 6.21766, // Carrefour Deux Lions (OpenStreetMap)
     lng: 1.18852,
     services: {
       fr: 'Carburants, gaz, services de proximité, paiements ZenCard.',
       en: 'Fuel, gas, neighborhood services, ZenCard payments.',
+      pt: 'Combustíveis, gás, serviços de proximidade, pagamentos ZenCard.',
     },
   },
   {
@@ -41,12 +43,14 @@ export const stations = [
     description: {
       fr: 'Station de proximité au cœur du quartier Agoè Téléssou.',
       en: 'Neighborhood station in the heart of the Agoè Téléssou district.',
+      pt: 'Posto de proximidade no coração do bairro de Agoè Téléssou.',
     },
     lat: 6.2243, // quartier Agoè-Nyivé (OpenStreetMap) — à affiner
     lng: 1.2102, // quartier Agoè-Nyivé (OpenStreetMap) — à affiner
     services: {
       fr: 'Carburants, gaz, services de proximité, paiements ZenCard.',
       en: 'Fuel, gas, neighborhood services, ZenCard payments.',
+      pt: 'Combustíveis, gás, serviços de proximidade, pagamentos ZenCard.',
     },
   },
   {
@@ -59,12 +63,14 @@ export const stations = [
     description: {
       fr: 'Station de proximité offrant un accueil client et des services énergétiques.',
       en: 'Neighborhood station offering customer service and energy services.',
+      pt: 'Posto de proximidade que oferece atendimento ao cliente e serviços energéticos.',
     },
     lat: 6.1302, // Nyékonakpoé (OpenStreetMap)
     lng: 1.2059,
     services: {
       fr: 'Services énergétiques et accueil client.',
       en: 'Energy services and customer service.',
+      pt: 'Serviços energéticos e atendimento ao cliente.',
     },
   },
   {
@@ -77,12 +83,14 @@ export const stations = [
     description: {
       fr: 'Station implantée en zone industrielle, au service des professionnels et des particuliers.',
       en: 'Station located in the industrial zone, serving businesses and individuals alike.',
+      pt: 'Posto situado na zona industrial, ao serviço de profissionais e particulares.',
     },
     lat: 6.14, // zone portuaire/industrielle de Lomé (OpenStreetMap) — à affiner
     lng: 1.28, // zone portuaire/industrielle de Lomé (OpenStreetMap) — à affiner
     services: {
       fr: 'Carburants, gaz, services de proximité, paiements ZenCard.',
       en: 'Fuel, gas, neighborhood services, ZenCard payments.',
+      pt: 'Combustíveis, gás, serviços de proximidade, pagamentos ZenCard.',
     },
   },
   {
@@ -95,12 +103,14 @@ export const stations = [
     description: {
       fr: "Station de quartier desservant le secteur d'Adéwi.",
       en: 'Neighborhood station serving the Adéwi area.',
+      pt: 'Posto de bairro que serve a zona de Adéwi.',
     },
     lat: 6.16, // Marché d'Adéwui, Doumasséssé (OpenStreetMap)
     lng: 1.2126,
     services: {
       fr: 'Carburants, gaz, services de proximité, paiements ZenCard.',
       en: 'Fuel, gas, neighborhood services, ZenCard payments.',
+      pt: 'Combustíveis, gás, serviços de proximidade, pagamentos ZenCard.',
     },
   },
   {
@@ -113,12 +123,14 @@ export const stations = [
     description: {
       fr: 'Distribution de carburants et services associés sur la côte togolaise.',
       en: 'Fuel distribution and related services on the Togolese coast.',
+      pt: 'Distribuição de combustíveis e serviços associados na costa togolesa.',
     },
     lat: 6.2289, // Aného (OpenStreetMap)
     lng: 1.5938,
     services: {
       fr: 'Distribution de carburants et services.',
       en: 'Fuel distribution and services.',
+      pt: 'Distribuição de combustíveis e serviços.',
     },
   },
   {
@@ -131,12 +143,14 @@ export const stations = [
     description: {
       fr: 'Station sur l\'axe Lomé–Tsévié, au service des voyageurs et des riverains.',
       en: 'Station on the Lomé–Tsévié road, serving travelers and local residents.',
+      pt: 'Posto no eixo Lomé–Tsévié, ao serviço dos viajantes e dos residentes.',
     },
     lat: 6.4231, // Tsévié (OpenStreetMap)
     lng: 1.2105,
     services: {
       fr: 'Carburants, gaz, services de proximité, paiements ZenCard.',
       en: 'Fuel, gas, neighborhood services, ZenCard payments.',
+      pt: 'Combustíveis, gás, serviços de proximidade, pagamentos ZenCard.',
     },
   },
   {
@@ -149,12 +163,14 @@ export const stations = [
     description: {
       fr: 'Produits pétroliers et services associés dans la région des Plateaux.',
       en: 'Petroleum products and related services in the Plateaux region.',
+      pt: 'Produtos petrolíferos e serviços associados na região dos Planaltos.',
     },
     lat: 6.9107, // Kpalimé (OpenStreetMap)
     lng: 0.6324,
     services: {
       fr: 'Produits pétroliers et services associés.',
       en: 'Petroleum products and related services.',
+      pt: 'Produtos petrolíferos e serviços associados.',
     },
   },
   {
@@ -167,12 +183,14 @@ export const stations = [
     description: {
       fr: 'Station desservant la ville d\'Atakpamé et ses environs.',
       en: 'Station serving the town of Atakpamé and its surroundings.',
+      pt: 'Posto que serve a cidade de Atakpamé e os seus arredores.',
     },
     lat: 7.5321, // Atakpamé (OpenStreetMap)
     lng: 1.1219,
     services: {
       fr: 'Carburants, gaz, services de proximité, paiements ZenCard.',
       en: 'Fuel, gas, neighborhood services, ZenCard payments.',
+      pt: 'Combustíveis, gás, serviços de proximidade, pagamentos ZenCard.',
     },
   },
   {
@@ -185,12 +203,14 @@ export const stations = [
     description: {
       fr: "Station de proximité sur l'axe routier national, à Blitta.",
       en: 'Neighborhood station on the national highway, in Blitta.',
+      pt: 'Posto de proximidade na estrada nacional, em Blitta.',
     },
     lat: 8.3535, // Blitta (OpenStreetMap)
     lng: 0.9963,
     services: {
       fr: 'Carburants, gaz, services de proximité, paiements ZenCard.',
       en: 'Fuel, gas, neighborhood services, ZenCard payments.',
+      pt: 'Combustíveis, gás, serviços de proximidade, pagamentos ZenCard.',
     },
   },
   {
@@ -203,12 +223,14 @@ export const stations = [
     description: {
       fr: 'Station de référence desservant la région de la Kara.',
       en: 'Flagship station serving the Kara region.',
+      pt: 'Posto de referência que serve a região de Kara.',
     },
     lat: 9.5489, // Kara (OpenStreetMap)
     lng: 1.1977,
     services: {
       fr: 'Carburants, gaz, services de proximité, paiements ZenCard.',
       en: 'Fuel, gas, neighborhood services, ZenCard payments.',
+      pt: 'Combustíveis, gás, serviços de proximidade, pagamentos ZenCard.',
     },
   },
 ];

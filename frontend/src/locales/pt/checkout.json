@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "badge": "ENCOMENDA",
+    "title": "Finalizar a sua encomenda"
+  },
+  "empty": {
+    "text": "O seu carrinho está vazio, ainda não há nada para encomendar.",
+    "cta": "Descobrir a loja"
+  },
+  "summary": {
+    "title": "A sua encomenda",
+    "total": "Total a pagar"
+  },
+  "form": {
+    "contactTitle": "Os seus dados",
+    "fields": {
+      "name": { "label": "Nome completo", "placeholder": "O seu nome e apelido" },
+      "phone": { "label": "Telefone", "placeholder": "+228 XX XX XX XX" },
+      "email": { "label": "E-mail", "placeholder": "voce@exemplo.com" }
+    },
+    "deliveryTitle": "Modo de levantamento",
+    "delivery": {
+      "pickup": "Levantamento no posto",
+      "home": "Entrega ao domicílio"
+    },
+    "stationLabel": "Posto de levantamento",
+    "stationPlaceholder": "Escolha um posto",
+    "addressLabel": "Morada de entrega",
+    "addressPlaceholder": "Bairro, rua, pontos de referência...",
+    "paymentTitle": "Modo de pagamento",
+    "payment": {
+      "cash": "Pagamento na entrega / no posto",
+      "mobile": "Mobile Money"
+    },
+    "submitCta": "Confirmar a encomenda"
+  },
+  "success": {
+    "title": "Encomenda confirmada!",
+    "text": "Obrigado, a sua encomenda {{orderNumber}} foi registada. A nossa equipa entrará em contacto consigo para a confirmar.",
+    "backHome": "Voltar ao início",
+    "backShop": "Continuar as compras"
+  }
+}

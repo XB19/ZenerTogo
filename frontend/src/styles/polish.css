@@ -1212,3 +1212,31 @@
         border-radius:28px;
     }
 }
+
+/* Sélecteur FR / EN / PT : trois boutons, on resserre sur mobile pour que
+   l'en-tête tienne sur la largeur d'un téléphone. */
+@media (max-width:576px){
+    .client-app .language-switcher{
+        gap:0;
+    }
+
+    .client-app .language-switcher button{
+        padding:4px 7px;
+        font-size:11px;
+    }
+
+    .client-app .logo img{
+        height:50px;
+    }
+}
+
+@media (max-width:400px){
+    .client-app .language-switcher button{
+        padding:4px 5px;
+        font-size:10.5px;
+    }
+
+    .client-app .logo img{
+        height:44px;
+    }
+}

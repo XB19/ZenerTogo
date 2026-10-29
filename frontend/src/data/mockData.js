@@ -15,10 +15,10 @@
 export const offres = [
   {
     id: 1,
-    titre: { fr: 'Responsable Commercial', en: 'Sales Manager' },
+    titre: { fr: 'Responsable Commercial', en: 'Sales Manager', pt: 'Responsável Comercial' },
     ville: 'Lomé',
-    type_contrat: { fr: 'CDI', en: 'Permanent contract' },
-    departement: { fr: 'Direction Commerciale', en: 'Sales Department' },
+    type_contrat: { fr: 'CDI', en: 'Permanent contract', pt: 'Contrato sem termo' },
+    departement: { fr: 'Direction Commerciale', en: 'Sales Department', pt: 'Direção Comercial' },
     date_limite: '2026-09-30',
     created_at: '2026-07-01',
     actif: true,
@@ -30,6 +30,9 @@ export const offres = [
       en:
         "ZENER is looking for a Sales Manager to drive the commercial development of its " +
         "network of service stations and strengthen relationships with strategic partners.",
+      pt:
+        'A ZENER procura um(a) Responsável Comercial para conduzir o desenvolvimento comercial da ' +
+        'sua rede de postos de abastecimento e reforçar as relações com os parceiros estratégicos.',
     },
     missions: {
       fr:
@@ -42,6 +45,10 @@ export const offres = [
         "Negotiate distribution agreements with partners.\n" +
         "Track the sales targets of the station network.\n" +
         "Manage a team of field sales representatives.",
+      pt:
+        'Desenvolver a carteira de clientes profissionais.\nNegociar os acordos de distribuição com ' +
+        'os parceiros.\nAcompanhar os objetivos comerciais da rede de postos.\nGerir uma equipa de ' +
+        'comerciais de terreno.',
     },
     profil: {
       fr:
@@ -54,14 +61,18 @@ export const offres = [
         "At least 5 years of experience in a similar sales role.\n" +
         "Excellent negotiation and interpersonal skills.\n" +
         "Driving license required.",
+      pt:
+        'Licenciatura ou mestrado em comércio ou gestão.\nPelo menos 5 anos de experiência numa ' +
+        'função comercial semelhante.\nExcelente capacidade de negociação e de relacionamento.\n' +
+        'Carta de condução obrigatória.',
     },
   },
   {
     id: 2,
-    titre: { fr: 'Technicien Maintenance Stations', en: 'Station Maintenance Technician' },
+    titre: { fr: 'Technicien Maintenance Stations', en: 'Station Maintenance Technician', pt: 'Técnico de Manutenção de Postos' },
     ville: 'Lomé',
-    type_contrat: { fr: 'CDD', en: 'Fixed-term contract' },
-    departement: { fr: 'Exploitation', en: 'Operations' },
+    type_contrat: { fr: 'CDD', en: 'Fixed-term contract', pt: 'Contrato a termo' },
+    departement: { fr: 'Exploitation', en: 'Operations', pt: 'Exploração' },
     date_limite: '2026-08-15',
     created_at: '2026-06-20',
     actif: true,
@@ -72,6 +83,9 @@ export const offres = [
       en:
         "Reporting to the operations manager, you will handle preventive and corrective " +
         "maintenance of equipment at our service stations in the region.",
+      pt:
+        'Sob a responsabilidade do chefe de exploração, assegura a manutenção preventiva e ' +
+        'corretiva dos equipamentos dos nossos postos de abastecimento da região.',
     },
     missions: {
       fr:
@@ -82,6 +96,9 @@ export const offres = [
         "Maintain pumps and tanks.\n" +
         "Diagnose and repair technical faults.\n" +
         "Ensure compliance with QHSE safety standards.",
+      pt:
+        'Assegurar a manutenção das bombas e dos tanques.\nDiagnosticar e reparar as avarias ' +
+        'técnicas.\nZelar pelo cumprimento das normas de segurança QHSE.',
     },
     profil: {
       fr:
@@ -92,14 +109,17 @@ export const offres = [
         "Technical degree (electromechanical or equivalent).\n" +
         "2 years of experience in industrial maintenance.\n" +
         "Willingness to travel regionally.",
+      pt:
+        'Formação técnica (eletromecânica ou equivalente).\n2 anos de experiência em manutenção ' +
+        'industrial.\nDisponibilidade para deslocações regionais.',
     },
   },
   {
     id: 3,
-    titre: { fr: 'Chargé(e) de Clientèle ZenCard', en: 'ZenCard Customer Advisor' },
+    titre: { fr: 'Chargé(e) de Clientèle ZenCard', en: 'ZenCard Customer Advisor', pt: 'Assistente de Clientes ZenCard' },
     ville: 'Lomé',
-    type_contrat: { fr: 'Stage', en: 'Internship' },
-    departement: { fr: 'Relation Client', en: 'Customer Relations' },
+    type_contrat: { fr: 'Stage', en: 'Internship', pt: 'Estágio' },
+    departement: { fr: 'Relation Client', en: 'Customer Relations', pt: 'Relação com o Cliente' },
     date_limite: null,
     created_at: '2026-07-10',
     actif: true,
@@ -110,6 +130,9 @@ export const offres = [
       en:
         "Join the ZenCard team to support individuals and businesses with sign-up and " +
         "follow-up for their fuel payment card.",
+      pt:
+        'Junte-se à equipa ZenCard para acompanhar particulares e empresas na adesão e no ' +
+        'acompanhamento do seu cartão de pagamento de combustível.',
     },
     missions: {
       fr:
@@ -120,6 +143,9 @@ export const offres = [
         "Process ZenCard sign-up requests.\n" +
         "Respond to customer requests by phone and email.\n" +
         "Contribute to improving the customer journey.",
+      pt:
+        'Tratar os pedidos de adesão ao ZenCard.\nResponder aos pedidos dos clientes por telefone e ' +
+        'e-mail.\nContribuir para a melhoria do percurso do cliente.',
     },
     profil: {
       fr:
@@ -128,6 +154,9 @@ export const offres = [
       en:
         "Final-year student (business, communication).\n" +
         "Good writing skills and customer-service mindset.",
+      pt:
+        'Estudante do último ano (comércio, comunicação).\nBoa capacidade de redação e sentido de ' +
+        'serviço ao cliente.',
     },
   },
 ];
@@ -139,8 +168,9 @@ export const actualites = [
     titre: {
       fr: 'Groupe Zener : les 3 points clés de son premier Comité Exécutif',
       en: 'Zener Group: 3 key takeaways from its first Executive Committee',
+      pt: 'Grupo Zener: os 3 pontos-chave do seu primeiro Comité Executivo',
     },
-    categorie: { fr: 'Actualités', en: 'News' },
+    categorie: { fr: 'Actualités', en: 'News', pt: 'Notícias' },
     created_at: '2026-08-10',
     image: '/images/zenertg/comite-executif.jpg',
     gallery: ['/images/zenertg/comite-executif-2.jpg', '/images/zenertg/comite-executif-3.jpg'],
@@ -178,6 +208,21 @@ export const actualites = [
         "and accelerate the projects that create value for customers, partners and employees.\n" +
         "Set to become a regular meeting, the Executive Committee is part of a shared ambition: building a more " +
         "agile, higher-performing Group that is firmly focused on the future.",
+      pt:
+        'O Grupo Zener realizou o seu primeiro Comité Executivo, reunindo os Diretores-Gerais das ' +
+        'suas filiais e os seus principais colaboradores. Esta primeira sessão permitiu fazer o ' +
+        'balanço do primeiro semestre, partilhar os avanços dos projetos estratégicos e alinhar as ' +
+        'prioridades para os próximos meses.\n## Fazer o balanço do primeiro semestre\nEsta primeira ' +
+        'sessão permitiu fazer o balanço das ações realizadas ao longo do primeiro semestre e o ' +
+        'ponto de situação sobre os avanços do Grupo.\n## Acompanhar os projetos estratégicos\nOs ' +
+        'participantes partilharam o estado de avanço dos projetos estratégicos do Grupo, ' +
+        'oferecendo um quadro comum para acompanhar as diferentes iniciativas e as suas próximas ' +
+        'etapas.\n## Reforçar o alinhamento entre as filiais\nPara além do balanço, este Comité ' +
+        'Executivo marca uma etapa no reforço da governação do Grupo Zener. Traduz a vontade de ' +
+        'favorecer uma tomada de decisão concertada, desenvolver as sinergias entre as filiais e ' +
+        'acelerar os projetos que criam valor para os clientes, os parceiros e os colaboradores.\n' +
+        'Destinado a tornar-se um encontro regular, o Comité Executivo inscreve-se numa ambição ' +
+        'comum: construir um Grupo mais ágil, mais eficiente e resolutamente virado para o futuro.',
     },
   },
   {
@@ -185,8 +230,9 @@ export const actualites = [
     titre: {
       fr: "La ZenAttitude fait escale dans la ville aux 7 collines : Ouverture d'une oasis Zener à Atakpamé",
       en: 'The ZenAttitude stops in the city of 7 hills: a Zener Oasis opens in Atakpamé',
+      pt: 'A ZenAttitude faz escala na cidade das 7 colinas: abertura de um Oasis Zener em Atakpamé',
     },
-    categorie: { fr: 'Actualités', en: 'News' },
+    categorie: { fr: 'Actualités', en: 'News', pt: 'Notícias' },
     created_at: '2026-07-02',
     image: '/images/zenertg/oasis-atakpame.webp',
     gallery: ['/images/zenertg/oasis-atakpame-2.webp'],
@@ -227,6 +273,23 @@ export const actualites = [
         "growing today, with the ambition of bringing its solutions closer to its customers, wherever they need them.\n" +
         "In Atakpamé, the ZenAttitude now makes a stop. And like every growing Oasis, this is just one more step.\n" +
         "Little by little, the Oasis builds its nest.",
+      pt:
+        'Há cidades por onde se passa. E há aquelas onde se escolhe fazer uma pausa.\nCom as suas ' +
+        'colinas, o seu dinamismo e a sua posição estratégica, Atakpamé, carinhosamente apelidada ' +
+        'de cidade das 7 colinas, é uma daquelas que ligam pessoas, regiões e histórias.\nHoje, ' +
+        'escreve-se um novo capítulo com a abertura do 11.º Oasis Zener, que vem reforçar a nossa ' +
+        'rede e aproximar ainda mais os nossos serviços dos nossos clientes.\n## Um Oasis, muito ' +
+        'mais do que um posto de abastecimento\nEm Atakpamé, este novo Oasis não será apenas um ' +
+        'posto onde atestar o depósito. Os utilizadores encontrarão tudo o que faz a experiência ' +
+        'Zener: os combustíveis Xtraline e Xtrazole, bem como o Zencard, o cartão de combustível ' +
+        'da Zener que simplifica o pagamento e dá acesso ao self-service 24 h/24, entre outros. ' +
+        'Uma forma de tornar cada viagem mais simples, mais rápida e mais tranquila.\n## Uma nova ' +
+        'etapa nas estradas do Togo\nCom este 11.º Oasis, a Zener prossegue o desenvolvimento da ' +
+        'sua rede de postos de abastecimento ao serviço da mobilidade togolesa. Já presente em ' +
+        'Lomé, Aného, Kara, Blitta, Tsévié e Kpalimé, a família dos Oasis Zener cresce hoje com a ' +
+        'ambição de aproximar as suas soluções dos seus clientes, onde quer que precisem.\nEm ' +
+        'Atakpamé, a ZenAttitude faz agora escala. E como todo o Oasis que cresce, este é apenas ' +
+        'mais uma etapa.\nPouco a pouco, o Oasis faz o seu ninho.',
     },
   },
 ];
@@ -252,6 +315,7 @@ export const boutiqueProducts = [
     description: {
       fr: 'Bouteille Sikavi 6kg Petite Butane, idéale pour un usage domestique, sécurisée et facile à recharger grâce au système de consigne.',
       en: 'Sikavi 6kg "Petite Butane" cylinder, ideal for household use, safe and easy to refill thanks to the deposit system.',
+      pt: 'Garrafa Sikavi 6 kg «Petite Butane», ideal para uso doméstico, segura e fácil de recarregar graças ao sistema de consignação.',
     },
   },
   {
@@ -268,6 +332,7 @@ export const boutiqueProducts = [
     description: {
       fr: 'Bouteille Evalu 50kg, grand format pour particuliers et professionnels, offrant une autonomie maximale et sécurisée.',
       en: 'Evalu 50kg cylinder, a large format for households and professionals, offering maximum and safe autonomy.',
+      pt: 'Garrafa Evalu 50 kg, grande formato para particulares e profissionais, que oferece uma autonomia máxima e segura.',
     },
   },
   {
@@ -284,6 +349,7 @@ export const boutiqueProducts = [
     description: {
       fr: 'Bouteille Enora 6kg, polyvalente et pratique, idéale pour un usage domestique ou en extérieur, sûre et facile à recharger.',
       en: 'Enora 6kg cylinder, versatile and practical, ideal for household or outdoor use, safe and easy to refill.',
+      pt: 'Garrafa Enora 6 kg, polivalente e prática, ideal para uso doméstico ou ao ar livre, segura e fácil de recarregar.',
     },
   },
   {
@@ -300,6 +366,7 @@ export const boutiqueProducts = [
     description: {
       fr: 'Bouteille Enora 12,5kg, économique et polyvalente, idéale pour un usage domestique ou professionnel, résistante et facile à raccorder.',
       en: 'Enora 12.5kg cylinder, economical and versatile, ideal for household or professional use, sturdy and easy to connect.',
+      pt: 'Garrafa Enora 12,5 kg, económica e polivalente, ideal para uso doméstico ou profissional, resistente e fácil de ligar.',
     },
   },
   {
@@ -316,6 +383,7 @@ export const boutiqueProducts = [
     description: {
       fr: 'Bouteille Abiré 12,5kg, adaptée aux foyers nombreux ou aux usages professionnels légers, sécurisée et facile à recharger grâce au système de consigne',
       en: 'Abiré 12.5kg cylinder, suited to large households or light professional use, safe and easy to refill thanks to the deposit system.',
+      pt: 'Garrafa Abiré 12,5 kg, adaptada a famílias numerosas ou a usos profissionais ligeiros, segura e fácil de recarregar graças ao sistema de consignação.',
     },
   },
   {
@@ -332,6 +400,7 @@ export const boutiqueProducts = [
     description: {
       fr: 'Bouteille Aboe Nomou 6kg pour robinet, pratique et sécurisée pour un usage domestique ou professionnel léger, avec rechargement économique via le système de consigne.',
       en: 'Aboe Nomou 6kg valve cylinder, practical and safe for household or light professional use, with economical refills through the deposit system.',
+      pt: 'Garrafa Aboe Nomou 6 kg com torneira, prática e segura para uso doméstico ou profissional ligeiro, com recarga económica através do sistema de consignação.',
     },
   },
   {
@@ -348,6 +417,7 @@ export const boutiqueProducts = [
     description: {
       fr: 'Apefa 3 kg est une recharge de gaz pratique et sécurisée, idéale pour vos besoins domestiques. Elle assure une cuisson efficace et fiable, parfaite pour le foyer.',
       en: 'Apefa 3 kg is a practical and safe gas refill, ideal for your household needs. It ensures efficient and reliable cooking, perfect for the home.',
+      pt: 'A Apefa 3 kg é uma recarga de gás prática e segura, ideal para as suas necessidades domésticas. Garante uma cozedura eficaz e fiável, perfeita para o lar.',
     },
   },
   {
@@ -364,6 +434,7 @@ export const boutiqueProducts = [
     description: {
       fr: 'Bouteille Multi Usage 25kg, adaptée aux particuliers et entreprises, simple à installer et sécurisée pour un usage quotidien.',
       en: 'Multi Usage 25kg cylinder, suited to households and businesses, simple to install and safe for everyday use.',
+      pt: 'Garrafa Multiusos 25 kg, adaptada a particulares e empresas, simples de instalar e segura para o uso diário.',
     },
   },
 ];
@@ -388,9 +459,13 @@ export const testimonials = [
         "We have worked with ZENER for several years to supply our vehicle fleet. The " +
         "quality of service, product availability and professionalism of the teams " +
         "perfectly meet our expectations.",
+      pt:
+        'Trabalhamos com a ZENER há vários anos para o abastecimento da nossa frota de veículos. A ' +
+        'qualidade do serviço, a disponibilidade dos produtos e o profissionalismo das equipas ' +
+        'correspondem plenamente às nossas expectativas.',
     },
     name: 'KOMADAN Josué',
-    role: { fr: 'CEO JOSUE THE DESIGNER', en: 'CEO JOSUE THE DESIGNER' },
+    role: { fr: 'CEO JOSUE THE DESIGNER', en: 'CEO JOSUE THE DESIGNER', pt: 'CEO JOSUE THE DESIGNER' },
     image: '/images/testimonial.jpg',
   },
   {
@@ -401,18 +476,21 @@ export const testimonials = [
       en:
         "The professionalism of the teams and the availability of products give us " +
         "complete satisfaction.",
+      pt:
+        'O profissionalismo das equipas e a disponibilidade dos produtos dão-nos total satisfação.',
     },
     name: 'AKAKPO Mensah',
-    role: { fr: 'DIRECTEUR GENERAL', en: 'CHIEF EXECUTIVE OFFICER' },
+    role: { fr: 'DIRECTEUR GENERAL', en: 'CHIEF EXECUTIVE OFFICER', pt: 'DIRETOR-GERAL' },
     image: '/images/testimonial2.png',
   },
   {
     text: {
       fr: "Un partenaire fiable qui accompagne efficacement notre développement.",
       en: "A reliable partner that effectively supports our growth.",
+      pt: 'Um parceiro fiável que acompanha eficazmente o nosso desenvolvimento.',
     },
     name: 'KOFFI Mawuli',
-    role: { fr: 'RESPONSABLE OPERATIONS', en: 'OPERATIONS MANAGER' },
+    role: { fr: 'RESPONSABLE OPERATIONS', en: 'OPERATIONS MANAGER', pt: 'RESPONSÁVEL DE OPERAÇÕES' },
     image: '/images/testimonial3.png',
   },
 ];

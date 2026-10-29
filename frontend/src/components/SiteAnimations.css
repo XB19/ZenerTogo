@@ -59,3 +59,12 @@
     .client-app main > div{ animation:none; }
     .client-app .zr-progress span{ transition:none; }
 }
+
+/* Les blocs encore cachés partent décalés de 48 px vers la droite : sans
+   ce garde-fou ils élargissent la page sur mobile avant d'apparaître.
+   `clip` (et non `hidden`) ne crée pas de conteneur de défilement, ce qui
+   préserve les éléments sticky. */
+.client-app main,
+.client-app .zener-footer{
+    overflow-x:clip;
+}
