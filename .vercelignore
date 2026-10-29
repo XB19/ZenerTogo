@@ -1,0 +1,6 @@
+# Seul le frontend (Root Directory = frontend) est déployé sur Vercel.
+backend/
+docker-compose.yml
+**/node_modules/
+frontend/dist/
+**/.env*
