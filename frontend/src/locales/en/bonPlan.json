@@ -44,5 +44,6 @@
     "close": "✕",
     "title": "ZenCard Top-Up",
     "text": "The top-up system will be available soon."
-  }
+  },
+  "stats": { "offers": "Active offers", "card": "Your benefits card" }
 }

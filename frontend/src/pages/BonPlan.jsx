@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useBonPlan } from '../lib/bonplan';
 import './BonPlan.css';
 
 function BonPlan() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [lightbox, setLightbox] = useState(null); // { image, title } | null
   const [zencardOpen, setZencardOpen] = useState(false);
 
@@ -17,6 +18,26 @@ function BonPlan() {
     { img: '/images/zencard_pub7.jpg', alt: t('bonPlan.gallery.items.pub7.alt'), title: t('bonPlan.gallery.items.pub7.title') },
     { img: '/images/zencard_product.jpg', alt: t('bonPlan.gallery.items.product.alt'), title: t('bonPlan.gallery.items.product.title') },
   ];
+
+  // Contenu local, affiché tant que l'API Bon Plan n'est pas branchée ou ne répond pas.
+  const localContent = {
+    posters: galleryItems.map((item) => ({ id: item.img, title: item.title, image: item.img, alt: item.alt })),
+    cards: [
+      {
+        id: 'excel-rh',
+        title: t('bonPlan.textCard.title'),
+        text: t('bonPlan.textCard.text'),
+        badge: t('bonPlan.textCard.badge'),
+        url: '#',
+        linkLabel: t('bonPlan.textCard.link'),
+      },
+    ],
+  };
+  const locale = (i18n.resolvedLanguage || i18n.language || 'fr').slice(0, 2);
+  // Contenu et mise en page (textes, compteur, bouton, cartes, colonnes) réglés dans l'admin Bon Plan.
+  const { posters, cards, page, loading } = useBonPlan(localContent, locale);
+  const texts = page.texts;
+  const shownCards = page.showCards ? cards : [];
 
   return (
     <div className="page-bonplan">
@@ -38,19 +59,39 @@ function BonPlan() {
         {/* HERO */}
         <section className="hero-section">
           <div className="container">
-            <div className="hero-tag">{t('bonPlan.hero.tag')}</div>
+            <div className="hero-tag">{texts.heroEyebrow || t('bonPlan.hero.tag')}</div>
 
             <h1 className="hero-title">
-              {t('bonPlan.hero.titleLine1')}
-              <span>{t('bonPlan.hero.titleAmp')}</span>
-              {t('bonPlan.hero.titleLine2')}
+              {texts.heroTitle || (
+                <>
+                  {t('bonPlan.hero.titleLine1')}
+                  <span>{t('bonPlan.hero.titleAmp')}</span>
+                  {t('bonPlan.hero.titleLine2')}
+                </>
+              )}
             </h1>
 
-            <p className="hero-text">{t('bonPlan.hero.text')}</p>
+            <p className="hero-text">{texts.heroText || t('bonPlan.hero.text')}</p>
 
-            <button className="hero-btn" onClick={() => setZencardOpen(true)}>
-              {t('bonPlan.hero.cta')}
-            </button>
+            {page.showZencardButton && (
+              <button className="hero-btn" onClick={() => setZencardOpen(true)}>
+                {texts.buttonLabel || t('bonPlan.hero.cta')}
+              </button>
+            )}
+
+            {page.showCounter && (
+              <div className="bp-stats">
+                <div>
+                  <b>{loading ? '–' : posters.length + shownCards.length}</b>
+                  <span>{t('bonPlan.stats.offers')}</span>
+                </div>
+                <i aria-hidden="true" />
+                <div>
+                  <b className="bp-stats-gold">ZenCard</b>
+                  <span>{t('bonPlan.stats.card')}</span>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 
@@ -58,20 +99,20 @@ function BonPlan() {
         <section className="bonsplans-section">
           <div className="container">
             <div style={{ textAlign: 'center' }}>
-              <span className="section-tag">{t('bonPlan.section.tag')}</span>
-              <h2 className="section-title">{t('bonPlan.section.title')}</h2>
+              <span className="section-tag">{texts.sectionEyebrow || t('bonPlan.section.tag')}</span>
+              <h2 className="section-title">{texts.sectionTitle || t('bonPlan.section.title')}</h2>
             </div>
 
-            <div className="bp-grid">
-              {galleryItems.map((item) => (
+            <div className={`bp-grid bp-cols-${page.columns}`}>
+              {posters.map((item) => (
                 <div
                   className="bp-card"
-                  key={item.img}
-                  onClick={() => setLightbox({ image: item.img, title: item.title })}
+                  key={item.id}
+                  onClick={() => setLightbox({ image: item.image, title: item.title })}
                 >
-                  <span className="bp-badge">{t('bonPlan.gallery.badge')}</span>
+                  <span className="bp-badge">{item.badge || t('bonPlan.gallery.badge')}</span>
 
-                  <img src={item.img} className="bp-img" alt={item.alt} />
+                  <img src={item.image} className="bp-img" alt={item.alt || item.title} loading="lazy" />
 
                   <div className="bp-overlay">
                     <span style={{ color: 'white', fontSize: '13px', fontWeight: 600 }}>
@@ -85,8 +126,9 @@ function BonPlan() {
                 </div>
               ))}
 
-              {/* CARD TEXTE */}
-              <div className="bp-text-card">
+              {/* CARTES TEXTE */}
+              {shownCards.map((card) => (
+              <div className="bp-text-card" key={card.id}>
                 <div
                   style={{
                     width: '44px',
@@ -115,7 +157,7 @@ function BonPlan() {
                     marginBottom: '12px',
                   }}
                 >
-                  {t('bonPlan.textCard.badge')}
+                  {card.badge || t('bonPlan.textCard.badge')}
                 </span>
 
                 <h3
@@ -126,7 +168,7 @@ function BonPlan() {
                     marginBottom: '10px',
                   }}
                 >
-                  {t('bonPlan.textCard.title')}
+                  {card.title}
                 </h3>
 
                 <p
@@ -137,11 +179,13 @@ function BonPlan() {
                     marginBottom: '16px',
                   }}
                 >
-                  {t('bonPlan.textCard.text')}
+                  {card.text}
                 </p>
 
+                {card.url && (
                 <a
-                  href="#"
+                  href={card.url}
+                  {...(/^https?:/.test(card.url) ? { target: '_blank', rel: 'noreferrer' } : {})}
                   style={{
                     color: 'var(--blue-mid)',
                     fontWeight: 700,
@@ -149,9 +193,11 @@ function BonPlan() {
                     fontSize: '13px',
                   }}
                 >
-                  {t('bonPlan.textCard.link')}
+                  {card.linkLabel || t('bonPlan.textCard.link')}
                 </a>
+                )}
               </div>
+              ))}
             </div>
           </div>
         </section>

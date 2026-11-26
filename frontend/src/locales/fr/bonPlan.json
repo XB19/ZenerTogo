@@ -44,5 +44,6 @@
     "close": "✕",
     "title": "Recharge ZenCard",
     "text": "Le système de recharge sera bientôt disponible."
-  }
+  },
+  "stats": { "offers": "Offres actives", "card": "Votre carte avantages" }
 }

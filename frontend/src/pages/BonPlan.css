@@ -659,6 +659,48 @@ MODAL
 RESPONSIVE
 ========================= */
 
+
+/* Compteur d'offres et colonnes réglées dans l'admin Bon Plan */
+.page-bonplan .bp-stats{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:32px;
+    margin-top:40px;
+}
+.page-bonplan .bp-stats b{
+    display:block;
+    font-family:'Playfair Display',serif;
+    font-size:28px;
+    line-height:1.2;
+    color:white;
+}
+.page-bonplan .bp-stats .bp-stats-gold{
+    color:var(--secondary);
+}
+.page-bonplan .bp-stats span{
+    display:block;
+    margin-top:4px;
+    font-size:11px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.6);
+}
+.page-bonplan .bp-stats i{
+    width:1px;
+    height:40px;
+    background:rgba(255,255,255,.2);
+}
+@media(min-width:1100px){
+    .page-bonplan .bp-grid.bp-cols-3{
+        grid-template-columns:repeat(3,1fr);
+    }
+    .page-bonplan .bp-grid.bp-cols-4{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+
 @media(max-width:768px){
 
     .page-bonplan .container{

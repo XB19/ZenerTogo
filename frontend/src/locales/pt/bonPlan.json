@@ -44,5 +44,6 @@
     "close": "✕",
     "title": "Carregamento ZenCard",
     "text": "O sistema de carregamento estará disponível em breve."
-  }
+  },
+  "stats": { "offers": "Ofertas ativas", "card": "O seu cartão de vantagens" }
 }
